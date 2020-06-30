@@ -4,8 +4,8 @@ export default function App() {
   useEffect(() => {
     window.VANTA.NET({
       el: "#bg-animation",
-      mouseControls: true,
-      touchControls: true,
+      mouseControls: false,
+      touchControls: false,
       minHeight: 200.0,
       minWidth: 200.0,
       scale: 1.0,
@@ -17,12 +17,16 @@ export default function App() {
 
   return (
     <div className="App">
-      <div id="bg-animation">
+      <div id="bg-animation" />
+
+      <div className="heading">
         <h1>
           Hello, I'm <span>Rabah Babaci</span>.
           <br />
           I'm a full-stack web developer.
         </h1>
+
+        <button>View my work</button>
       </div>
     </div>
   );

@@ -58,10 +58,16 @@ code {
   max-height: 100vh;
   width: 100vw;
   max-width: 100vw;
-  z-index: -99;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  opacity: 0.97;
+  z-index: -1;
+}
+
+.heading {
+  position: absolute;
+  top: 40%;
+  bottom: 0;
+  width: 100%;
+  // height: 100%;
 
   h1 {
     color: #fff;
@@ -72,6 +78,23 @@ code {
       font-family: Monaco;
       background-color: rgba(148, 42, 60, 0.7);
       padding: 0 10px;
+    }
+  }
+
+  button {
+    font-size: 26px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: inherit;
+    border: 2px solid #fff;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      background-color: rgb(60, 157, 170);
+      border: 2px solid rgb(60, 157, 170);
+      transition-duration: 0.2s;
     }
   }
 }
