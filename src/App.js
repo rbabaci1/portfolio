@@ -9,7 +9,7 @@ export default function App() {
       minHeight: 200.0,
       minWidth: 200.0,
       scale: 1.0,
-      scaleMobile: 0.5,
+      scaleMobile: 0.1,
       color: 0xffaf3f,
       backgroundColor: 0x0f0e1d,
     });
