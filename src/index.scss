@@ -71,7 +71,12 @@ code {
 
     span {
       font-weight: 600;
-      color: #fa1b78;
+      background: radial-gradient(
+        circle,
+        rgba(45, 193, 196, 0.6) 0%,
+        rgba(236, 45, 83, 0.6) 100%
+      );
+      border-radius: 1px;
       padding: 0 10px;
     }
   }
@@ -101,8 +106,8 @@ code {
     }
 
     &:hover {
-      background-color: rgb(52, 146, 158);
-      border: 2px solid rgb(52, 146, 158);
+      background-color: rgb(66, 177, 192);
+      border: 2px solid rgb(66, 177, 192);
       transition-duration: 0.3s;
     }
   }
