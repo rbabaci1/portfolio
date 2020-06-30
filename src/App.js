@@ -1,7 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { BsArrowRight } from "react-icons/bs";
 
 export default function App() {
+  const [loaded, setLoaded] = useState(false);
+
   useEffect(() => {
     window.VANTA.NET({
       el: "#bg-animation",
@@ -14,21 +16,25 @@ export default function App() {
       color: 0x42cfed,
       backgroundColor: 0x0f0e1d,
     });
+
+    setLoaded(true);
   }, []);
 
   return (
     <div className="App">
       <div id="bg-animation" />
 
-      <div className="heading">
-        <h1>
-          Hello, I'm <span>Rabah Babaci</span>.
-          <br />
-          I'm a Full-Stack Web Developer.
-        </h1>
+      {loaded && (
+        <div className="heading">
+          <h1>
+            Hello, I'm <span>Rabah Babaci</span>.
+            <br />
+            I'm a Full-Stack Web Developer.
+          </h1>
 
-        <button>View my work{<BsArrowRight size={35} />}</button>
-      </div>
+          <button>View my work{<BsArrowRight size={35} />}</button>
+        </div>
+      )}
     </div>
   );
 }
