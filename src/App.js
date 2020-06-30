@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { BsArrowRight } from "react-icons/bs";
 
 export default function App() {
   useEffect(() => {
@@ -23,10 +24,10 @@ export default function App() {
         <h1>
           Hello, I'm <span>Rabah Babaci</span>.
           <br />
-          I'm a full-stack web developer.
+          I'm a Full-Stack Web Developer.
         </h1>
 
-        <button>View my work</button>
+        <button>View my work{<BsArrowRight size={35} />}</button>
       </div>
     </div>
   );
