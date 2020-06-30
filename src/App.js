@@ -18,7 +18,11 @@ export default function App() {
   return (
     <div className="App">
       <div id="bg-animation">
-        <h1 id="test">Work in progress...</h1>
+        <h1>
+          Hello, I'm <span>Rabah Babaci</span>.
+          <br />
+          I'm a full-stack web developer.
+        </h1>
       </div>
     </div>
   );
