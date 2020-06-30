@@ -56,16 +56,15 @@ code {
   margin: 0;
   height: 100vh;
   max-height: 100vh;
-  opacity: 0.97;
+  opacity: 0.95;
   z-index: -1;
 }
 
 .heading {
   position: absolute;
   top: 35%;
-  bottom: 0;
   width: 100%;
-  background-blend-mode: luminosity;
+  background-color: rgba(28, 28, 43, 0.4);
 
   h1 {
     color: #fff;
