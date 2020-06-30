@@ -9,8 +9,8 @@ export default function App() {
       minHeight: 200.0,
       minWidth: 200.0,
       scale: 1.0,
-      scaleMobile: 0.7,
-      color: 0xffaf3f,
+      scaleMobile: 1.0,
+      color: 0x42cfed,
       backgroundColor: 0x0f0e1d,
     });
   }, []);
