@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 export default function App() {
   const [loaded, setLoaded] = useState(false);
@@ -31,7 +32,9 @@ export default function App() {
             I'm a Full-Stack Web Developer.
           </h1>
 
-          <button>View my work{<BsArrowRight size={35} />}</button>
+          <Link to="about" smooth={true} duration={700} offset={-55}>
+            <button>View my work{<BsArrowRight size={35} />}</button>
+          </Link>
         </div>
       )}
     </div>
