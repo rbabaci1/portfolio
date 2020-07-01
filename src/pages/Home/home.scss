@@ -23,6 +23,13 @@
         font-weight: 500;
         color: $red;
       }
+
+      @media (max-width: $medium_devices) {
+        font-size: 34px;
+      }
+      @media (max-width: $small_devices) {
+        font-size: 32px;
+      }
     }
 
     img {
@@ -30,6 +37,16 @@
       position: relative;
       bottom: 3px;
       left: 80px;
+
+      @media (max-width: $medium_devices) {
+        width: 250px;
+        left: 70px;
+        bottom: 6px;
+      }
+      @media (max-width: $small_devices) {
+        width: 230px;
+        bottom: 8px;
+      }
     }
 
     button {
@@ -61,25 +78,19 @@
           transform: rotate(90deg);
         }
       }
-    }
 
-    @media (max-width: $medium_devices) {
-      h1 {
-        font-size: 34px;
-      }
-
-      img {
-        width: 250px;
-        left: 70px;
-        bottom: 5px;
-      }
-
-      button {
+      @media (max-width: $medium_devices) {
         font-size: 22px;
         padding: 7px 10px;
 
         svg {
           font-size: 28px;
+        }
+      }
+      @media (max-width: $small_devices) {
+        font-size: 20px;
+        svg {
+          font-size: 26px;
         }
       }
     }
