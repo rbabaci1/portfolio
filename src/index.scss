@@ -45,6 +45,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+@import "./colors.scss";
 
 .App {
   text-align: center;
@@ -63,35 +64,35 @@ code {
       width: 100%;
 
       h1 {
-        font-size: 45px;
+        font-size: 40px;
         color: #fff;
-        line-height: 70px;
-
-        img {
-          width: 280px;
-          position: relative;
-          bottom: 118px;
-          left: 90px;
-        }
+        line-height: 40px;
 
         span {
+          letter-spacing: 1px;
           font-weight: 500;
-          font-style: italic;
-          color: wheat;
-          padding: 5px 15px;
+          color: $red;
         }
       }
 
+      img {
+        width: 280px;
+        position: relative;
+        bottom: 2px;
+        left: 80px;
+      }
+
       button {
-        font-size: 26px;
-        margin-top: 30px;
-        padding: 10px 20px;
+        font-size: 24px;
+        font-weight: 300;
+        padding: 10px 15px;
         color: #fff;
         background-color: inherit;
         border: 2px solid #fff;
         cursor: pointer;
         outline: none;
         box-sizing: border-box;
+        margin-top: 30px;
 
         svg {
           margin-left: 15px;
@@ -101,8 +102,8 @@ code {
         }
 
         &:hover {
-          background-color: #42b1c0;
-          border: 2px solid #42b1c0;
+          background-color: $light_green;
+          border: 2px solid $light_green;
           transition-duration: 0.3s;
 
           svg {

@@ -27,19 +27,18 @@ export default function App() {
       {loaded && (
         <div className="heading">
           <h1>
-            Hello, I'm <span>Rabah Babaci</span>
-            .
-            <br />
-            I'm a Full-Stack Web Developer.
-            <br />
-            <img
-              src="https://assets-global.website-files.com/5cd091cfb5499f22bdf72905/5e156bcd9ba5cbffdd421c8a_underline-red.png"
-              alt="bottom underline"
-            />
+            Hello, I'm <span>Rabah Babaci</span>.
           </h1>
 
+          <img
+            src="https://assets-global.website-files.com/5cd091cfb5499f22bdf72905/5e156bcd9ba5cbffdd421c8a_underline-red.png"
+            alt="bottom underline"
+          />
+
+          <h1>I'm a Full-Stack Web Developer.</h1>
+
           <Link to="about" smooth={true} duration={700} offset={-55}>
-            <button>View my work{<BsArrowRight size={35} />}</button>
+            <button>View my work{<BsArrowRight size={32} />}</button>
           </Link>
         </div>
       )}
