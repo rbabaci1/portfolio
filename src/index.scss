@@ -45,117 +45,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-@import "./colors.scss";
 
 .App {
   text-align: center;
-
-  .home {
-    #bg-animation {
-      margin: 0;
-      height: 100vh;
-      max-height: 100vh;
-      z-index: -1;
-    }
-
-    .heading {
-      position: absolute;
-      top: 36%;
-      width: 100%;
-
-      h1 {
-        font-size: 40px;
-        color: #fff;
-        line-height: 40px;
-
-        span {
-          letter-spacing: 1px;
-          font-weight: 500;
-          color: $red;
-        }
-      }
-
-      img {
-        width: 280px;
-        position: relative;
-        bottom: 2px;
-        left: 80px;
-      }
-
-      button {
-        font-size: 24px;
-        font-weight: 300;
-        padding: 10px 15px;
-        color: #fff;
-        background-color: inherit;
-        border: 2px solid #fff;
-        cursor: pointer;
-        outline: none;
-        box-sizing: border-box;
-        margin-top: 30px;
-
-        svg {
-          margin-left: 15px;
-          vertical-align: middle;
-          z-index: 99;
-          transition-duration: 0.3s;
-        }
-
-        &:hover {
-          background-color: $light_green;
-          border: 2px solid $light_green;
-          transition-duration: 0.3s;
-
-          svg {
-            transform: rotate(90deg);
-          }
-        }
-      }
-    }
-  }
-
-  .nav-bar {
-    height: 55px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: rgb(20, 27, 43);
-    position: sticky;
-    width: 100%;
-    top: -0.1px;
-    border-bottom: 5px solid rgb(66, 177, 192);
-
-    a {
-      text-decoration: none;
-      color: rgb(238, 237, 237);
-      cursor: pointer;
-      transition-duration: 0.3s;
-      font-size: 18px;
-      font-weight: 100;
-
-      &:hover {
-        color: rgb(212, 16, 59);
-      }
-    }
-  }
-}
-.active {
-  color: rgb(212, 16, 59) !important;
 }
 
-.about {
-  // border: 2px solid red;
-  padding: 200px;
-}
-.blog {
-  border: 2px solid blue;
-  padding: 200px;
-}
-.portfolio {
-  border: 2px solid green;
-  padding: 200px;
-}
-.contact {
-  border: 2px solid orange;
-  padding: 300px;
-}
+$red: #ec3944;
+$dark_blue: #1b212c;
+$light_green: #42b1c0;
+$large_devices: 1199.98px;
+$medium_devices: 991.98px;
+$small_devices: 767.98px;
+$mobile: 575.98px;

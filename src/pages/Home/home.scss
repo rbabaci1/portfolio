@@ -1,0 +1,87 @@
+@import "../../index.scss";
+
+.home {
+  #bg-animation {
+    margin: 0;
+    height: 100vh;
+    max-height: 100vh;
+    z-index: -1;
+  }
+
+  .heading {
+    position: absolute;
+    top: 36%;
+    width: 100%;
+
+    h1 {
+      font-size: 40px;
+      color: #fff;
+      line-height: 40px;
+
+      span {
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: $red;
+      }
+    }
+
+    img {
+      width: 280px;
+      position: relative;
+      bottom: 3px;
+      left: 80px;
+    }
+
+    button {
+      font-size: 24px;
+      font-weight: 300;
+      padding: 10px 15px;
+      color: #fff;
+      background-color: inherit;
+      border: 2px solid #fff;
+      cursor: pointer;
+      outline: none;
+      box-sizing: border-box;
+      margin-top: 30px;
+
+      svg {
+        margin-left: 12px;
+        vertical-align: middle;
+        z-index: 99;
+        transition-duration: 0.3s;
+        font-size: 32px;
+      }
+
+      &:hover {
+        background-color: $light_green;
+        border: 2px solid $light_green;
+        transition-duration: 0.3s;
+
+        svg {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    @media (max-width: $medium_devices) {
+      h1 {
+        font-size: 34px;
+      }
+
+      img {
+        width: 250px;
+        left: 70px;
+        bottom: 5px;
+      }
+
+      button {
+        font-size: 22px;
+        padding: 7px 10px;
+
+        svg {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}

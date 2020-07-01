@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-scroll";
 
+import "./navBar.scss";
+
 export default function NavBar() {
   return (
     <div className="nav-bar">

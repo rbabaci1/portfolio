@@ -1,0 +1,43 @@
+@import "../../index.scss";
+
+.nav-bar {
+  height: 55px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(20, 27, 43);
+  position: sticky;
+  width: 100%;
+  top: -0.1px;
+  border-bottom: 5px solid $light_green;
+
+  a {
+    text-decoration: none;
+    color: rgb(238, 237, 237);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    font-size: 18px;
+    font-weight: 100;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  .active {
+    color: $red;
+  }
+}
+
+.about {
+  padding: 200px;
+}
+.blog {
+  padding: 200px;
+}
+.portfolio {
+  padding: 200px;
+}
+.contact {
+  padding: 300px;
+}

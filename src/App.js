@@ -1,6 +1,6 @@
 import React from "react";
-import Home from "./pages/Home";
-import NavBar from "./components/NavBar";
+import Home from "./pages/Home/index";
+import NavBar from "./components/Navbar";
 
 export default function App() {
   return (
@@ -10,6 +10,7 @@ export default function App() {
       <NavBar />
 
       <p className="about">
+        <h1>ABOUT</h1>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. At varius vel
         pharetra vel turpis nunc. Id ornare arcu odio ut sem nulla. Odio ut sem
@@ -71,6 +72,7 @@ export default function App() {
       </p>
 
       <p className="portfolio">
+        <h1>PORTFOLIO</h1>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. At varius vel
         pharetra vel turpis nunc. Id ornare arcu odio ut sem nulla. Odio ut sem
@@ -131,6 +133,7 @@ export default function App() {
         porttitor eget dolor morbi non arcu.
       </p>
       <p className="blog">
+        <h1>BLOG</h1>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. At varius vel
         pharetra vel turpis nunc. Id ornare arcu odio ut sem nulla. Odio ut sem
@@ -191,6 +194,7 @@ export default function App() {
         porttitor eget dolor morbi non arcu.
       </p>
       <p className="contact">
+        <h1>CONTACT</h1>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. At varius vel
         pharetra vel turpis nunc. Id ornare arcu odio ut sem nulla. Odio ut sem
