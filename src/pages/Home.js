@@ -27,9 +27,15 @@ export default function App() {
       {loaded && (
         <div className="heading">
           <h1>
-            Hello, I'm <span>Rabah Babaci</span>.
+            Hello, I'm <span>Rabah Babaci</span>
+            .
             <br />
             I'm a Full-Stack Web Developer.
+            <br />
+            <img
+              src="https://assets-global.website-files.com/5cd091cfb5499f22bdf72905/5e156bcd9ba5cbffdd421c8a_underline-red.png"
+              alt="bottom underline"
+            />
           </h1>
 
           <Link to="about" smooth={true} duration={700} offset={-55}>
