@@ -30,6 +30,9 @@
       @media (max-width: $small_devices) {
         font-size: 32px;
       }
+      @media (max-width: $mobile) {
+        font-size: 6vw;
+      }
     }
 
     img {
@@ -39,13 +42,21 @@
       left: 80px;
 
       @media (max-width: $medium_devices) {
-        width: 250px;
+        width: 260px;
         left: 70px;
         bottom: 6px;
       }
       @media (max-width: $small_devices) {
-        width: 230px;
-        bottom: 8px;
+        width: 240px;
+        bottom: 9px;
+      }
+      @media (max-width: $mobile) {
+        width: 50vw;
+        bottom: 10px;
+      }
+      @media (max-width: 400px) {
+        left: 14vw;
+        bottom: 1.9vh;
       }
     }
 
@@ -59,7 +70,7 @@
       cursor: pointer;
       outline: none;
       box-sizing: border-box;
-      margin-top: 30px;
+      margin-top: 50px;
 
       svg {
         margin-left: 12px;
@@ -91,6 +102,12 @@
         font-size: 20px;
         svg {
           font-size: 26px;
+        }
+      }
+      @media (max-width: $mobile) {
+        font-size: 4.4vw;
+        svg {
+          font-size: 5vw;
         }
       }
     }
