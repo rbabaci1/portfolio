@@ -48,64 +48,85 @@ code {
 
 .App {
   text-align: center;
-}
 
-.home {
-  #bg-animation {
-    margin: 0;
-    height: 100vh;
-    max-height: 100vh;
-    z-index: -1;
-  }
-
-  .heading {
-    position: absolute;
-    top: 36%;
-    width: 100%;
-
-    h1 {
-      font-size: 45px;
-      color: #eeecec;
-      line-height: 60px;
-
-      span {
-        font-weight: 500;
-        background: radial-gradient(
-          circle,
-          rgba(57, 213, 216, 0.5) 0%,
-          rgba(236, 45, 83, 0.5) 100%
-        );
-        color: #fff;
-        padding: 5px 15px;
-      }
+  .home {
+    #bg-animation {
+      margin: 0;
+      height: 100vh;
+      max-height: 100vh;
+      z-index: -1;
     }
 
-    button {
-      font-size: 26px;
-      margin-top: 30px;
-      padding: 10px 20px;
-      color: #fff;
-      background-color: inherit;
-      border: 2px solid #fff;
-      cursor: pointer;
-      outline: none;
-      box-sizing: border-box;
+    .heading {
+      position: absolute;
+      top: 36%;
+      width: 100%;
 
-      svg {
-        margin-left: 15px;
-        vertical-align: middle;
-        z-index: 99;
-        transition-duration: 0.3s;
+      h1 {
+        font-size: 45px;
+        color: #eeecec;
+        line-height: 60px;
+
+        span {
+          font-weight: 500;
+          background: radial-gradient(
+            circle,
+            rgba(57, 213, 216, 0.5) 0%,
+            rgba(236, 45, 83, 0.5) 100%
+          );
+          color: #fff;
+          padding: 5px 15px;
+        }
       }
 
-      &:hover {
-        background-color: rgb(66, 177, 192);
-        border: 2px solid rgb(66, 177, 192);
-        transition-duration: 0.3s;
+      button {
+        font-size: 26px;
+        margin-top: 30px;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: inherit;
+        border: 2px solid #fff;
+        cursor: pointer;
+        outline: none;
+        box-sizing: border-box;
 
         svg {
-          transform: rotate(90deg);
+          margin-left: 15px;
+          vertical-align: middle;
+          z-index: 99;
+          transition-duration: 0.3s;
         }
+
+        &:hover {
+          background-color: rgb(66, 177, 192);
+          border: 2px solid rgb(66, 177, 192);
+          transition-duration: 0.3s;
+
+          svg {
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+
+  .nav-bar {
+    height: 55px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(26, 19, 43);
+
+    a {
+      text-decoration: none;
+      color: rgb(238, 237, 237);
+      cursor: pointer;
+      transition-duration: 0.3s;
+      font-size: 18px;
+      font-weight: 100;
+
+      &:hover {
+        color: rgb(212, 16, 59);
       }
     }
   }
