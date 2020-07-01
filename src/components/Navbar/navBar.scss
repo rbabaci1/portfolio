@@ -27,6 +27,13 @@
   .active {
     color: $red;
   }
+
+  @media (max-width: $small_devices) {
+    // font-size: 34px;
+    a {
+      color: yellow;
+    }
+  }
 }
 
 .about {
