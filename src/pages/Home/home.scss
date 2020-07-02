@@ -4,8 +4,11 @@
   #bg-animation {
     margin: 0;
     height: 100vh;
-    max-height: 100vh;
     z-index: -1;
+
+    .vanta-canvas {
+      max-height: 100vh;
+    }
   }
 
   .heading {
