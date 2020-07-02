@@ -72,10 +72,18 @@
   text-align: center !important;
   background-color: $dark_blue !important;
   color: #fff !important;
+  padding: 15px !important;
 
   &:hover {
     color: $red !important;
   }
+}
+
+.MuiDrawer-paperAnchorTop {
+  display: flex;
+  justify-content: center;
+  height: 100vh !important;
+  background: #141b2b !important;
 }
 
 .about {

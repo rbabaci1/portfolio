@@ -99,6 +99,7 @@ export default function SwipeableTemporaryDrawer() {
             open={open}
             onClose={toggleDrawer(false)}
             onOpen={toggleDrawer(true)}
+            transitionDuration={500}
           >
             {list("top")}
           </SwipeableDrawer>
