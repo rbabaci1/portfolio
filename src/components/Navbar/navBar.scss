@@ -10,13 +10,14 @@
 
   .desktop {
     display: none;
+
     a {
       text-decoration: none;
       color: rgb(238, 237, 237);
       cursor: pointer;
       transition-duration: 0.3s;
       font-size: 18px;
-      font-weight: 300;
+      font-weight: 400;
       letter-spacing: 0.5px;
 
       &:hover {
@@ -47,6 +48,13 @@
       svg {
         margin-right: 15px;
         cursor: pointer;
+        &:hover {
+          background-color: rgb(39, 52, 73);
+        }
+        width: 50px;
+        height: 50px;
+        padding: 8px;
+        border-radius: 50%;
       }
 
       @media (max-width: $small_devices) {
@@ -57,14 +65,8 @@
       }
     }
   }
-
-  @media (max-width: $small_devices) {
-    // font-size: 34px;
-    a {
-      color: yellow;
-    }
-  }
 }
+
 // material UI dropdown menu
 .MuiListItem-button {
   text-align: center !important;

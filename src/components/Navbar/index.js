@@ -3,11 +3,9 @@ import { Link } from "react-scroll";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
-
-import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import { RiMenu4Line } from "react-icons/ri";
+import { TiThMenu } from "react-icons/ti";
 
 import "./navBar.scss";
 
@@ -94,7 +92,7 @@ export default function SwipeableTemporaryDrawer() {
 
       <div className="mobile">
         <div class="drop-down-menu">
-          <RiMenu4Line size={40} onClick={toggleDrawer(true)} />
+          <TiThMenu size={35} onClick={toggleDrawer(true)} />
 
           <SwipeableDrawer
             anchor={"top"}
