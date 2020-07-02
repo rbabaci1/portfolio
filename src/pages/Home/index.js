@@ -24,7 +24,7 @@ export default function App() {
   }, []);
 
   return (
-    <Div100vh>
+    <Div100vh style={{ maxHeight: "100rvh" }}>
       <div className="home">
         <div id="bg-animation" />
 
