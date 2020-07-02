@@ -24,29 +24,30 @@ export default function App() {
   }, []);
 
   return (
-    <Div100vh style={{ maxHeight: "100rvh" }}>
-      <div className="home">
-        <div id="bg-animation" />
+    <div className="home">
+      <Div100vh
+        style={{ height: "100rvh", maxHeight: "100rvh" }}
+        id="bg-animation"
+      />
 
-        {loaded && (
-          <div className="heading">
-            <h1>
-              Hello, I'm <span>Rabah Babaci</span>.
-            </h1>
+      {loaded && (
+        <div className="heading">
+          <h1>
+            Hello, I'm <span>Rabah Babaci</span>.
+          </h1>
 
-            <img
-              src="https://assets-global.website-files.com/5cd091cfb5499f22bdf72905/5e156bcd9ba5cbffdd421c8a_underline-red.png"
-              alt="bottom underline"
-            />
+          <img
+            src="https://assets-global.website-files.com/5cd091cfb5499f22bdf72905/5e156bcd9ba5cbffdd421c8a_underline-red.png"
+            alt="bottom underline"
+          />
 
-            <h1>I'm a Full-Stack Web Developer.</h1>
+          <h1>I'm a Full-Stack Web Developer.</h1>
 
-            <Link to="about" smooth={true} duration={700} offset={-55}>
-              <button>View my work{<BsArrowRight />}</button>
-            </Link>
-          </div>
-        )}
-      </div>
-    </Div100vh>
+          <Link to="about" smooth={true} duration={700} offset={-55}>
+            <button>View my work{<BsArrowRight />}</button>
+          </Link>
+        </div>
+      )}
+    </div>
   );
 }
