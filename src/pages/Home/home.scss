@@ -1,7 +1,6 @@
 @import "../../index.scss";
 
 .home {
-  background-color: rgba(56, 37, 37, 0.3);
   #bg-animation {
     margin: 0;
     height: 100vh;
@@ -11,17 +10,24 @@
 
   .heading {
     position: absolute;
-    top: 36%;
+    top: 0;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(20, 27, 43, 0.4);
 
     h1 {
       font-size: 40px;
       color: #fff;
       line-height: 40px;
+      font-family: "Raleway";
 
       span {
         letter-spacing: 1px;
-        font-weight: 500;
+        font-weight: 600;
         color: $red;
       }
 
@@ -32,7 +38,7 @@
         font-size: 32px;
       }
       @media (max-width: $mobile) {
-        font-size: 6.7vw;
+        font-size: 6.2vw;
       }
     }
 
@@ -49,65 +55,57 @@
       }
       @media (max-width: $small_devices) {
         width: 240px;
-        bottom: 9px;
+        bottom: 7px;
       }
       @media (max-width: $mobile) {
         width: 50vw;
       }
       @media (max-width: 400px) {
         left: 14vw;
-        bottom: 1.8vh;
+        bottom: 1.1vh;
       }
     }
 
     button {
       font-size: 24px;
-      font-weight: 300;
+      font-weight: 400;
       padding: 10px 15px;
+      font-family: "Raleway";
       color: #fff;
       background-color: inherit;
       border: 2px solid #fff;
       cursor: pointer;
       outline: none;
-      box-sizing: border-box;
       margin-top: 50px;
 
       svg {
         margin-left: 12px;
         vertical-align: middle;
         z-index: 99;
-        transition-duration: 0.3s;
+        transition-duration: 0.4s;
         font-size: 32px;
       }
 
       &:hover {
         background-color: $light_green;
         border: 2px solid $light_green;
-        transition-duration: 0.3s;
+        transition-duration: 0.4s;
 
         svg {
           transform: rotate(90deg);
         }
       }
 
-      @media (max-width: $medium_devices) {
-        font-size: 22px;
-        padding: 7px 10px;
-
-        svg {
-          font-size: 28px;
-        }
-      }
       @media (max-width: $small_devices) {
-        font-size: 20px;
+        font-size: 22px;
         svg {
           font-size: 26px;
         }
       }
       @media (max-width: $mobile) {
-        font-size: 5.5vw;
+        font-size: 4.5vw;
         svg {
-          font-size: 6.5vw;
+          font-size: 5.5vw;
         }
       }
     }
