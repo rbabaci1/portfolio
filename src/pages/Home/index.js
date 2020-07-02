@@ -3,7 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-scroll";
 import Div100vh from "react-div-100vh";
 
-import "./home.scss";
+import "./homePage.scss";
 
 export default function App() {
   const [loaded, setLoaded] = useState(false);

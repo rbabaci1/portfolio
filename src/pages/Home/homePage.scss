@@ -80,14 +80,14 @@
         margin-left: 12px;
         vertical-align: middle;
         z-index: 99;
-        transition-duration: 0.4s;
+        transition-duration: 0.3s;
         font-size: 32px;
       }
 
       &:hover {
         background-color: $light_green;
         border: 2px solid $light_green;
-        transition-duration: 0.4s;
+        transition-duration: 0.3s;
 
         svg {
           transform: rotate(90deg);
