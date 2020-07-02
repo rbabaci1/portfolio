@@ -1,37 +1,9 @@
-// import React from "react";
-// import { Link } from "react-scroll";
-
-// export default function NavBar() {
-//   return (
-//     <div className="nav-bar">
-// <Link to="home" spy={true} smooth={true} duration={700}>
-//   HOME
-// </Link>
-
-// <Link to="about" spy={true} smooth={true} duration={700} offset={-55}>
-//   ABOUT
-// </Link>
-
-// <Link to="portfolio" spy={true} smooth={true} duration={700} offset={-55}>
-//   PORTFOLIO
-// </Link>
-
-// <Link to="blog" spy={true} smooth={true} duration={700} offset={-55}>
-//   BLOG
-// </Link>
-
-// <Link to="contact" spy={true} smooth={true} duration={700} offset={0}>
-//   CONTACT
-// </Link>
-// </div>
-//   );
-// }
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
-import List from "@material-ui/core/List";
+
 import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
@@ -79,6 +51,7 @@ export default function SwipeableTemporaryDrawer() {
           spy={true}
           smooth={true}
           duration={700}
+          offset={-55}
           key={index}
         >
           <ListItem button onClick={() => setOpen(false)}>

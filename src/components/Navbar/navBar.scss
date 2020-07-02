@@ -1,7 +1,7 @@
 @import "../../index.scss";
 
 .nav-bar {
-  background-color: rgb(20, 27, 43);
+  background-color: $dark_blue;
   position: sticky;
   width: 100%;
   top: -0.1px;
@@ -64,10 +64,20 @@
     }
   }
 }
+// material UI dropdown menu
+.MuiListItem-button {
+  text-align: center !important;
+  background-color: $dark_blue !important;
+  color: #fff !important;
+
+  &:hover {
+    color: $red !important;
+  }
+}
 
 .about {
   padding: 200px 0;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 .blog {
   padding: 200px 0;
