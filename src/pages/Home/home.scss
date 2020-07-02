@@ -1,6 +1,7 @@
 @import "../../index.scss";
 
 .home {
+  background-color: rgba(56, 37, 37, 0.3);
   #bg-animation {
     margin: 0;
     height: 100vh;
@@ -31,7 +32,7 @@
         font-size: 32px;
       }
       @media (max-width: $mobile) {
-        font-size: 6vw;
+        font-size: 6.7vw;
       }
     }
 
@@ -52,11 +53,10 @@
       }
       @media (max-width: $mobile) {
         width: 50vw;
-        bottom: 10px;
       }
       @media (max-width: 400px) {
         left: 14vw;
-        bottom: 1.9vh;
+        bottom: 1.8vh;
       }
     }
 
@@ -105,9 +105,9 @@
         }
       }
       @media (max-width: $mobile) {
-        font-size: 4.4vw;
+        font-size: 5.5vw;
         svg {
-          font-size: 5vw;
+          font-size: 6.5vw;
         }
       }
     }
