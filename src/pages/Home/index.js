@@ -34,25 +34,27 @@ export default function App() {
   }, [vantaEffect]);
 
   return (
-    <Div100vh className="home">
-      <div className="vanta" ref={myRef}>
-        <div className="heading">
-          <h1>
-            Hello, I'm <span>Rabah Babaci</span>.
-          </h1>
+    <div className="home">
+      <Div100vh style={{ height: "100rvh", maxHeight: "100rvh" }}>
+        <div className="vanta" ref={myRef} />
+      </Div100vh>
 
-          <img
-            src="https://assets-global.website-files.com/5cd091cfb5499f22bdf72905/5e156bcd9ba5cbffdd421c8a_underline-red.png"
-            alt="bottom underline"
-          />
+      <div className="heading">
+        <h1>
+          Hello, I'm <span>Rabah Babaci</span>.
+        </h1>
 
-          <h1>I'm a Full-Stack Web Developer.</h1>
+        <img
+          src="https://assets-global.website-files.com/5cd091cfb5499f22bdf72905/5e156bcd9ba5cbffdd421c8a_underline-red.png"
+          alt="bottom underline"
+        />
 
-          <Link to="about" smooth={true} duration={700} offset={-55}>
-            <button>View my work{<BsArrowRight />}</button>
-          </Link>
-        </div>
+        <h1>I'm a Full-Stack Web Developer.</h1>
+
+        <Link to="about" smooth={true} duration={700} offset={-55}>
+          <button>View my work{<BsArrowRight />}</button>
+        </Link>
       </div>
-    </Div100vh>
+    </div>
   );
 }
