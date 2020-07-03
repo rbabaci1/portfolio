@@ -7,7 +7,7 @@
     @include size();
     position: absolute;
     top: 0;
-    background-color: rgba(8, 11, 36, 0.4);
+    background-color: rgba(8, 11, 36, 0.3);
 
     h1 {
       font-size: 40px;
@@ -95,6 +95,9 @@
           font-size: 5.5vw;
         }
       }
+    }
+    @media (max-width: $mobile) {
+      background-color: rgba(8, 11, 36, 0.5);
     }
   }
 }
