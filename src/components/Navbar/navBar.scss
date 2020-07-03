@@ -45,18 +45,6 @@
       text-align: end;
       color: #fff;
 
-      svg {
-        margin-right: 15px;
-        cursor: pointer;
-        width: 50px;
-        height: 50px;
-        padding: 8px;
-        border-radius: 50%;
-        &:hover {
-          background-color: rgb(39, 52, 73);
-        }
-      }
-
       @media (max-width: $small_devices) {
         display: flex;
         justify-content: flex-end;
@@ -68,11 +56,23 @@
 }
 
 // material UI dropdown menu
+.menu-icon {
+  margin-right: 15px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: rgb(39, 52, 73);
+  }
+}
+
 .MuiListItem-button {
   text-align: center !important;
-  background-color: $dark_blue !important;
   color: #fff !important;
-  padding: 15px 0 !important;
+  padding: 20px 0 !important;
 
   &:hover {
     color: $red !important;
@@ -80,8 +80,19 @@
 }
 
 .MuiDrawer-paperAnchorTop {
-  padding: 10px 0;
-  background: #141b2b !important;
+  background: $dark_blue !important;
+  height: 100vh !important;
+  justify-content: center;
+
+  svg {
+    @extend .menu-icon;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 30px 0 0;
+    cursor: pointer;
+    color: $white;
+  }
 }
 
 .about {
@@ -99,4 +110,10 @@
 .contact {
   padding: 300px 0;
   border: 1px solid orange;
+}
+
+.bottom {
+  width: 50px;
+  height: 3px;
+  background-color: #fff;
 }

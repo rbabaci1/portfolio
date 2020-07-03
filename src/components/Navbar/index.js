@@ -6,6 +6,7 @@ import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import { TiThMenu } from "react-icons/ti";
+import { AiOutlineClose } from "react-icons/ai";
 
 import "./navBar.scss";
 
@@ -92,15 +93,21 @@ export default function SwipeableTemporaryDrawer() {
 
       <div className="mobile">
         <div class="drop-down-menu">
-          <TiThMenu size={35} onClick={toggleDrawer(true)} />
+          <TiThMenu
+            size={35}
+            onClick={toggleDrawer(true)}
+            className="menu-icon"
+          />
 
           <SwipeableDrawer
             anchor={"top"}
             open={open}
             onClose={toggleDrawer(false)}
             onOpen={toggleDrawer(true)}
-            transitionDuration={400}
+            transitionDuration={300}
           >
+            <AiOutlineClose size={35} onClick={toggleDrawer(false)} />
+
             {list("top")}
           </SwipeableDrawer>
         </div>
