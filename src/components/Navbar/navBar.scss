@@ -88,16 +88,16 @@
     color: $white;
   }
   .slider {
-    width: 100px;
-    height: 4px;
+    width: 150px;
+    height: 5px;
     background: #fff;
     border-radius: 2px;
     position: absolute;
     bottom: 3px;
-    left: 137px;
+    left: 50%;
 
     &:hover {
-      box-shadow: 0px 0px 10px 0px #fff;
+      box-shadow: 0px 0px 15px 0px #fff;
     }
   }
 }
