@@ -6,7 +6,7 @@
   position: sticky;
   top: -0.1px;
   background-color: $dark_blue;
-  border-bottom: 3px solid #04c2c9;
+  border-bottom: 3px solid $light_green;
 
   .desktop {
     display: none;
@@ -118,10 +118,6 @@
   }
 }
 
-.about {
-  padding: 200px 0;
-  // border: 1px solid red;
-}
 .blog {
   padding: 200px 0;
   border: 1px solid green;

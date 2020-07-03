@@ -1,0 +1,47 @@
+@import "../../styles/vaiables.scss";
+
+.about {
+  padding: 100px 0;
+
+  h1 {
+    font-size: 42px;
+    color: $dark_gray;
+    font-weight: 700;
+  }
+  .header-bar {
+    height: 4px;
+    width: 120px;
+    background-color: $dark_gray;
+    margin: 15px 0 100px 0;
+    position: relative;
+    left: 100px;
+  }
+}
+.octagon {
+  width: 100px;
+  height: 100px;
+  background: $light_green;
+  position: relative;
+}
+.octagon:before {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 29px solid $light_green;
+  border-left: 29px solid #fff;
+  border-right: 29px solid #fff;
+}
+.octagon:after {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 29px solid $light_green;
+  border-left: 29px solid #fff;
+  border-right: 29px solid #fff;
+}
