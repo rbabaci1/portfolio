@@ -15,11 +15,3 @@
   font-weight: $weight;
   font-family: $family;
 }
-
-@mixin position($type, $top: 0, $right: 0, $bottom: 0, $left: 0) {
-  position: $type;
-  top: $top;
-  right: $right;
-  bottom: $bottom;
-  left: $left;
-}
