@@ -1,43 +1,29 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-scroll";
-import NET from "vanta/dist/vanta.net.min";
 import Div100vh from "react-div-100vh";
 
 import "./homePage.scss";
 
-// window.VANTA.NET({
-//   el: "#bg-animation",
-//   mouseControls: false,
-//   touchControls: false,
-//   minHeight: 200.0,
-//   minWidth: 200.0,
-//   scale: 1.0,
-//   scaleMobile: 1.0,
-//   color: 0x42b1c0,
-// });
 export default function App() {
-  const [vantaEffect, setVantaEffect] = useState(0);
-  const myRef = useRef(null);
-
   useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(
-        NET({
-          el: myRef.current,
-        })
-      );
-    }
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    };
-  }, [vantaEffect]);
+    const effect = window.VANTA.NET({
+      el: "#bg-animation",
+      mouseControls: false,
+      touchControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      color: 0x42b1c0,
+    });
+
+    return () => effect.destroy();
+  }, []);
 
   return (
     <div className="home">
-      <Div100vh style={{ height: "100rvh", maxHeight: "100rvh" }}>
-        <div className="vanta" ref={myRef} />
-      </Div100vh>
+      <Div100vh id="bg-animation" />
 
       <div className="heading">
         <h1>
@@ -55,6 +41,8 @@ export default function App() {
           <button>View my work{<BsArrowRight />}</button>
         </Link>
       </div>
+      {/* {loaded && (
+      )} */}
     </div>
   );
 }

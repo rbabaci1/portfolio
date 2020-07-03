@@ -2,17 +2,12 @@
 @import "../../styles/mixins.scss";
 
 .home {
-  .vanta {
-    height: 969px;
-    max-height: 100vh;
-  }
-
   .heading {
     @include flex(column);
     @include size();
     position: absolute;
     top: 0;
-    background-color: rgba(39, 99, 49, 0.4);
+    background-color: rgba(70, 30, 45, 0.4);
 
     h1 {
       font-size: 40px;
