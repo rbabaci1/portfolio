@@ -1,0 +1,25 @@
+@mixin flex($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin size($height: 100%, $width: 100%) {
+  height: $height;
+  width: $width;
+}
+
+@mixin fonts($size, $weight, $family: inherit) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+}
+
+@mixin position($type, $top: 0, $right: 0, $bottom: 0, $left: 0) {
+  position: $type;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

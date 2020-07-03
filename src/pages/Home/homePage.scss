@@ -1,15 +1,12 @@
-@import "../../index.scss";
+@import "../../styles/vaiables.scss";
+@import "../../styles/mixins.scss";
 
 .home {
   .heading {
+    @include flex(column);
+    @include size();
     position: absolute;
     top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: rgba(26, 25, 44, 0.4);
 
     h1 {
@@ -35,7 +32,7 @@
     }
 
     img {
-      width: 280px;
+      @include size(fit-content, 290px);
       position: relative;
       bottom: 3px;
       left: 80px;
@@ -59,10 +56,8 @@
     }
 
     button {
-      font-size: 24px;
-      font-weight: 400;
+      @include fonts(24px, 400);
       padding: 10px 15px;
-      font-family: "Raleway";
       color: #fff;
       background-color: inherit;
       border: 2px solid #fff;
