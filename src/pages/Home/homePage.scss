@@ -4,102 +4,99 @@
 .home {
   .vanta {
     height: 100vh;
-    // .vanta-canvas {
-    //   height: 100%;
-    // }
-  }
 
-  .heading {
-    @include flex(column);
-    @include size();
-    position: absolute;
-    top: 0;
-    background-color: rgba(39, 99, 49, 0.4);
+    .heading {
+      @include flex(column);
+      @include size();
+      position: absolute;
+      top: 0;
+      background-color: rgba(39, 99, 49, 0.4);
 
-    h1 {
-      font-size: 40px;
-      color: #fff;
-      line-height: 40px;
+      h1 {
+        font-size: 40px;
+        color: #fff;
+        line-height: 40px;
 
-      span {
-        letter-spacing: 1px;
-        font-weight: 600;
-        color: $red;
-      }
+        span {
+          letter-spacing: 1px;
+          font-weight: 600;
+          color: $red;
+        }
 
-      @media (max-width: $medium_devices) {
-        font-size: 34px;
-      }
-      @media (max-width: $small_devices) {
-        font-size: 32px;
-      }
-      @media (max-width: $mobile) {
-        font-size: 6.2vw;
-      }
-    }
-
-    img {
-      width: 290px;
-      position: relative;
-      bottom: 3px;
-      left: 80px;
-
-      @media (max-width: $medium_devices) {
-        width: 260px;
-        left: 70px;
-        bottom: 6px;
-      }
-      @media (max-width: $small_devices) {
-        width: 240px;
-        bottom: 7px;
-      }
-      @media (max-width: $mobile) {
-        width: 50vw;
-      }
-      @media (max-width: 400px) {
-        left: 12vw;
-        bottom: 1.2vh;
-      }
-    }
-
-    button {
-      @include fonts(24px, 400);
-      padding: 10px 15px;
-      color: #fff;
-      background-color: inherit;
-      border: 2px solid #fff;
-      cursor: pointer;
-      outline: none;
-      margin-top: 40px;
-
-      svg {
-        margin-left: 12px;
-        vertical-align: middle;
-        z-index: 99;
-        transition-duration: 0.3s;
-        font-size: 32px;
-      }
-
-      &:hover {
-        background-color: $light_green;
-        border: 2px solid $light_green;
-        transition-duration: 0.3s;
-
-        svg {
-          transform: rotate(90deg);
+        @media (max-width: $medium_devices) {
+          font-size: 34px;
+        }
+        @media (max-width: $small_devices) {
+          font-size: 32px;
+        }
+        @media (max-width: $mobile) {
+          font-size: 6.2vw;
         }
       }
 
-      @media (max-width: $small_devices) {
-        font-size: 22px;
-        svg {
-          font-size: 26px;
+      img {
+        width: 290px;
+        position: relative;
+        bottom: 3px;
+        left: 80px;
+
+        @media (max-width: $medium_devices) {
+          width: 260px;
+          left: 70px;
+          bottom: 6px;
+        }
+        @media (max-width: $small_devices) {
+          width: 240px;
+          bottom: 7px;
+        }
+        @media (max-width: $mobile) {
+          width: 50vw;
+        }
+        @media (max-width: 400px) {
+          left: 12vw;
+          bottom: 1.2vh;
         }
       }
-      @media (max-width: $mobile) {
-        font-size: 4.5vw;
+
+      button {
+        @include fonts(24px, 400);
+        padding: 10px 15px;
+        color: #fff;
+        background-color: inherit;
+        border: 2px solid #fff;
+        cursor: pointer;
+        outline: none;
+        margin-top: 40px;
+
         svg {
-          font-size: 5.5vw;
+          margin-left: 12px;
+          vertical-align: middle;
+          z-index: 99;
+          transition-duration: 0.3s;
+          font-size: 32px;
+        }
+
+        &:hover {
+          background-color: $light_green;
+          border: 2px solid $light_green;
+          transition-duration: 0.3s;
+
+          svg {
+            transform: rotate(90deg);
+          }
+        }
+
+        @media (max-width: $small_devices) {
+          font-size: 22px;
+          svg {
+            font-size: 26px;
+          }
+        }
+        @media (max-width: $mobile) {
+          font-size: 4.5vw;
+          svg {
+            font-size: 5.5vw;
+          }
         }
       }
     }

@@ -34,8 +34,7 @@ export default function App() {
   }, [vantaEffect]);
 
   return (
-    <div className="home">
-      {/* <Div100vh id="bg-animation" /> */}
+    <Div100vh className="home">
       <div className="vanta" ref={myRef}>
         <div className="heading">
           <h1>
@@ -54,9 +53,6 @@ export default function App() {
           </Link>
         </div>
       </div>
-
-      {/* {loaded && (
-      )} */}
-    </div>
+    </Div100vh>
   );
 }
