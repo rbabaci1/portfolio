@@ -16,7 +16,7 @@ export default function App() {
       scale: 1.0,
       scaleMobile: 0.7,
       backgroundColor: 0xe1e3c,
-      color: 0x8d8989,
+      color: 0x42b1c0,
     });
 
     return () => effect.destroy();
