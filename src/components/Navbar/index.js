@@ -106,7 +106,9 @@ export default function SwipeableTemporaryDrawer() {
 
             {list("top")}
 
-            <div className="slider" />
+            <div className="slider-wrapper">
+              <div className="slider" />
+            </div>
           </SwipeableDrawer>
         </div>
       </div>

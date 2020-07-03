@@ -87,17 +87,20 @@
     padding: 5px;
     color: $white;
   }
-  .slider {
-    width: 150px;
-    height: 5px;
-    background: #fff;
-    border-radius: 2px;
-    position: absolute;
-    bottom: 3px;
-    left: 30%;
+  .slider-wrapper {
+    @include flex(row, center);
 
-    &:hover {
-      box-shadow: 0px 0px 15px 0px #fff;
+    .slider {
+      width: 150px;
+      height: 5px;
+      background: #fff;
+      border-radius: 2px;
+      position: fixed;
+      bottom: 3px;
+
+      &:hover {
+        box-shadow: 0px 0px 15px 0px #fff;
+      }
     }
   }
 }
