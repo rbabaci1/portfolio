@@ -34,6 +34,7 @@
   }
 
   .mobile {
+    display: none;
     height: 100%;
 
     .drop-down-menu {
@@ -41,8 +42,12 @@
       width: 100%;
       text-align: end;
       color: #fff;
+    }
 
-      @media (max-width: $small_devices) {
+    @media (max-width: $small_devices) {
+      display: block;
+
+      .drop-down-menu {
         @include flex(row, flex-end);
         height: 100%;
       }
