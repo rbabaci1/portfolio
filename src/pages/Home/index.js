@@ -17,7 +17,8 @@ export default function App() {
       minWidth: 200.0,
       scale: 1.0,
       scaleMobile: 1.0,
-      color: 0x2f9baa,
+      color: 0x42b1c0,
+      backgroundColor: 0x141b2b,
     });
 
     setLoaded(true);

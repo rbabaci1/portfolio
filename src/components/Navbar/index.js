@@ -7,6 +7,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import { TiThMenu } from "react-icons/ti";
 import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 import "./navBar.scss";
 
@@ -106,7 +107,7 @@ export default function SwipeableTemporaryDrawer() {
             onOpen={toggleDrawer(true)}
             transitionDuration={300}
           >
-            <AiOutlineClose size={35} onClick={toggleDrawer(false)} />
+            <AiOutlineCloseCircle size={35} onClick={toggleDrawer(false)} />
 
             {list("top")}
           </SwipeableDrawer>
