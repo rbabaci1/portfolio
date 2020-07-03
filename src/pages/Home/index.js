@@ -25,7 +25,8 @@ export default function App() {
 
   return (
     <div className="home">
-      <Div100vh style={{ maxHeight: "100rvh" }} id="bg-animation" />
+      {/* <Div100vh style={{ maxHeight: "100rvh" }} id="bg-animation" /> */}
+      <div id="bg-animation" />
 
       {loaded && (
         <div className="heading">
