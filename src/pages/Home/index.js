@@ -18,7 +18,6 @@ export default function App() {
       scale: 1.0,
       scaleMobile: 1.0,
       color: 0x42b1c0,
-      backgroundColor: 0x141b2b,
     });
 
     setLoaded(true);
@@ -28,24 +27,24 @@ export default function App() {
     <div className="home">
       <Div100vh id="bg-animation" />
 
-      {loaded && (
-        <div className="heading">
-          <h1>
-            Hello, I'm <span>Rabah Babaci</span>.
-          </h1>
+      <div className="heading">
+        <h1>
+          Hello, I'm <span>Rabah Babaci</span>.
+        </h1>
 
-          <img
-            src="https://assets-global.website-files.com/5cd091cfb5499f22bdf72905/5e156bcd9ba5cbffdd421c8a_underline-red.png"
-            alt="bottom underline"
-          />
+        <img
+          src="https://assets-global.website-files.com/5cd091cfb5499f22bdf72905/5e156bcd9ba5cbffdd421c8a_underline-red.png"
+          alt="bottom underline"
+        />
 
-          <h1>I'm a Full-Stack Web Developer.</h1>
+        <h1>I'm a Full-Stack Web Developer.</h1>
 
-          <Link to="about" smooth={true} duration={700} offset={-55}>
-            <button>View my work{<BsArrowRight />}</button>
-          </Link>
-        </div>
-      )}
+        <Link to="about" smooth={true} duration={700} offset={-55}>
+          <button>View my work{<BsArrowRight />}</button>
+        </Link>
+      </div>
+      {/* {loaded && (
+      )} */}
     </div>
   );
 }
