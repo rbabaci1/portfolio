@@ -50,8 +50,8 @@
         width: 50vw;
       }
       @media (max-width: 400px) {
-        left: 11vw;
-        bottom: 1.4vh;
+        left: 12vw;
+        bottom: 1.2vh;
       }
     }
 
@@ -97,7 +97,7 @@
       }
     }
     @media (max-width: $mobile) {
-      background-color: rgba(8, 11, 36, 0.5);
+      background-color: rgba(32, 7, 17, 0.5);
     }
   }
 }
