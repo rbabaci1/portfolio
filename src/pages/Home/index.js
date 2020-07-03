@@ -7,7 +7,7 @@ import "./homePage.scss";
 
 export default function App() {
   useEffect(() => {
-    const effect = window.VANTA.DOTS({
+    const effect = window.VANTA.NET({
       el: "#bg-animation",
       mouseControls: false,
       touchControls: false,
@@ -15,8 +15,7 @@ export default function App() {
       minWidth: 200.0,
       scale: 1.0,
       scaleMobile: 1.0,
-      backgroundColor: 0x192537,
-      // color: 0x42b1c0,
+      backgroundColor: 0xe1e3c,
     });
 
     return () => effect.destroy();
