@@ -3,7 +3,8 @@ import AOS from "aos";
 
 import "./about.scss";
 import OctagonCard from "../../components/OctagonCard";
-import icon from "../../images/responsiveIcon.svg";
+import responsive from "../../images/responsiveIcon.svg";
+import fast from "../../images/speedIcon.svg";
 
 export default function About() {
   useEffect(() => {
@@ -22,12 +23,12 @@ export default function About() {
         <OctagonCard
           title="Responsive"
           description="My layouts will work on any device, big or small."
-          icon={icon}
+          icon={responsive}
         />
         <OctagonCard
           title="Fast"
           description="My layouts will work on any device, big or small."
-          icon={icon}
+          icon={fast}
         />
       </div>
     </div>
