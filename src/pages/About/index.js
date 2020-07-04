@@ -10,7 +10,7 @@ import "./about.scss";
 
 export default function About() {
   useEffect(() => {
-    AOS.init({ duration: 1200, once: true, delay: 200 });
+    AOS.init({ duration: 1000, once: true, delay: 200 });
   }, []);
 
   return (
@@ -24,7 +24,7 @@ export default function About() {
       <div className="cards">
         <HexagonCard
           title="Responsive"
-          description="My layouts will work on any device, big or small."
+          description="Sensitive, ticklish layouts that will work on any device, big or small."
           icon={responsive}
         />
 
@@ -36,13 +36,13 @@ export default function About() {
 
         <HexagonCard
           title="Cutting edge"
-          description="My layouts will work on any device, big or small."
+          description="The Modern stage with new styles, techniques applied."
           icon={cuttingEdge}
         />
 
         <HexagonCard
           title="Dynamic"
-          description="My layouts will work on any device, big or small."
+          description="Websites don't have to be static, I love making pages come to life."
           icon={dynamic}
         />
       </div>
