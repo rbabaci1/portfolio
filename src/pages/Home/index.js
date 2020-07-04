@@ -42,8 +42,6 @@ export default function App() {
           <button>View my work{<BsArrowRight />}</button>
         </Link>
       </div>
-      {/* {loaded && (
-      )} */}
     </div>
   );
 }

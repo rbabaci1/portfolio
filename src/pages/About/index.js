@@ -1,13 +1,13 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 
 import "./about.scss";
+import OctagonCard from "../../components/OctagonCard";
+import icon from "../../images/responsiveIcon.svg";
 
 export default function About() {
-  const headerBar = useRef(null);
-
   useEffect(() => {
-    AOS.init({ duration: 1500, once: true, delay: 500 });
+    AOS.init({ duration: 1500, once: true, delay: 400 });
   }, []);
 
   return (
@@ -18,7 +18,18 @@ export default function About() {
 
       <div data-aos="fade-right" className="header-bar" data-aos-offset="300" />
 
-      <div className="octagon" ref={headerBar}></div>
+      <div className="cards">
+        <OctagonCard
+          title="Responsive"
+          description="My layouts will work on any device, big or small."
+          icon={icon}
+        />
+        <OctagonCard
+          title="Fast"
+          description="My layouts will work on any device, big or small."
+          icon={icon}
+        />
+      </div>
     </div>
   );
 }
