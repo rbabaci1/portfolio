@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 
 import "./about.scss";
-import OctagonCard from "../../components/OctagonCard";
+import HexagonCard from "../../components/HexagonCard";
 import responsive from "../../images/responsiveIcon.svg";
 import fast from "../../images/speedIcon.svg";
 
@@ -20,12 +20,12 @@ export default function About() {
       <div data-aos="fade-right" className="header-bar" data-aos-offset="300" />
 
       <div className="cards">
-        <OctagonCard
+        <HexagonCard
           title="Responsive"
           description="My layouts will work on any device, big or small."
           icon={responsive}
         />
-        <OctagonCard
+        <HexagonCard
           title="Fast"
           description="My layouts will work on any device, big or small."
           icon={fast}

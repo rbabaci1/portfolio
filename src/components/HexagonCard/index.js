@@ -1,15 +1,16 @@
 import React from "react";
 
-import "./OctagonCard.scss";
+import "./hexagonCard.scss";
 
 export default function OctagonCard({ title, description, icon }) {
   return (
     <div className="octagon-wrapper">
-      <div className="octagon" />
+      <div className="hexagon">
+        <img src={icon} alt="svg icon" />
+      </div>
+
       <h2>{title}</h2>
       <p>{description}</p>
-
-      <img src={icon} alt="svg icon" />
     </div>
   );
 }

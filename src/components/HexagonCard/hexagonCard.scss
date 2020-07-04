@@ -1,0 +1,56 @@
+@import "../../styles/vaiables.scss";
+@import "../../styles/mixins.scss";
+
+.octagon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+  margin: 10px 20px;
+
+  h2 {
+    margin: 35px 0 7px 0;
+    color: lighten($color: $dark_gray, $amount: 10);
+    font-weight: 700;
+  }
+  p {
+    text-align: center;
+    line-height: 25px;
+    font-size: 18px;
+    color: lighten($color: $dark_gray, $amount: 10);
+  }
+}
+
+.hexagon {
+  @include flex(row, center, center);
+  width: 100px;
+  height: 55px;
+  background: $light_green;
+  position: relative;
+
+  img {
+    height: 50px;
+  }
+}
+.hexagon::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid $light_green;
+}
+.hexagon::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid $light_green;
+}
