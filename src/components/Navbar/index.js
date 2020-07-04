@@ -49,7 +49,7 @@ export default function SwipeableTemporaryDrawer() {
           to={text.toLowerCase()}
           spy={true}
           smooth={true}
-          duration={700}
+          duration={600}
           offset={-55}
           key={index}
         >
@@ -64,11 +64,11 @@ export default function SwipeableTemporaryDrawer() {
   return (
     <div className="nav-bar">
       <div className="desktop">
-        <Link to="home" spy={true} smooth={true} duration={700}>
+        <Link to="home" spy={true} smooth={true} duration={600}>
           HOME
         </Link>
 
-        <Link to="about" spy={true} smooth={true} duration={700} offset={-55}>
+        <Link to="about" spy={true} smooth={true} duration={600} offset={-55}>
           ABOUT
         </Link>
 
@@ -76,17 +76,17 @@ export default function SwipeableTemporaryDrawer() {
           to="portfolio"
           spy={true}
           smooth={true}
-          duration={700}
+          duration={600}
           offset={-55}
         >
           PORTFOLIO
         </Link>
 
-        <Link to="blog" spy={true} smooth={true} duration={700} offset={-55}>
+        <Link to="blog" spy={true} smooth={true} duration={600} offset={-55}>
           BLOG
         </Link>
 
-        <Link to="contact" spy={true} smooth={true} duration={700} offset={0}>
+        <Link to="contact" spy={true} smooth={true} duration={600} offset={0}>
           CONTACT
         </Link>
       </div>

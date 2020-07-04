@@ -38,7 +38,7 @@ export default function App() {
 
         <h1>I'm a Full-Stack Web Developer.</h1>
 
-        <Link to="about" smooth={true} duration={700} offset={-55}>
+        <Link to="about" smooth={true} duration={600} offset={-55}>
           <button>View my work{<BsArrowRight />}</button>
         </Link>
       </div>

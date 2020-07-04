@@ -8,16 +8,16 @@ import fast from "../../images/speedIcon.svg";
 
 export default function About() {
   useEffect(() => {
-    AOS.init({ duration: 1500, once: true, delay: 400 });
+    AOS.init({ duration: 1400, once: true, delay: 300 });
   }, []);
 
   return (
     <div className="about">
-      <h1 data-aos="zoom-in-up" data-aos-duration="800">
+      <h1 data-aos="fade-up" data-aos-duration="700">
         ABOUT
       </h1>
 
-      <div data-aos="fade-right" className="header-bar" data-aos-offset="300" />
+      <div data-aos="fade-right" className="header-bar" />
 
       <div className="cards">
         <HexagonCard
