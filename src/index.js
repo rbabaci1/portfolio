@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
-import "normalize.css";
 
+import "normalize.css";
 import "./styles/index.scss";
 import App from "./App";
 
