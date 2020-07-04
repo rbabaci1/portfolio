@@ -92,7 +92,7 @@ export default function SwipeableTemporaryDrawer() {
       </div>
 
       <div className="mobile">
-        <div class="drop-down-menu">
+        <div className="drop-down-menu">
           <FiMenu onClick={toggleDrawer(true)} className="menu-icon" />
 
           <SwipeableDrawer

@@ -1,6 +1,8 @@
+@import "../../styles/mixins.scss";
 @import "../../styles/vaiables.scss";
 
 .about {
+  @include flex(column, center, center);
   padding: 100px 0;
 
   h1 {
@@ -13,8 +15,6 @@
     width: 120px;
     background-color: $dark_gray;
     margin: 15px 0 100px 0;
-    position: relative;
-    left: 100px;
   }
 }
 
@@ -23,6 +23,7 @@
   height: 100px;
   background: $light_green;
   position: relative;
+  z-index: -99;
 }
 .octagon:before {
   content: "";

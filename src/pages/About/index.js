@@ -1,21 +1,24 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import AOS from "aos";
 
 import "./about.scss";
 
 export default function About() {
-  React.useEffect(() => {
-    gsap.to(".header-bar", {
-      x: 400,
-      rotation: 360,
-      duration: 3,
-    });
+  const headerBar = useRef(null);
+
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true, delay: 500 });
   }, []);
 
   return (
     <div className="about">
-      <h1>ABOUT</h1>
-      <div className="header-bar" />
-      <div className="octagon"></div>
+      <h1 data-aos="zoom-in-up" data-aos-duration="800">
+        ABOUT
+      </h1>
+
+      <div data-aos="fade-right" className="header-bar" data-aos-offset="300" />
+
+      <div className="octagon" ref={headerBar}></div>
     </div>
   );
 }

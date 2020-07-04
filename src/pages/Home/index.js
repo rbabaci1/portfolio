@@ -6,21 +6,21 @@ import Div100vh from "react-div-100vh";
 import "./homePage.scss";
 
 export default function App() {
-  useEffect(() => {
-    const effect = window.VANTA.NET({
-      el: "#bg-animation",
-      mouseControls: false,
-      touchControls: false,
-      minHeight: 200.0,
-      minWidth: 200.0,
-      scale: 1.0,
-      scaleMobile: 0.7,
-      backgroundColor: 0xe1e3c,
-      color: 0x42b1c0,
-    });
+  // useEffect(() => {
+  //   const effect = window.VANTA.NET({
+  //     el: "#bg-animation",
+  //     mouseControls: false,
+  //     touchControls: false,
+  //     minHeight: 200.0,
+  //     minWidth: 200.0,
+  //     scale: 1.0,
+  //     scaleMobile: 0.7,
+  //     backgroundColor: 0xe1e3c,
+  //     color: 0x42b1c0,
+  //   });
 
-    return () => effect.destroy();
-  }, []);
+  //   return () => effect.destroy();
+  // }, []);
 
   return (
     <div className="home">
