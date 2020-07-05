@@ -105,10 +105,6 @@ export default function SwipeableTemporaryDrawer() {
             <AiOutlineClose onClick={toggleDrawer(false)} />
 
             {list("top")}
-
-            <div className="slider-wrapper">
-              <div className="slider" />
-            </div>
           </SwipeableDrawer>
         </div>
       </div>

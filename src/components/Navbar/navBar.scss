@@ -11,8 +11,6 @@
 
   .desktop {
     display: none;
-    display: flex;
-    align-items: center;
 
     a {
       @include flex();
@@ -103,30 +101,6 @@
     margin: 15px 15px 0 0;
     padding: 5px;
     color: $white;
-
-    @media (max-width: $mobile) {
-      display: none;
-    }
-  }
-  .slider-wrapper {
-    @include flex(row, center);
-
-    .slider {
-      width: 150px;
-      height: 5px;
-      background: #fff;
-      border-radius: 2px;
-      position: fixed;
-      bottom: 5px;
-
-      &:hover {
-        box-shadow: 0px 0px 15px 1px #fff;
-      }
-
-      @media (min-width: $mobile) {
-        display: none;
-      }
-    }
   }
 }
 

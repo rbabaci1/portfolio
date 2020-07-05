@@ -19,8 +19,13 @@
 
   .cards {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+
+    @media (min-width: 1010px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }
