@@ -2,18 +2,13 @@
 @import "../../styles/mixins.scss";
 
 .hexagon-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // width: 230px;
-  // margin: 30px 20px;
+  @include flex(column, align= center);
   margin: 30px 10px;
   position: relative;
 
   .hexagon {
     @include flex(row, center, center);
-    width: 100px;
-    height: 55px;
+    @include size(55px, 100px);
     background: $light_green;
     position: relative;
 
@@ -55,8 +50,7 @@
     }
 
     @media (max-width: $mobile) {
-      width: 90px;
-      height: 45px;
+      @include size(45px, 90px);
 
       &::before {
         border-left-width: 45px;
@@ -74,10 +68,9 @@
   }
 
   h2 {
+    @include fonts(5.2vw, 700);
     margin: 40px 0 7px 0;
     color: lighten($color: $dark_gray, $amount: 10);
-    font-weight: 700;
-    font-size: 5.2vw;
   }
   p {
     text-align: center;

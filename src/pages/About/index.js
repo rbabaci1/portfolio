@@ -26,14 +26,12 @@ export default function About() {
           title="Responsive"
           description="Sensitive, ticklish layouts that will work on any device, big or small."
           icon={responsive}
-          animation="flip-left"
         />
 
         <HexagonCard
           title="Fast"
           description="Fast load times and lag free interaction, my highest priority."
           icon={fast}
-          animation="flip-left"
           delay="150"
         />
 
@@ -41,7 +39,6 @@ export default function About() {
           title="Cutting edge"
           description="The Modern stage with new styles, techniques applied."
           icon={cuttingEdge}
-          animation="flip-left"
           delay="300"
         />
 
@@ -49,7 +46,6 @@ export default function About() {
           title="Dynamic"
           description="Websites don't have to be static, I love making pages come to life."
           icon={dynamic}
-          animation="flip-left"
           delay="450"
         />
       </div>
