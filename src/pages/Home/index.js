@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-scroll";
 import Div100vh from "react-div-100vh";
+import Typical from "react-typical";
 
 import "./homePage.scss";
 
