@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
+import React from "react";
 
 import HexagonCard from "../../components/HexagonCard";
 import responsive from "../../images/responsiveIcon.svg";
@@ -9,10 +8,6 @@ import fast from "../../images/speedIcon.svg";
 import "./about.scss";
 
 export default function About() {
-  useEffect(() => {
-    AOS.init({ duration: 1200, once: true, delay: 200 });
-  }, []);
-
   return (
     <div className="about">
       <h1 data-aos="slide-left" data-aos-duration="600">
