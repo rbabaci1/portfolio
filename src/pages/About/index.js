@@ -10,12 +10,12 @@ import "./about.scss";
 
 export default function About() {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true, delay: 200 });
+    AOS.init({ duration: 1200, once: true, delay: 200 });
   }, []);
 
   return (
     <div className="about">
-      <h1 data-aos="fade-up" data-aos-duration="500">
+      <h1 data-aos="slide-left" data-aos-duration="600">
         ABOUT
       </h1>
 
@@ -26,24 +26,31 @@ export default function About() {
           title="Responsive"
           description="Sensitive, ticklish layouts that will work on any device, big or small."
           icon={responsive}
+          animation="flip-left"
         />
 
         <HexagonCard
           title="Fast"
           description="Fast load times and lag free interaction, my highest priority."
           icon={fast}
+          animation="flip-left"
+          delay="150"
         />
 
         <HexagonCard
           title="Cutting edge"
           description="The Modern stage with new styles, techniques applied."
           icon={cuttingEdge}
+          animation="flip-left"
+          delay="300"
         />
 
         <HexagonCard
           title="Dynamic"
           description="Websites don't have to be static, I love making pages come to life."
           icon={dynamic}
+          animation="flip-left"
+          delay="450"
         />
       </div>
     </div>
