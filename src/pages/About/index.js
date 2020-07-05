@@ -1,10 +1,7 @@
 import React from "react";
 
 import HexagonCard from "../../components/HexagonCard";
-import responsive from "../../images/responsiveIcon.svg";
-import cuttingEdge from "../../images/cuttingEdgeIcon.svg";
-import dynamic from "../../images/dynamicIcon.svg";
-import fast from "../../images/speedIcon.svg";
+import { responsive, cuttingEdge, dynamic, fast } from "../../images/index";
 import "./about.scss";
 
 export default function About() {
