@@ -32,6 +32,8 @@
     @media (min-width: $small_devices) {
       @include flex(row, space-evenly);
       height: 100%;
+      max-width: 1200px;
+      margin: auto;
     }
   }
 
