@@ -29,7 +29,7 @@ export default function HomeButton() {
       smooth={true}
       duration={500}
       offset={-55}
-      data-aos="fade-right"
+      data-aos="fade-up"
       data-aos-duration="800"
     >
       <button>View my work{<BsArrowRight />}</button>
