@@ -16,7 +16,7 @@ export default function App() {
       <div className="heading">
         <Typist
           cursor={{ show: false }}
-          startDelay={600}
+          startDelay={500}
           avgTypingDelay={65}
           onTypingDone={() => setRenderImg(true)}
         >
@@ -36,8 +36,8 @@ export default function App() {
 
         <Typist
           cursor={{ show: false }}
-          onTypingDone={() => setRenderBtn(true)}
           avgTypingDelay={65}
+          onTypingDone={() => setRenderBtn(true)}
         >
           <Typist.Delay ms={3000} />
 
