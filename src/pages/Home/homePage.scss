@@ -9,17 +9,7 @@
     @include size();
     position: absolute;
     top: 0;
-    background-color: rgba(8, 11, 36, 0.3);
-
-    .Typist {
-      display: flex;
-      align-items: center;
-
-      .Cursor {
-        color: #fff;
-        font-size: 30px;
-      }
-    }
+    background-color: rgba(20, 27, 43, 0.3);
 
     h1 {
       font-size: 40px;

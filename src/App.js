@@ -16,7 +16,7 @@ export default function App() {
       <NavBar />
       <About />
 
-      <p className="portfolio">
+      <div className="portfolio">
         <h1>PORTFOLIO</h1>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. At varius vel
@@ -76,8 +76,8 @@ export default function App() {
         sodales neque sodales ut etiam sit amet. Aliquam sem et tortor consequat
         id porta. Nunc congue nisi vitae suscipit tellus mauris. Sit amet
         porttitor eget dolor morbi non arcu.
-      </p>
-      <p className="blog">
+      </div>
+      <div className="blog">
         <h1>BLOG</h1>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. At varius vel
@@ -137,8 +137,8 @@ export default function App() {
         sodales neque sodales ut etiam sit amet. Aliquam sem et tortor consequat
         id porta. Nunc congue nisi vitae suscipit tellus mauris. Sit amet
         porttitor eget dolor morbi non arcu.
-      </p>
-      <p className="contact">
+      </div>
+      <div className="contact">
         <h1>CONTACT</h1>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. At varius vel
@@ -198,7 +198,7 @@ export default function App() {
         sodales neque sodales ut etiam sit amet. Aliquam sem et tortor consequat
         id porta. Nunc congue nisi vitae suscipit tellus mauris. Sit amet
         porttitor eget dolor morbi non arcu.
-      </p>
+      </div>
     </div>
   );
 }
