@@ -70,16 +70,16 @@
   h2 {
     @include fonts(5.2vw, 700);
     margin: 40px 0 7px 0;
-    color: lighten($color: $dark_gray, $amount: 10);
+    color: lighten($color: $dark_gray, $amount: 8);
   }
   p {
     text-align: center;
-    line-height: 1.9vh;
+    line-height: 2vh;
     font-size: 3.5vw;
-    color: lighten($color: $dark_gray, $amount: 10);
+    color: lighten($color: $dark_gray, $amount: 8);
   }
 
-  @media (min-width: 375px) {
+  @media (min-width: $iPhone_X) {
     h2 {
       font-size: 20px;
     }

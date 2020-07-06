@@ -27,7 +27,7 @@
     }
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: $iPhone_X) {
     h1 {
       font-size: 8vw;
     }
