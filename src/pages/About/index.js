@@ -11,7 +11,7 @@ export default function About() {
         ABOUT
       </h1>
 
-      <div data-aos="fade-right" className="header-bar" />
+      <div data-aos="fade-right" className="header-border-bottom" />
 
       <div className="cards">
         <HexagonCard

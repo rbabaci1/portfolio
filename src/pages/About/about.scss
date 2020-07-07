@@ -9,7 +9,7 @@
     font-weight: 700;
     color: $dark_gray;
   }
-  .header-bar {
+  .header-border-bottom {
     @include size(4px, 120px);
     background-color: $dark_gray;
     margin: 10px 0 70px 0;
