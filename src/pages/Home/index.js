@@ -29,8 +29,8 @@ export default function App() {
           <img
             src="https://assets-global.website-files.com/5cd091cfb5499f22bdf72905/5e156bcd9ba5cbffdd421c8a_underline-red.png"
             alt="styles border bottom"
-            data-aos="fade-left"
-            data-aos-duration="800"
+            data-aos="fade-up"
+            data-aos-duration="500"
           />
         )}
 
@@ -39,11 +39,11 @@ export default function App() {
           avgTypingDelay={65}
           onTypingDone={() => setRenderBtn(true)}
         >
-          <Typist.Delay ms={3000} />
+          <Typist.Delay ms={2950} />
 
           <h1>
             I'm a Full-Stick Web Developer.
-            <Typist.Backspace count={18} delay={500} />
+            <Typist.Backspace count={18} delay={600} />
             <Typist.Delay ms={200} />
             ack Web Developer.
           </h1>

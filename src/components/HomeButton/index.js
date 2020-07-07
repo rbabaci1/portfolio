@@ -30,7 +30,7 @@ export default function HomeButton() {
       duration={500}
       offset={-55}
       data-aos="fade-up"
-      data-aos-duration="800"
+      data-aos-duration="500"
     >
       <button>View my work{<BsArrowRight />}</button>
     </Link>

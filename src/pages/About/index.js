@@ -24,21 +24,21 @@ export default function About() {
           title="Fast"
           description="Fast load times and lag free interaction, my highest priority."
           icon={fast}
-          delay="150"
+          delay="100"
         />
 
         <HexagonCard
           title="Cutting edge"
           description="The Modern stage with new styles, techniques applied."
           icon={cuttingEdge}
-          delay="300"
+          delay="200"
         />
 
         <HexagonCard
           title="Dynamic"
           description="Websites don't have to be static, I love making pages come to life."
           icon={dynamic}
-          delay="450"
+          delay="300"
         />
       </div>
     </div>

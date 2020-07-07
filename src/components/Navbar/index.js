@@ -49,7 +49,7 @@ export default function SwipeableTemporaryDrawer() {
           to={text.toLowerCase()}
           spy={true}
           smooth={true}
-          duration={500}
+          duration={600}
           offset={-55}
           key={index}
         >
@@ -64,11 +64,11 @@ export default function SwipeableTemporaryDrawer() {
   return (
     <div className="nav-bar">
       <div className="desktop">
-        <Link to="home" spy={true} smooth={true} duration={500}>
+        <Link to="home" spy={true} smooth={true} duration={400}>
           HOME
         </Link>
 
-        <Link to="about" spy={true} smooth={true} duration={500} offset={-55}>
+        <Link to="about" spy={true} smooth={true} duration={600} offset={-55}>
           ABOUT
         </Link>
 
@@ -82,11 +82,11 @@ export default function SwipeableTemporaryDrawer() {
           PORTFOLIO
         </Link>
 
-        <Link to="blog" spy={true} smooth={true} duration={500} offset={-55}>
+        <Link to="blog" spy={true} smooth={true} duration={600} offset={-55}>
           BLOG
         </Link>
 
-        <Link to="contact" spy={true} smooth={true} duration={500} offset={0}>
+        <Link to="contact" spy={true} smooth={true} duration={600} offset={0}>
           CONTACT
         </Link>
       </div>
@@ -100,7 +100,7 @@ export default function SwipeableTemporaryDrawer() {
             open={open}
             onClose={toggleDrawer(false)}
             onOpen={toggleDrawer(true)}
-            transitionDuration={300}
+            transitionDuration={400}
           >
             <AiOutlineClose onClick={toggleDrawer(false)} />
 
