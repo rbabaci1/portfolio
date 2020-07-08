@@ -1,6 +1,7 @@
 import React from "react";
 
 import HexagonCard from "../../components/HexagonCard";
+import HexagonImage from "../../components/HexagonImage";
 import { responsive, cuttingEdge, dynamic, fast } from "../../images/index";
 import "./about.scss";
 
@@ -22,7 +23,7 @@ export default function About() {
 
         <HexagonCard
           title="Fast"
-          description="Fast load times and lag free interaction, my highest priority."
+          description="Fast load times and lag free interaction, are my highest priority."
           icon={fast}
           delay="100"
         />
@@ -36,10 +37,18 @@ export default function About() {
 
         <HexagonCard
           title="Dynamic"
-          description="Websites don't have to be static, I love making pages come to life."
+          description="Websites don't have to be static. I love making pages come to life."
           icon={dynamic}
           delay="300"
         />
+      </div>
+
+      <div className="bottom-container">
+        <div className="about-me-wrapper">
+          <HexagonImage />
+        </div>
+
+        <div className="skills-wrapper"></div>
       </div>
     </div>
   );

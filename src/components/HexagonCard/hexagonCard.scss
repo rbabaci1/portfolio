@@ -2,7 +2,7 @@
 @import "../../styles/mixins.scss";
 
 .hexagon-wrapper {
-  @include flex(column, align= center);
+  @include flex(column, align=center);
   margin: 30px 10px;
   position: relative;
 
