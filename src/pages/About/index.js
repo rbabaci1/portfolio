@@ -44,8 +44,16 @@ export default function About() {
       </div>
 
       <div className="bottom-container">
-        <div className="about-me-wrapper">
+        <div className="about-me-wrapper" data-aos="slide-right">
           <HexagonImage />
+
+          <h2>Hi! I'm Rabah</h2>
+          <p>
+            I am a Full Stack Web Developer with a particular interest in Front
+            End development. My specialties include quickly learning new skills
+            and programming languages, problem solving, responsive design
+            principles, website optimization.
+          </p>
         </div>
 
         <div className="skills-wrapper"></div>

@@ -28,7 +28,8 @@ export default function HomeButton() {
       to="about"
       smooth={true}
       duration={400}
-      offset={-55}
+      // offset={-55}
+
       data-aos="fade-up"
       data-aos-duration="500"
     >
