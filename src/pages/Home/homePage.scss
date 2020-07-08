@@ -21,17 +21,6 @@
         font-weight: 700;
         color: $red;
         padding: 0 5px;
-
-        // background: linear-gradient(
-        //       90deg,
-        //       $white ($dot-space - $dot-size),
-        //       transparent 1%
-        //     )
-        //     center,
-        //   linear-gradient($white ($dot-space - $dot-size), transparent 1%)
-        //     center,
-        //   $dot-color;
-        // background-size: $dot-space $dot-space;
       }
 
       @media (max-width: $medium_devices) {
@@ -48,7 +37,7 @@
     img {
       width: 290px;
       position: relative;
-      bottom: 3px;
+      bottom: 4px;
       left: 80px;
 
       @media (max-width: $medium_devices) {
