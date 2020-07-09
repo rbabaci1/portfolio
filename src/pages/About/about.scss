@@ -29,28 +29,35 @@
 
   .bottom-container {
     // border: 1px solid red;
-    display: flex;
-    padding: 0 30px;
+    @include flex();
+    margin: 70px 30px;
     max-width: 1200px;
 
     .about-me-wrapper {
-      // border: 1px solid green;
-      display: flex;
-      flex-direction: column;
-      margin-top: 70px;
-      align-items: center;
+      @include flex(column, center, center);
       width: 50%;
 
+      img {
+        width: 350px;
+        position: relative;
+        top: 25px;
+      }
+
       h2 {
-        margin: 25px 0 20px 0;
         font-weight: 700;
         color: $dark_gray;
       }
       p {
-        color: lighten($color: $dark_gray, $amount: 8);
+        padding: 15px 0;
         font-size: 19px;
         line-height: 25px;
+        color: lighten($color: $dark_gray, $amount: 8);
       }
+    }
+    .skills-wrapper {
+      width: 50%;
+      height: 500px;
+      background-color: orange;
     }
   }
 

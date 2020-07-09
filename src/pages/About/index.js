@@ -1,8 +1,8 @@
 import React from "react";
 
 import HexagonCard from "../../components/HexagonCard";
-import HexagonImage from "../../components/HexagonImage";
 import { responsive, cuttingEdge, dynamic, fast } from "../../images/index";
+import photo from "../../images/me.png";
 import "./about.scss";
 
 export default function About() {
@@ -45,7 +45,7 @@ export default function About() {
 
       <div className="bottom-container">
         <div className="about-me-wrapper" data-aos="slide-right">
-          <HexagonImage />
+          <img src={photo} alt="rabah's selfie" />
 
           <h2>Hi! I'm Rabah</h2>
           <p>
