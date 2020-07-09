@@ -50,7 +50,7 @@ export default function SwipeableTemporaryDrawer() {
           spy={true}
           smooth={true}
           duration={600}
-          offset={-55}
+          // offset={-55}
           key={index}
         >
           <ListItem button onClick={() => setOpen(false)}>
@@ -68,7 +68,7 @@ export default function SwipeableTemporaryDrawer() {
           HOME
         </Link>
 
-        <Link to="about" spy={true} smooth={true} duration={600} offset={-55}>
+        <Link to="about" spy={true} smooth={true} duration={600}>
           ABOUT
         </Link>
 
@@ -77,16 +77,26 @@ export default function SwipeableTemporaryDrawer() {
           spy={true}
           smooth={true}
           duration={600}
-          offset={-55}
+          // offset={-55}
         >
           PORTFOLIO
         </Link>
 
-        <Link to="blog" spy={true} smooth={true} duration={600} offset={-55}>
+        <Link
+          to="blog"
+          spy={true}
+          smooth={true}
+          duration={600} //offset={-55}
+        >
           BLOG
         </Link>
 
-        <Link to="contact" spy={true} smooth={true} duration={600} offset={0}>
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          duration={600} //offset={0}
+        >
           CONTACT
         </Link>
       </div>

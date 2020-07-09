@@ -13,7 +13,7 @@
 
     h1 {
       font-size: 40px;
-      color: #fff;
+      color: $white;
       line-height: 40px;
 
       span {
@@ -63,7 +63,7 @@
       padding: 10px 15px;
       color: #fff;
       background-color: inherit;
-      border: 2px solid #fff;
+      border: 2px solid $white;
       cursor: pointer;
       outline: none;
       margin-top: 40px;
@@ -77,8 +77,8 @@
       }
 
       &:hover {
-        background-color: #42b1c0;
-        border: 2px solid #42b1c0;
+        background-color: darken($color: $light_green, $amount: 4);
+        border: 2px solid darken($color: $light_green, $amount: 4);
         transition-duration: 0.3s;
 
         svg {

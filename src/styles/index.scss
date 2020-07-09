@@ -1,3 +1,5 @@
+@import "../styles/vaiables.scss";
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -48,4 +50,9 @@ code {
 
 .App {
   text-align: center;
+
+  h2,
+  p {
+    color: lighten($color: $dark_gray, $amount: 6);
+  }
 }
