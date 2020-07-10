@@ -2,8 +2,8 @@
 @import "../../styles/mixins.scss";
 
 .home {
-  // background-color: rgb(24, 24, 39);
   height: 100vh;
+  background-color: rgb(24, 24, 39);
   #bg-animation {
     background-color: rgba(24, 24, 39, 0.7);
     height: 100vh;
@@ -14,7 +14,7 @@
     @include size();
     position: absolute;
     top: 0;
-    background-color: rgba(20, 27, 43, 0.3);
+    // background-color: rgba(20, 27, 43, 0.3);
 
     h1 {
       font-size: 40px;
