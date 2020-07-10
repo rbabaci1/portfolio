@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Div100vh from "react-div-100vh";
 import Typist from "react-typist";
 
 import "./homePage.scss";
@@ -11,7 +10,6 @@ export default function App() {
 
   return (
     <div className="home">
-      {/* <Div100vh id="bg-animation" /> */}
       <div id="bg-animation" />
 
       <div className="heading">
