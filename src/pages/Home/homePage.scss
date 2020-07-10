@@ -5,6 +5,7 @@
   background-color: rgb(24, 24, 39);
   height: 100vh;
   #bg-animation {
+    background-color: rgba(21, 21, 121, 0.5);
     height: 100vh;
   }
 
@@ -104,7 +105,7 @@
       }
     }
     @media (max-width: $mobile) {
-      background-color: rgba(20, 27, 43, 0.5);
+      // background-color: rgba(20, 27, 43, 0.5);
     }
   }
 }
