@@ -11,7 +11,8 @@ export default function App() {
 
   return (
     <div className="home">
-      <Div100vh id="bg-animation" />
+      {/* <Div100vh id="bg-animation" /> */}
+      <div id="bg-animation" />
 
       <div className="heading">
         <Typist

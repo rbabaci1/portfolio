@@ -4,7 +4,8 @@
 .nav-bar {
   @include size(55px);
   position: sticky;
-  top: -0.1px;
+  // top: -0.1px;
+  top: -1px;
   background-color: $dark_blue;
   border-bottom: 3px solid $light_green;
   z-index: 99;
