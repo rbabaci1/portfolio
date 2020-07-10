@@ -5,20 +5,17 @@
   background-color: rgb(24, 24, 39);
 
   #bg-animation {
-    background-color: rgba(24, 24, 39, 0.3);
+    // background-color: rgba(24, 24, 39, 0.3);
     height: 100vh;
-
-    @media (max-width: $mobile) {
-      background-color: rgba(43, 20, 25, 0.5);
-    }
   }
 
   .heading {
     @include flex(column);
     @include size();
+    height: 100vh;
     position: absolute;
     top: 0;
-    // background-color: rgba(20, 27, 43, 0.3);
+    background-color: rgba(20, 27, 43, 0.3);
 
     h1 {
       font-size: 40px;
@@ -107,6 +104,10 @@
           font-size: 5.5vw;
         }
       }
+    }
+
+    @media (max-width: $mobile) {
+      background-color: rgba(43, 20, 25, 0.5);
     }
   }
 }
