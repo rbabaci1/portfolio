@@ -2,11 +2,15 @@
 @import "../../styles/mixins.scss";
 
 .home {
-  height: 100vh;
   background-color: rgb(24, 24, 39);
+
   #bg-animation {
     background-color: rgba(24, 24, 39, 0.3);
     height: 100vh;
+
+    @media (max-width: $mobile) {
+      background-color: rgba(20, 27, 43, 0.5);
+    }
   }
 
   .heading {
@@ -103,9 +107,6 @@
           font-size: 5.5vw;
         }
       }
-    }
-    @media (max-width: $mobile) {
-      background-color: rgba(20, 27, 43, 0.5);
     }
   }
 }
