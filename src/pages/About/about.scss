@@ -29,10 +29,10 @@
 
   .bottom-container {
     border: 1px solid red;
-    @include flex();
+    @include flex(row, space-between);
     width: 100%;
     max-width: 1200px;
-    margin: 50px 30px;
+    margin: 50px 0;
 
     .about-me-wrapper {
       @include flex(column, center, center);
@@ -66,9 +66,23 @@
       }
     }
     .skills-wrapper {
-      width: 50%;
+      width: 400px;
       height: 400px;
-      background-color: orange;
+      border: 1px solid rgb(214, 213, 213);
+      border-radius: 50px;
+      margin: 0 70px 0 0;
+      position: relative;
+
+      .js {
+        position: absolute;
+        left: -40px;
+        top: 30px;
+        border-radius: 8px;
+      }
+      .react {
+        position: absolute;
+        top: -40px;
+      }
     }
   }
 

@@ -1,7 +1,14 @@
 import React from "react";
 
 import HexagonCard from "../../components/HexagonCard";
-import { responsive, cuttingEdge, dynamic, fast } from "../../images/index";
+import {
+  responsive,
+  cuttingEdge,
+  dynamic,
+  fast,
+  react,
+  js,
+} from "../../images/index";
 import photo from "../../images/me.png";
 import "./about.scss";
 
@@ -61,7 +68,10 @@ export default function About() {
           </p>
         </div>
 
-        <div className="skills-wrapper"></div>
+        <div className="skills-wrapper">
+          <img className="js" src={js} alt="javascript icon" />
+          <img className="react" src={react} alt="react icon" />
+        </div>
       </div>
     </div>
   );
