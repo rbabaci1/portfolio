@@ -72,6 +72,7 @@
       border-radius: 50%;
       margin: 0 70px 0 0;
       position: relative;
+      // animation: 30s spin infinite linear;
 
       img {
         position: absolute;
@@ -89,7 +90,7 @@
         top: -28px;
         left: 100px;
         background-color: transparent;
-        transform: rotate(40deg);
+        transform: rotate(42deg);
       }
       .redux {
         top: -30px;
@@ -166,5 +167,17 @@
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+// skills section spinning animation
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
   }
 }
