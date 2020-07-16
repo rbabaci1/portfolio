@@ -8,6 +8,7 @@ import {
   fast,
   react,
   js,
+  html,
 } from "../../images/index";
 import photo from "../../images/me.png";
 import "./about.scss";
@@ -71,6 +72,7 @@ export default function About() {
         <div className="skills-wrapper">
           <img className="js" src={js} alt="javascript icon" />
           <img className="react" src={react} alt="react icon" />
+          <img className="html" src={html} alt="html icon" />
         </div>
       </div>
     </div>
