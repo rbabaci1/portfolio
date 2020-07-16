@@ -1,19 +1,7 @@
 import React from "react";
 
 import HexagonCard from "../../components/HexagonCard";
-import {
-  responsive,
-  cuttingEdge,
-  dynamic,
-  fast,
-  react,
-  js,
-  html,
-  css,
-  sass,
-  redux,
-} from "../../images/index";
-import photo from "../../images/me.png";
+import * as Img from "../../images/index";
 import "./about.scss";
 
 export default function About() {
@@ -29,34 +17,34 @@ export default function About() {
         <HexagonCard
           title="Responsive"
           description="Sensitive, ticklish layouts that will work on any device, big or small."
-          icon={responsive}
+          icon={Img.responsive}
         />
 
         <HexagonCard
           title="Fast"
           description="Fast load times and lag free interaction, are my highest priority."
-          icon={fast}
+          icon={Img.fast}
           delay="100"
         />
 
         <HexagonCard
           title="Cutting edge"
           description="The Modern stage with new styles, techniques applied."
-          icon={cuttingEdge}
+          icon={Img.cuttingEdge}
           delay="200"
         />
 
         <HexagonCard
           title="Dynamic"
           description="Websites don't have to be static. I love making pages come to life."
-          icon={dynamic}
+          icon={Img.dynamic}
           delay="300"
         />
       </div>
 
       <div className="bottom-container">
         <div className="about-me-wrapper" data-aos="slide-right">
-          <img src={photo} alt="rabah's selfie" />
+          <img src={Img.me} alt="rabah's selfie" />
 
           <h2>
             Hi! I'm Rabah{" "}
@@ -73,12 +61,12 @@ export default function About() {
         </div>
 
         <div className="skills-wrapper">
-          <img className="js" src={js} alt="javascript icon" />
-          <img className="react" src={react} alt="react icon" />
-          <img className="html" src={html} alt="html icon" />
-          <img className="css" src={css} alt="css icon" />
-          <img className="sass" src={sass} alt="sass icon" />
-          <img className="redux" src={redux} alt="redux icon" />
+          <img className="js" src={Img.js} alt="javascript icon" />
+          <img className="react" src={Img.react} alt="react icon" />
+          <img className="html" src={Img.html} alt="html icon" />
+          <img className="css" src={Img.css} alt="css icon" />
+          <img className="sass" src={Img.sass} alt="sass icon" />
+          <img className="redux" src={Img.redux} alt="redux icon" />
         </div>
       </div>
     </div>

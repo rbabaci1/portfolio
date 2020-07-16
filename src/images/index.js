@@ -8,6 +8,7 @@ import html from "./html.svg";
 import css from "./css.svg";
 import sass from "./sass.svg";
 import redux from "./redux.svg";
+import me from "./me.png";
 
 export {
   responsive,
@@ -20,4 +21,5 @@ export {
   css,
   sass,
   redux,
+  me,
 };
