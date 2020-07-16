@@ -11,6 +11,7 @@ import {
   html,
   css,
   sass,
+  redux,
 } from "../../images/index";
 import photo from "../../images/me.png";
 import "./about.scss";
@@ -77,6 +78,7 @@ export default function About() {
           <img className="html" src={html} alt="html icon" />
           <img className="css" src={css} alt="css icon" />
           <img className="sass" src={sass} alt="sass icon" />
+          <img className="redux" src={redux} alt="redux icon" />
         </div>
       </div>
     </div>

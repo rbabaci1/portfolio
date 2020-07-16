@@ -75,28 +75,42 @@
 
       .js {
         position: absolute;
-        left: -40px;
+        left: -35px;
         top: 30px;
-        border-radius: 8px;
+        border-radius: 6px;
+        padding: 3px 0;
+        background-color: #fff;
       }
       .react {
         position: absolute;
         top: -40px;
+        left: 40px;
       }
       .html {
         position: absolute;
         right: -40px;
-        top: 25px;
+        top: 30px;
+        background-color: #fff;
       }
       .css {
         position: absolute;
         right: -38px;
-        top: 120px;
+        top: 140px;
+        padding: 3px 0;
+        background-color: #fff;
       }
       .sass {
         position: absolute;
-        right: 20px;
+        right: 45px;
         top: -36px;
+        padding: 0 3px;
+        background-color: #fff;
+      }
+      .redux {
+        position: absolute;
+        top: -35px;
+        left: 160px;
+        background-color: #fff;
       }
     }
   }
