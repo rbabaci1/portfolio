@@ -9,6 +9,8 @@ import {
   react,
   js,
   html,
+  css,
+  sass,
 } from "../../images/index";
 import photo from "../../images/me.png";
 import "./about.scss";
@@ -73,6 +75,8 @@ export default function About() {
           <img className="js" src={js} alt="javascript icon" />
           <img className="react" src={react} alt="react icon" />
           <img className="html" src={html} alt="html icon" />
+          <img className="css" src={css} alt="css icon" />
+          <img className="sass" src={sass} alt="sass icon" />
         </div>
       </div>
     </div>
