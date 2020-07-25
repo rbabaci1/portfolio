@@ -54,7 +54,7 @@
           margin-left: 10px;
           font-size: 34px;
           animation-name: wave-animation;
-          animation-duration: 3s;
+          animation-duration: 4s;
           animation-iteration-count: infinite;
           transform-origin: 70% 70%;
         }
@@ -81,49 +81,70 @@
       }
 
       .js {
-        left: 10px;
+        left: 15px;
         top: 40px;
         border-radius: 6px;
         padding: 5px 0;
         transform: rotate(40deg);
       }
+
       .python {
         left: -35px;
         bottom: 165px;
         transform: rotate(0deg);
         padding: 5px 0;
       }
+
       .nodeJs {
         left: -11px;
         bottom: 55px;
         transform: rotate(-30deg);
       }
+
+      .pg {
+        bottom: -25px;
+        left: 82px;
+        transform: rotate(-63deg);
+        padding: 5px 0;
+      }
+
+      .git {
+        bottom: -28px;
+        padding: 0 5px;
+        transform: rotate(-10deg);
+      }
+
       .react {
-        top: -28px;
+        top: -23px;
         left: 100px;
         background-color: transparent;
         transform: rotate(42deg);
       }
+
       .redux {
-        top: -30px;
-        right: 102px;
-        padding: 0 3px;
+        top: -25px;
+        right: 118px;
+        padding: 0 5px;
         transform: rotate(15deg);
       }
+
       .sass {
-        right: 0px;
-        top: 40px;
+        right: 15px;
+        top: 25px;
       }
+
       .html {
-        right: -38px;
-        top: 147px;
+        right: -30px;
+        top: 120px;
+        transform: rotate(-5deg);
         padding: 3px 0;
       }
+
       .css {
-        right: -5px;
-        bottom: 52px;
+        right: -20px;
+        bottom: 103px;
         padding: 5px 0;
-        transform: rotate(35deg);
+        transform: rotate(21deg);
       }
     }
   }

@@ -11,6 +11,8 @@ import redux from "./redux.svg";
 import me from "./me.png";
 import python from "./python.svg";
 import nodeJs from "./nodeJs.svg";
+import pg from "./pg.svg";
+import git from "./git.svg";
 
 export {
   responsive,
@@ -26,4 +28,6 @@ export {
   me,
   python,
   nodeJs,
+  pg,
+  git,
 };

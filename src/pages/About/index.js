@@ -69,6 +69,8 @@ export default function About() {
           <img className="redux" src={Img.redux} alt="redux icon" />
           <img className="python" src={Img.python} alt="python icon" />
           <img className="nodeJs" src={Img.nodeJs} alt="node js icon" />
+          <img className="pg" src={Img.pg} alt="postgreSql icon" />
+          <img className="git" src={Img.git} alt="git icon" />
         </div>
       </div>
     </div>
