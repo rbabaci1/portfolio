@@ -10,6 +10,7 @@ import sass from "./sass.svg";
 import redux from "./redux.svg";
 import me from "./me.png";
 import python from "./python.svg";
+import nodeJs from "./nodeJs.svg";
 
 export {
   responsive,
@@ -24,4 +25,5 @@ export {
   redux,
   me,
   python,
+  nodeJs,
 };
