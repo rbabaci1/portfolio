@@ -71,6 +71,7 @@ export default function About() {
           <img className="nodeJs" src={Img.nodeJs} alt="node js icon" />
           <img className="pg" src={Img.pg} alt="postgreSql icon" />
           <img className="git" src={Img.git} alt="git icon" />
+          <img className="github" src={Img.gitHub} alt="gitHub icon" />
         </div>
       </div>
     </div>

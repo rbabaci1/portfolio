@@ -69,11 +69,11 @@
     .skills-wrapper {
       width: 400px;
       height: 400px;
-      border: 1px solid rgb(214, 213, 213);
+      border: 1px solid rgb(224, 224, 224);
       border-radius: 50%;
       margin: 0 70px 0 0;
       position: relative;
-      // animation: 25s spin infinite alternate;
+      // animation: 30s spin infinite alternate;
 
       img {
         position: absolute;
@@ -114,18 +114,10 @@
         transform: rotate(-3deg);
       }
 
-      .react {
-        top: -23px;
-        left: 100px;
-        background-color: transparent;
-        transform: rotate(42deg);
-      }
-
-      .redux {
-        top: -25px;
-        right: 118px;
-        padding: 0 5px;
-        transform: rotate(15deg);
+      .github {
+        bottom: 7px;
+        right: 50px;
+        padding: 0 0 0 3px;
       }
 
       .sass {
@@ -145,6 +137,20 @@
         bottom: 95px;
         padding: 5px 0;
         transform: rotate(21deg);
+      }
+
+      .react {
+        top: -23px;
+        left: 100px;
+        background-color: transparent;
+        transform: rotate(42deg);
+      }
+
+      .redux {
+        top: -25px;
+        right: 118px;
+        padding: 0 5px;
+        transform: rotate(15deg);
       }
     }
   }

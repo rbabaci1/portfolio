@@ -13,6 +13,7 @@ import python from "./python.svg";
 import nodeJs from "./nodeJs.svg";
 import pg from "./pg.svg";
 import git from "./git.svg";
+import gitHub from "./gitHub.svg";
 
 export {
   responsive,
@@ -30,4 +31,5 @@ export {
   nodeJs,
   pg,
   git,
+  gitHub,
 };
