@@ -67,6 +67,7 @@ export default function About() {
           <img className="css" src={Img.css} alt="css icon" />
           <img className="sass" src={Img.sass} alt="sass icon" />
           <img className="redux" src={Img.redux} alt="redux icon" />
+          <img className="python" src={Img.python} alt="python icon" />
         </div>
       </div>
     </div>
