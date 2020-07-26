@@ -53,10 +53,11 @@ export default function About() {
             </span>
           </h2>
           <p>
-            I am a Full Stack Web Developer with a particular interest in Front
-            End development. My specialties include quickly learning new skills
-            and programming languages, problem solving, responsive design
-            principles, website optimization.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. At
+            varius vel pharetra vel turpis nunc. Id ornare arcu odio ut sem
+            nulla. Odio ut sem nulla pharetra diam sit. Viverra suspendisse
+            potenti nullam ac.
           </p>
         </div>
 
