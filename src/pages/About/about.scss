@@ -31,7 +31,11 @@
     @include flex(row, space-between);
     width: 100%;
     max-width: 1200px;
-    margin: 50px 0;
+    margin-top: 40px;
+
+    @media (max-width: 1010px) {
+      flex-direction: column;
+    }
 
     .about-me-wrapper {
       @include flex(column, center, center);
@@ -62,6 +66,18 @@
         padding: 15px 10px;
         font-size: 18px;
         line-height: 22px;
+      }
+
+      @media (max-width: 1010px) {
+        width: 100%;
+        padding: 0 50px;
+        position: relative;
+        bottom: 50px;
+
+        img {
+          width: 300px;
+          top: 0;
+        }
       }
     }
 
