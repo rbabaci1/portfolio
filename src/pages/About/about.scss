@@ -28,7 +28,6 @@
   }
 
   .bottom-container {
-    border: 1px solid red;
     @include flex(row, space-between);
     width: 100%;
     max-width: 1200px;
@@ -73,6 +72,7 @@
       border-radius: 50%;
       margin: 0 70px 0 0;
       position: relative;
+
       // animation: 30s spin infinite linear;
 
       img {
