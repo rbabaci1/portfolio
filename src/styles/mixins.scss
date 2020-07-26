@@ -15,3 +15,122 @@
   font-weight: $weight;
   font-family: $family;
 }
+
+@mixin icons-positions {
+  .js {
+    left: 15px;
+    top: 40px;
+    border-radius: 6px;
+    padding: 5px 0;
+    transform: rotate(40deg);
+  }
+
+  .python {
+    left: -30px;
+    top: 140px;
+    padding: 5px 0;
+  }
+
+  .nodeJs {
+    left: -17px;
+    bottom: 76px;
+    transform: rotate(-25deg);
+  }
+
+  .pg {
+    bottom: -8px;
+    left: 63px;
+    transform: rotate(-56deg);
+    padding: 5px 0;
+  }
+
+  .git {
+    bottom: -30px;
+    left: 170px;
+    padding: 0 5px;
+    transform: rotate(-3deg);
+  }
+
+  .github {
+    bottom: 7px;
+    right: 50px;
+    padding: 0 0 0 3px;
+  }
+
+  .sass {
+    right: 15px;
+    top: 25px;
+  }
+
+  .html {
+    right: -30px;
+    top: 125px;
+    transform: rotate(-5deg);
+    padding: 3px 0;
+  }
+
+  .css {
+    right: -16px;
+    bottom: 95px;
+    padding: 5px 0;
+    transform: rotate(21deg);
+  }
+
+  .react {
+    top: -23px;
+    left: 100px;
+    background-color: transparent;
+    transform: rotate(42deg);
+  }
+
+  .redux {
+    top: -25px;
+    right: 118px;
+    padding: 0 5px;
+    transform: rotate(15deg);
+  }
+}
+
+@mixin spin {
+  // skills section spinning animation
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+    }
+  }
+}
+
+@mixin wave-animation {
+  // hand waving animation
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
