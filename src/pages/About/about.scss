@@ -75,15 +75,6 @@
       position: relative;
       // animation: 30s spin infinite linear;
 
-      .rim {
-        position: absolute;
-        z-index: -99;
-        height: 300px;
-        width: 300px;
-        top: 50px;
-        right: 45px;
-      }
-
       img {
         position: absolute;
         background-color: #fff;

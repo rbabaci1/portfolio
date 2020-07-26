@@ -3,7 +3,6 @@ import React from "react";
 import HexagonCard from "../../components/HexagonCard";
 import * as Img from "../../images/index";
 import "./about.scss";
-import rim from "../../images/rim.gif";
 
 export default function About() {
   return (
@@ -73,8 +72,6 @@ export default function About() {
           <img className="pg" src={Img.pg} alt="postgreSql icon" />
           <img className="git" src={Img.git} alt="git icon" />
           <img className="github" src={Img.gitHub} alt="gitHub icon" />
-
-          <img className="rim" src={rim} alt="rim" />
         </div>
       </div>
     </div>
