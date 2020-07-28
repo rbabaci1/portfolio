@@ -35,7 +35,8 @@
     padding: 40px;
 
     @media (max-width: 1010px) {
-      flex-direction: column;
+      flex-direction: column-reverse;
+      padding-bottom: 50px;
     }
 
     .about-me-wrapper {
@@ -73,7 +74,7 @@
         width: 100%;
         padding: 0 50px;
         position: relative;
-        bottom: 50px;
+        top: 50px;
 
         img {
           top: 10px;
@@ -87,7 +88,7 @@
       border: 1px solid rgb(224, 224, 224);
       border-radius: 50%;
       position: relative;
-      // animation: 20s spin infinite linear;
+      animation: 20s spin infinite linear;
 
       img {
         position: absolute;
