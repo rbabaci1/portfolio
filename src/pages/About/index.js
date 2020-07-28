@@ -43,7 +43,11 @@ export default function About() {
       </div>
 
       <div className="bottom-container">
-        <div className="about-me-wrapper" data-aos="slide-right">
+        <div
+          className="about-me-wrapper"
+          data-aos="fade-right"
+          data-aos-duration="700"
+        >
           <img src={Img.me} alt="rabah's selfie" />
 
           <h2>
@@ -61,7 +65,11 @@ export default function About() {
           </p>
         </div>
 
-        <div className="skills-wrapper">
+        <div
+          className="skills-wrapper"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
           <img className="js" src={Img.js} alt="javascript icon" />
           <img className="react" src={Img.react} alt="react icon" />
           <img className="html" src={Img.html} alt="html icon" />
