@@ -44,7 +44,7 @@ export default function SwipeableTemporaryDrawer() {
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
     >
-      {["HOME", "ABOUT", "PORTFOLIO", "BLOG", "CONTACT"].map((text, index) => (
+      {["HOME", "ABOUT", "PORTFOLIO", "CONTACT"].map((text, index) => (
         <Link
           to={text.toLowerCase()}
           spy={true}
@@ -82,14 +82,14 @@ export default function SwipeableTemporaryDrawer() {
           PORTFOLIO
         </Link>
 
-        <Link
+        {/* <Link
           to="blog"
           spy={true}
           smooth={true}
           duration={600} //offset={-55}
         >
           BLOG
-        </Link>
+        </Link> */}
 
         <Link
           to="contact"
