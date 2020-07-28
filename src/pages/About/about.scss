@@ -72,7 +72,7 @@
 
       @media (max-width: 1010px) {
         width: 100%;
-        padding: 0 50px;
+        padding: 0 100px;
         position: relative;
         top: 50px;
 
@@ -88,7 +88,7 @@
       border: 1px solid rgb(224, 224, 224);
       border-radius: 50%;
       position: relative;
-      animation: 20s spin infinite linear;
+      // animation: 20s spin infinite linear;
 
       img {
         position: absolute;
