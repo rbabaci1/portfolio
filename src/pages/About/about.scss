@@ -58,10 +58,8 @@
           bottom: 0;
           margin-left: 10px;
           font-size: 34px;
-          animation-name: wave-animation;
-          animation-duration: 4s;
-          animation-iteration-count: infinite;
-          transform-origin: 70% 70%;
+          animation: 4s wave-animation;
+          animation-iteration-count: 3;
         }
       }
       p {
