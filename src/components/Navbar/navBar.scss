@@ -21,6 +21,7 @@
       cursor: pointer;
       transition-duration: 0.3s;
       letter-spacing: 0.5px;
+      padding: 0 50px;
 
       &:hover {
         color: $red;
@@ -31,10 +32,11 @@
     }
 
     @media (min-width: $small_devices) {
-      @include flex(row, space-evenly);
+      @include flex(row, flex-end);
       height: 100%;
-      max-width: 1200px;
-      margin: auto;
+      // max-width: 1200px;
+      // margin: auto;
+      margin-right: 25px;
     }
   }
 
