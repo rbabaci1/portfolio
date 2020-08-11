@@ -70,7 +70,7 @@
         img {
           position: absolute;
           top: -350px;
-          height: 250px;
+          height: 240px;
           transition: linear;
           transition-duration: 0.6s;
         }
@@ -79,8 +79,14 @@
         padding: 0;
 
         img {
-          height: 200px;
-          top: -300px;
+          height: 220px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        img {
+          height: 170px;
+          top: -280px;
         }
       }
     }
@@ -101,12 +107,12 @@
       @include icons-positions;
 
       @media (max-width: 600px) {
-        width: 320px;
-        height: 320px;
+        width: 300px;
+        height: 300px;
 
         img {
-          height: 50px;
-          width: 50px;
+          height: 45px;
+          width: 45px;
         }
       }
     }
