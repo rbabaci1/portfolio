@@ -53,7 +53,7 @@
         .wave {
           position: absolute;
           bottom: 0;
-          margin-left: 10px;
+          right: -45px;
           font-size: 34px;
           animation: 5s wave-animation;
           animation-iteration-count: 3;
@@ -111,10 +111,14 @@
         height: 300px;
 
         img {
-          height: 45px;
-          width: 45px;
+          height: 50px;
+          width: 50px;
         }
       }
+    }
+
+    @media (max-width: 500px) {
+      padding: 47px 15px 60px 15px;
     }
   }
 

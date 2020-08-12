@@ -25,7 +25,7 @@
     transform: rotate(40deg);
 
     @media (max-width: 600px) {
-      top: 30px;
+      top: 25px;
     }
   }
 
@@ -36,7 +36,7 @@
 
     @media (max-width: 600px) {
       top: 103px;
-      left: -17px;
+      left: -20px;
     }
   }
 
@@ -46,8 +46,8 @@
     transform: rotate(-25deg);
 
     @media (max-width: 600px) {
-      bottom: 70px;
-      left: -10px;
+      bottom: 67px;
+      left: -13px;
     }
   }
 
@@ -59,7 +59,7 @@
 
     @media (max-width: 600px) {
       left: 40px;
-      bottom: 8px;
+      bottom: 5px;
     }
   }
 
@@ -71,7 +71,8 @@
 
     @media (max-width: 600px) {
       left: 120px;
-      bottom: -28px;
+      bottom: -29px;
+      transform: rotate(2deg);
     }
   }
 
@@ -81,8 +82,8 @@
     padding: 0 0 0 3px;
 
     @media (max-width: 600px) {
-      bottom: -3px;
-      right: 50px;
+      bottom: -6px;
+      right: 48px;
       width: 40px;
     }
   }
@@ -92,7 +93,7 @@
     top: 25px;
 
     @media (max-width: 600px) {
-      right: 12px;
+      right: 8px;
     }
   }
 
@@ -115,7 +116,7 @@
     transform: rotate(21deg);
 
     @media (max-width: 600px) {
-      bottom: 68px;
+      bottom: 62px;
       right: -10px;
       transform: rotate(23deg);
     }
@@ -129,7 +130,7 @@
 
     @media (max-width: 600px) {
       left: 85px;
-      top: -16px;
+      top: -19px;
       transform: rotate(44deg);
     }
   }
@@ -141,8 +142,8 @@
     transform: rotate(15deg);
 
     @media (max-width: 600px) {
-      right: 90px;
-      top: -20px;
+      right: 85px;
+      top: -22px;
       transform: rotate(18deg);
     }
   }
