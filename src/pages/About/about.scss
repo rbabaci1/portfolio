@@ -97,7 +97,10 @@
       border: 1px solid rgb(224, 224, 224);
       border-radius: 50%;
       position: relative;
-      // animation: 30s spin infinite linear;
+
+      &:hover {
+        animation: 20s spin infinite linear;
+      }
 
       img {
         position: absolute;
