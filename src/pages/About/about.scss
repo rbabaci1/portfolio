@@ -97,10 +97,11 @@
       border: 1px solid rgb(224, 224, 224);
       border-radius: 50%;
       position: relative;
+      animation: 20s spin paused infinite linear;
 
       &:hover {
-        // find a way to stop at hover location for the spin animation
         animation: 20s spin infinite linear;
+        animation-play-state: running;
       }
 
       img {
