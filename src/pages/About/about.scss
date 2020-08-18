@@ -100,8 +100,7 @@
       animation: 20s spin paused infinite linear;
 
       &:hover {
-        animation: 20s spin infinite linear;
-        animation-play-state: running;
+        animation: 20s spin running infinite linear;
       }
 
       img {
