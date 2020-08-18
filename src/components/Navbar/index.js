@@ -64,28 +64,15 @@ export default function SwipeableTemporaryDrawer() {
   return (
     <div className="nav-bar">
       <div className="desktop">
-        <Link
-          data-aos="fade-in"
-          to="home"
-          spy={true}
-          smooth={true}
-          duration={400}
-        >
+        <Link to="home" spy={true} smooth={true} duration={400}>
           HOME
         </Link>
 
-        <Link
-          data-aos="fade-in"
-          to="about"
-          spy={true}
-          smooth={true}
-          duration={600}
-        >
+        <Link to="about" spy={true} smooth={true} duration={600}>
           ABOUT
         </Link>
 
         <Link
-          data-aos="fade-in"
           to="portfolio"
           spy={true}
           smooth={true}
@@ -105,7 +92,6 @@ export default function SwipeableTemporaryDrawer() {
         </Link> */}
 
         <Link
-          data-aos="fade-in"
           to="contact"
           spy={true}
           smooth={true}
