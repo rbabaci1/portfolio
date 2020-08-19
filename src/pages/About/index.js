@@ -2,16 +2,17 @@ import React from "react";
 
 import HexagonCard from "../../components/HexagonCard";
 import * as Img from "../../images/index";
+import BorderBottom from "../../components/HeaderBottomBorder";
 import "./about.scss";
 
 export default function About() {
   return (
     <div className="about">
-      <h1 data-aos="slide-left" data-aos-duration="600">
+      <h1 data-aos="fade-left" data-aos-duration="700">
         ABOUT
       </h1>
 
-      <div data-aos="fade-right" className="header-border-bottom" />
+      <BorderBottom />
 
       <div className="cards">
         <HexagonCard

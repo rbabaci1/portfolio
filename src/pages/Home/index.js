@@ -28,7 +28,7 @@ export default function App() {
           <img
             src="https://assets-global.website-files.com/5cd091cfb5499f22bdf72905/5e156bcd9ba5cbffdd421c8a_underline-red.png"
             alt="styles border bottom"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-duration="500"
           />
         )}

@@ -1,3 +1,8 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/vaiables.scss";
+
 .projects {
+  @include flex(column, center, center);
   padding: 70px 0;
+  background-color: $light_gray;
 }
