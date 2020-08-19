@@ -73,7 +73,7 @@ export default function SwipeableTemporaryDrawer() {
         </Link>
 
         <Link
-          to="portfolio"
+          to="projects"
           spy={true}
           smooth={true}
           duration={600}
@@ -110,7 +110,7 @@ export default function SwipeableTemporaryDrawer() {
             open={open}
             onClose={toggleDrawer(false)}
             onOpen={toggleDrawer(true)}
-            transitionDuration={400}
+            transitionDuration={500}
           >
             <AiOutlineClose onClick={toggleDrawer(false)} />
 
