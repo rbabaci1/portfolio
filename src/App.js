@@ -4,7 +4,7 @@ import AOS from "aos";
 import Home from "./pages/Home/index";
 import NavBar from "./components/Navbar";
 import About from "./pages/About";
-import Projects from "./pages/Projects";
+import Portfolio from "./pages/Portfolio";
 
 export default function App() {
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function App() {
       <Home />
       <NavBar />
       <About />
-      <Projects />
+      <Portfolio />
 
       <div className="contact">
         <h1>CONTACT</h1>

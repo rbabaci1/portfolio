@@ -1,11 +1,11 @@
 import React from "react";
 
 import BorderBottom from "../../components/HeaderBottomBorder";
-import "./projects.scss";
+import "./portfolio.scss";
 
 export default function Projects() {
   return (
-    <div className="projects">
+    <div className="portfolio">
       <h1 data-aos="fade-left" data-aos-duration="700">
         PROJECTS
       </h1>
