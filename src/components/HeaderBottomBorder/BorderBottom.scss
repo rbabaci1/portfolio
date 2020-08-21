@@ -2,7 +2,7 @@
 @import "../../styles/vaiables.scss";
 
 .header-border-bottom {
-  @include size(4px, 120px);
+  @include size(4px, 110px);
   background-color: $dark_gray;
   margin: 10px 0 70px 0;
 }

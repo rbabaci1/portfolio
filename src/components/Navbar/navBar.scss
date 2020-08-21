@@ -2,7 +2,7 @@
 @import "../../styles/mixins.scss";
 
 .nav-bar {
-  @include size(55px);
+  @include size(50px);
   position: sticky;
   top: -0.2px;
   // top: -1px;
@@ -21,14 +21,17 @@
       cursor: pointer;
       transition-duration: 0.3s;
       letter-spacing: 0.5px;
-      padding: 0 50px;
+      margin: 0 35px;
+      padding: 0 15px;
+      height: 100%;
 
       &:hover {
-        color: $red;
+        background: $red;
       }
     }
     .active {
-      color: $red;
+      // color: $red;
+      background: $red;
     }
 
     @media (min-width: $small_devices) {
