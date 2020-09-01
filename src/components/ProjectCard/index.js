@@ -11,6 +11,8 @@ export default function ProjectCard() {
         <h2>The Game Of Life</h2>
         <span>React-JS</span>
       </div>
+
+      <div className="button">LEARN MORE</div>
     </div>
   );
 }
