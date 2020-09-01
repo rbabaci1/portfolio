@@ -1,0 +1,39 @@
+.project-card {
+  box-sizing: border-box;
+  width: 360px;
+  height: 360px;
+  border: 1px solid rgb(197, 197, 197);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: opacity 0.5s;
+
+  .border-top {
+    height: 5px;
+    background-color: rgb(136, 135, 135);
+  }
+
+  .text {
+    position: relative;
+    opacity: 0;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+
+    h2 {
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+    span {
+      font-size: 20px;
+      color: red;
+    }
+  }
+
+  &:hover {
+    .text {
+      top: 80px;
+      opacity: 1;
+    }
+  }
+}
