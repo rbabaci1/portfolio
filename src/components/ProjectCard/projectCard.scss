@@ -1,3 +1,6 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/vaiables.scss";
+
 .project-card {
   box-sizing: border-box;
   width: 360px;
@@ -38,10 +41,14 @@
     }
   }
   .button {
-    border: 2px solid;
     width: 170px;
-    padding: 10px 0;
+    padding: 12px 0;
     bottom: 0;
+    cursor: pointer;
+    background-color: $light_green;
+    color: $white;
+    font-weight: 400;
+    letter-spacing: 1px;
   }
 
   &:hover {
