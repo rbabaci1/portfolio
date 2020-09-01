@@ -4,7 +4,7 @@
 .project-card {
   position: relative;
   width: 360px;
-  height: 360px;
+  height: 370px;
   box-sizing: border-box;
   overflow: hidden;
   background-color: $white;
@@ -13,8 +13,9 @@
     height: 8px;
     background-color: $light_gray;
   }
-  .bg-img {
-    background-image: url("https://cdn.pixabay.com/photo/2020/08/23/03/41/leaves-5509797__480.jpg");
+
+  div:nth-of-type(2) {
+    background-image: url("https://images.unsplash.com/photo-1598929439293-93f9d215b131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
     height: 100%;
     width: 100%;
     background-position: center;
