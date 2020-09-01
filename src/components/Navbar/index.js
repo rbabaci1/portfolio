@@ -73,7 +73,7 @@ export default function SwipeableTemporaryDrawer() {
         </Link>
 
         <Link
-          to="portfolio"
+          to="projects"
           spy={true}
           smooth={true}
           duration={600}
