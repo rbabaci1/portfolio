@@ -45,18 +45,7 @@
     }
   }
   .button {
-    width: 170px;
-    padding: 12px 0;
     bottom: 0;
-    cursor: pointer;
-    font-weight: 400;
-    letter-spacing: 1px;
-    border: 2px solid $light_green;
-
-    &:hover {
-      background-color: $light_green;
-      color: $white;
-    }
   }
 
   &:hover {
@@ -68,14 +57,12 @@
       transition-duration: 0.5s;
     }
     .text {
-      top: 100px;
+      top: 80px;
       opacity: 1;
-      z-index: 2;
     }
     .button {
       bottom: 100px;
       opacity: 1;
-      z-index: 2;
     }
     .bg-img {
       opacity: 0;

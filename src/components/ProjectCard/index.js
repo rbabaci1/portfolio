@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./projectCard.scss";
+import Button from "../LearnMoreButton";
 
 export default function ProjectCard() {
   return (
@@ -13,7 +14,9 @@ export default function ProjectCard() {
         <span>React-JS</span>
       </div>
 
-      <div className="button">LEARN MORE</div>
+      <Button className="button" />
+
+      {/* <div className="button">LEARN MORE</div> */}
     </div>
   );
 }
