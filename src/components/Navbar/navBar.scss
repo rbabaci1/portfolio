@@ -30,14 +30,12 @@
       }
     }
     .active {
-      // color: $red;
-      background: $red;
+      color: $red;
     }
 
     @media (min-width: $small_devices) {
       @include flex(row, flex-end);
       height: 100%;
-      // max-width: 1200px;
     }
   }
 
