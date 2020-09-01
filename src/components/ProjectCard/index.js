@@ -6,6 +6,7 @@ export default function ProjectCard() {
   return (
     <div className="project-card">
       <div className="border-top" />
+      <div className="bg-img" />
 
       <div className="text">
         <h2>The Game Of Life</h2>
