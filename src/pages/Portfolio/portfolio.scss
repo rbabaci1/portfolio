@@ -12,14 +12,11 @@
 
     .cards {
       border: 1px solid blue;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 100%;
-
-      .card {
-        margin: 10px;
-      }
+      padding: 10px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      // grid-gap: 10px;
     }
   }
 }

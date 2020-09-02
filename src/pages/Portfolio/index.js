@@ -5,7 +5,7 @@ import "./portfolio.scss";
 import ProjectCard from "../../components/ProjectCard";
 
 export default function Projects() {
-  const temp = [1, 2, 3, 4, 5, 6, 8, 9];
+  const temp = [1, 2, 3, 4, 5, 6, 8, 9, 10];
 
   const handleClick = () => {
     console.log("Here not affecting margin space!");
@@ -17,7 +17,6 @@ export default function Projects() {
         <h1 data-aos="fade-left" data-aos-duration="700">
           PROJECTS
         </h1>
-
         <BorderBottom />
 
         <div className="cards">
