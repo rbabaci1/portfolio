@@ -5,7 +5,7 @@ import LearnMoreButton from "../LearnMoreButton";
 
 export default function ProjectCard({ title, subtitles, onClick }) {
   return (
-    <div className="project-card">
+    <div className="card">
       <div className="bg-img" />
 
       <div className="text">

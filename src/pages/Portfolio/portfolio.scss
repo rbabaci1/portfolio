@@ -1,9 +1,25 @@
 @import "../../styles/mixins.scss";
 @import "../../styles/vaiables.scss";
 
-.projects {
-  @include flex(column, center, center);
-  padding: 70px 0;
+.projects-container {
   background-color: $light_gray;
-  border: 1px solid red;
+
+  .projects {
+    @include flex(column, center, center);
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 0;
+
+    .cards {
+      border: 1px solid blue;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+
+      .card {
+        margin: 10px;
+      }
+    }
+  }
 }

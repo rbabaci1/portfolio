@@ -73,7 +73,7 @@ button {
 
     &:after {
       content: "";
-      background: lighten($color: $light_green, $amount: 20);
+      background: lighten($color: $light_green, $amount: 15);
       position: absolute;
       padding-top: 300%;
       padding-left: 350%;
