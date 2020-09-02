@@ -14,7 +14,7 @@ button {
   &.learn-more {
     width: 11rem;
     height: auto;
-    border: 1px solid $light_green;
+    border: 2px solid $light_green;
     display: flex;
     margin: auto;
 
@@ -25,7 +25,6 @@ button {
       margin: 0;
       width: 3rem;
       height: 2.7rem;
-      background: $light_green;
 
       .icon {
         @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
@@ -47,8 +46,8 @@ button {
             right: 0.0625rem;
             width: 0.625rem;
             height: 0.625rem;
-            border-top: 0.125rem solid #fff;
-            border-right: 0.125rem solid #fff;
+            border-top: 0.125rem solid $light_green;
+            border-right: 0.125rem solid $light_green;
             transform: rotate(45deg);
           }
         }
@@ -63,17 +62,23 @@ button {
       right: 0;
       bottom: 0;
       padding: 0.55rem 0;
-      margin: 0 0 0 2.85rem;
-      color: lighten($color: $dark_gray, $amount: 8);
-      font-weight: 600;
+      margin: 0 0 0 2.8rem;
+      color: lighten($color: $dark_gray, $amount: 5);
+      font-weight: 500;
       line-height: 1.6;
     }
   }
   &:hover {
     .circle {
       width: 100%;
+      background: $light_green;
+
       .icon {
         &.arrow {
+          &::before {
+            border-color: #fff;
+          }
+
           background: $white;
           transform: translate(1rem, 0);
         }
