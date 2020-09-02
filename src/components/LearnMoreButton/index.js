@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./button.scss";
+import "./learnMoreButton.scss";
 
 export default function Button() {
   return (
