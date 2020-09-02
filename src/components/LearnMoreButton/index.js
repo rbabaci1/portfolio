@@ -5,7 +5,10 @@ import "./learnMoreButton.scss";
 export default function Button() {
   return (
     <div className="button">
-      <button className="learn-more">
+      <button
+        className="learn-more"
+        onClick={() => console.log("Here not affecting margin space!")}
+      >
         <span className="circle" aria-hidden="true">
           <span className="icon arrow"></span>
         </span>

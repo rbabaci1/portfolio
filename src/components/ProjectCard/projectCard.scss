@@ -8,13 +8,10 @@
   box-sizing: border-box;
   overflow: hidden;
   background-color: $white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
-  .border-top {
-    height: 8px;
-    background-color: $light_gray;
-  }
-
-  div:nth-of-type(2) {
+  div:nth-of-type(1) {
     background-image: url("https://images.unsplash.com/photo-1598929439293-93f9d215b131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
     height: 100%;
     width: 100%;
@@ -49,13 +46,8 @@
   }
 
   &:hover {
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
-    .border-top {
-      background-color: $light_green;
-      transition-duration: 0.5s;
-    }
     .text {
       top: 80px;
       opacity: 1;
