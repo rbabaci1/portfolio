@@ -2,13 +2,10 @@ import React from "react";
 
 import "./learnMoreButton.scss";
 
-export default function Button() {
+export default function LeanMoreButton({ onClick }) {
   return (
     <div className="button">
-      <button
-        className="learn-more"
-        onClick={() => console.log("Here not affecting margin space!")}
-      >
+      <button className="learn-more" onClick={onClick}>
         <span className="circle" aria-hidden="true">
           <span className="icon arrow"></span>
         </span>

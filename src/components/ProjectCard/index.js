@@ -3,7 +3,7 @@ import React from "react";
 import "./projectCard.scss";
 import LearnMoreButton from "../LearnMoreButton";
 
-export default function ProjectCard() {
+export default function ProjectCard({ title, subtitles, onClick }) {
   return (
     <div className="project-card">
       <div className="bg-img" />
@@ -13,7 +13,7 @@ export default function ProjectCard() {
         <span>React-JS</span>
       </div>
 
-      <LearnMoreButton className="button" />
+      <LearnMoreButton className="button" onClick={onClick} />
     </div>
   );
 }

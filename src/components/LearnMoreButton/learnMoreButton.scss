@@ -17,6 +17,9 @@ button {
     border: 2px solid $light_green;
     display: flex;
     margin: auto;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    overflow: hidden;
 
     .circle {
       @include transition(all, 0.4s, cubic-bezier(0.65, 0, 0.076, 1));
@@ -67,7 +70,25 @@ button {
       font-weight: 500;
       line-height: 1.6;
     }
+
+    &:after {
+      content: "";
+      background: lighten($color: $light_green, $amount: 20);
+      position: absolute;
+      padding-top: 300%;
+      padding-left: 350%;
+      opacity: 0;
+      transition: all 0.8s;
+    }
+
+    &:active:after {
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+      transition: 0s;
+    }
   }
+
   &:hover {
     .circle {
       width: 100%;
