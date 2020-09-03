@@ -3,10 +3,10 @@ import React from "react";
 import "./projectCard.scss";
 import LearnMoreButton from "../LearnMoreButton";
 
-export default function ProjectCard({ title, subtitles, onClick }) {
+export default function ProjectCard({ id, title, subtitles, onClick }) {
   return (
     <div className="card">
-      <div className="bg-img" />
+      <div className={`bg-img img_${id}`} />
 
       <div className="text">
         <h2>The Game Of Life</h2>

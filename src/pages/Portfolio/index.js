@@ -21,7 +21,7 @@ export default function Projects() {
 
         <div className="cards">
           {temp.map(i => {
-            return <ProjectCard key={i} onClick={handleClick} />;
+            return <ProjectCard key={i} id={i} onClick={handleClick} />;
           })}
         </div>
       </div>
