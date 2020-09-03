@@ -18,6 +18,7 @@
       grid-template-columns: repeat(3, 1fr);
       justify-items: center;
       grid-gap: 10px;
+      width: 100%;
 
       .img_1 {
         background-image: url("https://images.unsplash.com/photo-1598929439293-93f9d215b131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
@@ -26,12 +27,19 @@
         background-image: url("https://cdn.pixabay.com/photo/2020/08/29/18/50/coastal-5527726__480.jpg");
       }
 
-      @media (max-width: 1160px) {
+      @media (max-width: 1165px) {
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 50px;
+        grid-gap: 20px;
 
         div:nth-of-type(9) {
           grid-column: 1 / span 2;
+        }
+      }
+      @media (max-width: 620px) {
+        grid-template-columns: repeat(1, 1fr);
+
+        div:nth-of-type(9) {
+          grid-column: auto;
         }
       }
     }
