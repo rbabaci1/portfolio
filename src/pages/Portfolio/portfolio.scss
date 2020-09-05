@@ -2,7 +2,8 @@
 @import "../../styles/vaiables.scss";
 
 .projects-container {
-  background-color: $light_gray;
+  // background-color: $light_gray;
+  background-color: #dcdddf;
 
   .projects {
     @include flex(column, center, center);

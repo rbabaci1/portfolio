@@ -1,19 +1,39 @@
 import React from "react";
 
-import "./projectCard.scss";
 import LearnMoreButton from "../LearnMoreButton";
+import "./projectCard.scss";
+import macBook from "../../images/macbook.jpeg";
 
 export default function ProjectCard({ id, title, subtitles, onClick }) {
   return (
     <div className="card">
-      <div className={`bg-img img_${id}`} />
+      <img src={macBook} alt="macBook" />
 
-      <div className="text">
-        <h2>The Game Of Life</h2>
-        <span>React-JS</span>
+      <div className="inner-bg">
+        <div className={`bg-img img_${id}`} />
+
+        <div className="text">
+          <h2>The Game Of Life</h2>
+          <span>React-JS</span>
+        </div>
+
+        <LearnMoreButton className="button" onClick={onClick} />
       </div>
-
-      <LearnMoreButton className="button" onClick={onClick} />
     </div>
   );
+}
+
+{
+  /* <div className="card">
+  <div className="inner-screen">
+    <div className={`bg-img img_${id}`} />
+
+    <div className="text">
+      <h2>The Game Of Life</h2>
+      <span>React-JS</span>
+    </div>
+
+    <LearnMoreButton className="button" onClick={onClick} />
+  </div>{" "}
+</div> */
 }

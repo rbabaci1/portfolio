@@ -20,9 +20,10 @@ export default function Projects() {
         <BorderBottom />
 
         <div className="cards">
-          {temp.map(i => {
+          <ProjectCard id={1} />
+          {/* {temp.map(i => {
             return <ProjectCard key={i} id={i} onClick={handleClick} />;
-          })}
+          })} */}
         </div>
       </div>
     </div>
