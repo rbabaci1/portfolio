@@ -2,7 +2,7 @@ import React from "react";
 
 import LearnMoreButton from "../LearnMoreButton";
 import "./projectCard.scss";
-import macBook from "../../images/macBook.png";
+import macBook from "../../images/macbook.png";
 
 export default function ProjectCard({ id, title, subtitles, onClick }) {
   return (
