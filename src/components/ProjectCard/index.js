@@ -2,14 +2,14 @@ import React from "react";
 
 import LearnMoreButton from "../LearnMoreButton";
 import "./projectCard.scss";
-import macBook from "../../images/macbook.jpeg";
+import macBook from "../../images/macbook.png";
 
 export default function ProjectCard({ id, title, subtitles, onClick }) {
   return (
     <div className="card">
-      <img src={macBook} alt="macBook" />
+      <img src={macBook} className="macBook" alt="macBook" />
 
-      <div className="inner-bg">
+      <div className="inner-container">
         <div className={`bg-img img_${id}`} />
 
         <div className="text">
