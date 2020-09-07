@@ -4,18 +4,20 @@
 .card {
   overflow: hidden;
   position: relative;
-  // border: 1px solid red;
+  border: 1px solid red;
+  // margin: 10px;
 
   .macBook {
     width: 450px;
     height: 100%;
+    // border: 1px solid red;
   }
 
   .inner-container {
-    width: 370px;
+    width: 371px;
     height: 236px;
     position: absolute;
-    top: 7px;
+    top: 8px;
     left: 41px;
     background-color: #fff;
 
