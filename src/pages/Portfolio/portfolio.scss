@@ -6,13 +6,13 @@
 
   .projects {
     @include flex(column, center, center);
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     padding: 70px 0;
+    border: 1px solid green;
 
     .cards {
       width: 100%;
-      // padding: 10px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;

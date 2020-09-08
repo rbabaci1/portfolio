@@ -21,6 +21,9 @@ export default function Projects() {
 
         <div className="cards">
           <ProjectCard id={2} />
+          <ProjectCard id={2} />
+          <ProjectCard id={2} />
+          <ProjectCard id={2} />
           {/* {temp.map(i => {
             return <ProjectCard key={i} id={i} onClick={handleClick} />;
           })} */}
