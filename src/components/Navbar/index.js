@@ -44,7 +44,7 @@ export default function SwipeableTemporaryDrawer() {
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
     >
-      {["HOME", "ABOUT", "PORTFOLIO", "CONTACT"].map((text, index) => (
+      {["HOME", "ABOUT", "projects", "CONTACT"].map((text, index) => (
         <Link
           to={text.toLowerCase()}
           spy={true}
@@ -54,7 +54,7 @@ export default function SwipeableTemporaryDrawer() {
           key={index}
         >
           <ListItem button onClick={() => setOpen(false)}>
-            <ListItemText primary={text} />
+            <ListItemText primary={text === "projects" ? "PORTFOLIO" : text} />
           </ListItem>
         </Link>
       ))}
