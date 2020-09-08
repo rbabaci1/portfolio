@@ -4,21 +4,21 @@
 .card {
   overflow: hidden;
   position: relative;
-  border: 1px solid red;
+  // border: 1px solid red;
   // margin: 10px;
 
   .macBook {
     width: 450px;
     height: 100%;
-    // border: 1px solid red;
+    border: 1px solid red;
   }
 
   .inner-container {
-    width: 371px;
-    height: 236px;
     position: absolute;
-    top: 8px;
-    left: 41px;
+    width: 369px;
+    height: 235px;
+    top: 9px;
+    left: 42px;
     background-color: #fff;
 
     .bg-img {
