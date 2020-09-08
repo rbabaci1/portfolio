@@ -5,11 +5,11 @@
   overflow: hidden;
   position: relative;
   margin: 10px auto;
+  // border: 1px solid red;
 
   .macBook {
     width: 450px;
     height: 100%;
-    // border: 1px solid red;
   }
 
   .inner-container {
@@ -71,5 +71,27 @@
 
   @media (max-width: 920px) {
     margin: 25px auto;
+  }
+  @media (max-width: 505px) {
+    .macBook {
+      width: 380px;
+    }
+    .inner-container {
+      width: 313px;
+      height: 201px;
+      top: 6px;
+      left: 35px;
+    }
+  }
+  @media (max-width: 410px) {
+    .macBook {
+      width: 340px;
+    }
+    .inner-container {
+      width: 280px;
+      height: 180px;
+      top: 6px;
+      left: 31px;
+    }
   }
 }
