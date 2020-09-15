@@ -65,50 +65,55 @@
     }
 
     .button {
+      height: 3.4rem;
       margin-top: 40px;
 
       .learn-more {
         width: 14.8rem;
-      }
 
-      .circle {
-        height: 3.4rem;
-        width: 3.4rem;
-        background-color: $light_green;
+        .circle {
+          height: 3.4rem;
+          width: 3.4rem;
+          background-color: $light_green;
 
-        .arrow {
-          left: 0.8rem;
+          .arrow {
+            left: 0.8rem;
 
-          &::before {
-            width: 0.725rem;
-            height: 0.725rem;
-            top: -0.3rem;
+            &::before {
+              width: 0.725rem;
+              height: 0.725rem;
+              top: -0.3rem;
+            }
           }
         }
-      }
 
-      .button-text {
-        font-size: 24px;
-        color: lighten($color: $light_green, $amount: 30);
-        right: 5px;
-
-        @media (max-width: $small_devices) {
-          font-size: 22px;
-        }
-        @media (max-width: $mobile) {
-          font-size: 4.5vw;
-        }
-      }
-
-      &:hover {
-        .circle {
-          width: 100%;
-        }
-        .arrow {
-          transform: translate(0.8rem, 0) rotate(90deg);
-        }
         .button-text {
-          color: $white;
+          font-size: 24px;
+          color: lighten($color: $light_green, $amount: 30);
+          right: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          // @media (max-width: $small_devices) {
+          //   font-size: 22px;
+          // }
+          // @media (max-width: $mobile) {
+          //   font-size: 4.5vw;
+          // }
+        }
+
+        &:hover {
+          .circle {
+            width: 100%;
+
+            .arrow {
+              transform: translate(0.8rem, 0) rotate(90deg) !important;
+            }
+          }
+          .button-text {
+            color: $white;
+          }
         }
       }
     }
