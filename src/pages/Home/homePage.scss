@@ -64,44 +64,41 @@
       }
     }
 
-    button {
-      @include fonts(24px, 400);
-      padding: 10px 15px;
-      color: #fff;
-      background-color: inherit;
-      border: 2px solid $white;
-      cursor: pointer;
-      outline: none;
+    .button {
       margin-top: 40px;
 
-      svg {
-        margin-left: 12px;
-        vertical-align: middle;
-        z-index: 99;
-        transition-duration: 0.3s;
-        font-size: 32px;
+      .learn-more {
+        width: 14.8rem;
+        height: 3.7rem;
+      }
+      .circle {
+        height: 100%;
+
+        .arrow::before {
+          width: 0.725rem;
+          height: 0.725rem;
+          top: -0.3rem;
+        }
+      }
+
+      .button-text {
+        font-size: 24px;
+        color: lighten($color: $light_green, $amount: 30);
+
+        @media (max-width: $small_devices) {
+          font-size: 22px;
+        }
+        @media (max-width: $mobile) {
+          font-size: 4.5vw;
+        }
       }
 
       &:hover {
-        background-color: darken($color: $light_green, $amount: 4);
-        border: 2px solid darken($color: $light_green, $amount: 4);
-        transition-duration: 0.3s;
-
-        svg {
-          transform: rotate(90deg);
+        .arrow {
+          transform: translate(1rem, 0) rotate(90deg);
         }
-      }
-
-      @media (max-width: $small_devices) {
-        font-size: 22px;
-        svg {
-          font-size: 26px;
-        }
-      }
-      @media (max-width: $mobile) {
-        font-size: 4.5vw;
-        svg {
-          font-size: 5.5vw;
+        .button-text {
+          color: $white;
         }
       }
     }

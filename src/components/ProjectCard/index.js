@@ -1,6 +1,6 @@
 import React from "react";
 
-import LearnMoreButton from "../LearnMoreButton";
+import Button from "../Button";
 import "./projectCard.scss";
 import macBook from "../../images/macbook.png";
 
@@ -17,7 +17,7 @@ export default function ProjectCard({ id, title, subtitles, onClick }) {
           <span>React-JS</span>
         </div>
 
-        <LearnMoreButton className="button" onClick={onClick} />
+        <Button className="button" text="LEARN MORE" onClick={onClick} />
       </div>
     </div>
   );

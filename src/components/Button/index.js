@@ -2,7 +2,7 @@ import React from "react";
 
 import "./learnMoreButton.scss";
 
-export default function LeanMoreButton({ onClick }) {
+export default function Button({ text, onClick }) {
   return (
     <div className="button">
       <button className="learn-more" onClick={onClick}>
@@ -10,7 +10,7 @@ export default function LeanMoreButton({ onClick }) {
           <span className="icon arrow"></span>
         </span>
 
-        <span className="button-text">LEARN MORE</span>
+        <span className="button-text">{text}</span>
       </button>
     </div>
   );

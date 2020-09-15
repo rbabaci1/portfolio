@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-scroll";
+import Button from "../Button";
 
 export default function HomeButton() {
   // useEffect(() => {
@@ -32,7 +32,7 @@ export default function HomeButton() {
       data-aos="fade-up"
       data-aos-duration="500"
     >
-      <button>View my work{<BsArrowRight />}</button>
+      <Button text="View my work" />
     </Link>
   );
 }

@@ -49,7 +49,7 @@ export default function App() {
           <Typist.Delay ms={200} />
         </Typist>
 
-        {renderBtn && <Button />}
+        {renderBtn ? <Button text="View my work" /> : undefined}
       </div>
     </div>
   );
