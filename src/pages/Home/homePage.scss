@@ -69,21 +69,28 @@
 
       .learn-more {
         width: 14.8rem;
-        height: 3.7rem;
       }
-      .circle {
-        height: 100%;
 
-        .arrow::before {
-          width: 0.725rem;
-          height: 0.725rem;
-          top: -0.3rem;
+      .circle {
+        height: 3.4rem;
+        width: 3.4rem;
+        background-color: $light_green;
+
+        .arrow {
+          left: 0.8rem;
+
+          &::before {
+            width: 0.725rem;
+            height: 0.725rem;
+            top: -0.3rem;
+          }
         }
       }
 
       .button-text {
         font-size: 24px;
         color: lighten($color: $light_green, $amount: 30);
+        right: 5px;
 
         @media (max-width: $small_devices) {
           font-size: 22px;
@@ -94,8 +101,11 @@
       }
 
       &:hover {
+        .circle {
+          width: 100%;
+        }
         .arrow {
-          transform: translate(1rem, 0) rotate(90deg);
+          transform: translate(0.8rem, 0) rotate(90deg);
         }
         .button-text {
           color: $white;

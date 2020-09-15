@@ -10,12 +10,10 @@ button {
   border: 0;
   background: transparent;
   padding: 0;
+  display: flex;
 
   &.learn-more {
     width: 10rem;
-    height: 2.8rem;
-    border: 2px solid $light_green;
-    display: flex;
     margin: auto;
     -webkit-transition-duration: 0.5s; /* Safari */
     transition-duration: 0.5s;
@@ -26,8 +24,10 @@ button {
       position: relative;
       display: block;
       margin: 0;
-      width: 2.5rem;
+      width: 2.7rem;
       height: 2.7rem;
+      border-radius: 50px;
+      background-color: $light_green;
 
       .icon {
         @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
@@ -49,8 +49,8 @@ button {
             right: 0.0625rem;
             width: 0.625rem;
             height: 0.625rem;
-            border-top: 0.125rem solid $light_green;
-            border-right: 0.125rem solid $light_green;
+            border-top: 0.125rem solid $white;
+            border-right: 0.125rem solid $white;
             transform: rotate(45deg);
           }
         }
@@ -62,7 +62,7 @@ button {
       position: absolute;
       top: 0;
       left: 0;
-      right: 4px;
+      right: 15px;
       bottom: 0;
       padding: 0.55rem 0;
       margin: 0 0 0 2.8rem;
@@ -85,7 +85,7 @@ button {
           }
 
           background: $white;
-          transform: translate(1rem, 0);
+          transform: translate(0.7rem, 0);
         }
       }
     }
