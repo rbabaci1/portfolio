@@ -4,6 +4,7 @@
 
 .button {
   height: 2.7rem;
+  overflow: hidden;
 
   .learn-more {
     position: relative;
@@ -13,6 +14,8 @@
     -webkit-transition-duration: 0.5s; /* Safari */
     transition-duration: 0.5s;
     overflow: hidden;
+    border-radius: 50px;
+    background-color: $light_gray;
 
     .circle {
       @include transition(all, 0.4s, cubic-bezier(0.65, 0, 0.076, 1));

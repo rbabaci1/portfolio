@@ -70,11 +70,12 @@
 
       .learn-more {
         width: 14.8rem;
+        background-color: rgb(21, 39, 53);
 
         .circle {
           height: 3.4rem;
           width: 3.4rem;
-          background-color: $light_green;
+          background-color: darken($color: $light_green, $amount: 3);
 
           .arrow {
             left: 0.8rem;
