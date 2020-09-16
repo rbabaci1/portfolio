@@ -20,10 +20,10 @@ export default function Projects() {
         <BorderBottom />
 
         <div className="cards">
-          <ProjectCard id={2} onClick={handleClick} />
-          <ProjectCard id={2} onClick={handleClick} />
-          <ProjectCard id={2} onClick={handleClick} />
-          <ProjectCard id={2} onClick={handleClick} />
+          <ProjectCard id={1} onClick={handleClick} />
+          <ProjectCard id={1} onClick={handleClick} />
+          <ProjectCard id={1} onClick={handleClick} />
+          <ProjectCard id={1} onClick={handleClick} />
           {/* {temp.map(i => {
             return <ProjectCard key={i} id={i} onClick={handleClick} />;
           })} */}

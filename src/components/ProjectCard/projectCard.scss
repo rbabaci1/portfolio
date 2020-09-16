@@ -4,21 +4,21 @@
 .card {
   overflow: hidden;
   position: relative;
-  margin: 10px auto;
+  margin: 0 auto 30px auto;
   // border: 1px solid red;
 
   .macBook {
-    width: 450px;
+    width: 440px;
     height: 100%;
   }
 
   .inner-container {
     position: absolute;
-    width: 371px;
-    height: 236px;
-    top: 8px;
-    left: 41px;
-    background-color: #fff;
+    width: 363px;
+    height: 232px;
+    left: 40px;
+    top: 7px;
+    background-color: $white;
 
     .bg-img {
       background-position: center;
@@ -69,20 +69,30 @@
     }
   }
 
-  @media (max-width: 920px) {
-    margin: 25px auto;
-  }
   @media (max-width: 505px) {
     .macBook {
-      width: 380px;
+      width: 420px;
     }
     .inner-container {
-      width: 313px;
-      height: 201px;
-      top: 6px;
-      left: 35px;
+      width: 347px;
+      height: 221px;
+      top: 7px;
+      left: 38px;
     }
   }
+
+  @media (max-width: 455px) {
+    .macBook {
+      width: 390px;
+    }
+    .inner-container {
+      width: 321px;
+      height: 205px;
+      left: 36px;
+      top: 7px;
+    }
+  }
+
   @media (max-width: 410px) {
     .macBook {
       width: 340px;
