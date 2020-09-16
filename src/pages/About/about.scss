@@ -7,7 +7,7 @@
 
   .cards {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -21,8 +21,8 @@
     @include flex(row, space-between);
     overflow: hidden;
     width: 100%;
-    max-width: 1200px;
-    padding: 47px 47px 130px 47px;
+    max-width: 1300px;
+    padding: 70px 40px 80px 0px;
 
     @media (max-width: 1010px) {
       flex-direction: column-reverse;
