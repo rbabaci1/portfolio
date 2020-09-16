@@ -3,7 +3,7 @@
 @import "../../styles/vaiables.scss";
 
 .button {
-  height: 2.7rem;
+  height: 2.55rem;
   overflow: hidden;
 
   .learn-more {
@@ -22,8 +22,8 @@
       position: relative;
       display: block;
       margin: 0;
-      width: 2.7rem;
-      height: 2.7rem;
+      width: 2.55rem;
+      height: 2.55rem;
       border-radius: 50px;
       background-color: $light_green;
 
@@ -36,7 +36,7 @@
 
         &.arrow {
           @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
-          left: 0.5rem;
+          left: 0.4rem;
           width: 1.12rem;
           height: 0.125rem;
 
@@ -68,6 +68,9 @@
       font-weight: 500;
       line-height: 1.6;
       font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     &:hover {
