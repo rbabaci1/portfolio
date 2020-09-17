@@ -6,6 +6,10 @@
   height: 2.5rem;
   overflow: hidden;
 
+  @media (max-width: 455px) {
+    height: 2.2rem;
+  }
+
   .learn-more {
     position: relative;
     cursor: pointer;
@@ -17,6 +21,10 @@
     border-radius: 50px;
     background-color: $light_gray;
 
+    @media (max-width: 455px) {
+      width: 9rem;
+    }
+
     .circle {
       @include transition(all, 0.4s, cubic-bezier(0.65, 0, 0.076, 1));
       position: relative;
@@ -26,6 +34,11 @@
       height: 2.5rem;
       border-radius: 50px;
       background-color: $light_green;
+
+      @media (max-width: 455px) {
+        height: 2.2rem;
+        width: 2.2rem;
+      }
 
       .icon {
         @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
@@ -62,13 +75,21 @@
       left: 0;
       bottom: 0;
       padding: 0.55rem 0;
-      margin: 0 0 0 2.8rem;
+      margin-left: 2.8rem;
       color: lighten($color: $dark_gray, $amount: 4);
       font-weight: 500;
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 14.5px;
+
+      @media (max-width: 455px) {
+        font-size: 14px;
+        margin-left: 2.6rem;
+      }
+      @media (max-width: 410px) {
+        font-size: 13px;
+      }
     }
 
     &:hover {
@@ -83,6 +104,10 @@
             }
             background: $white;
             transform: translate(0.7rem, 0);
+
+            @media (max-width: 455px) {
+              transform: translate(0.5rem, 0);
+            }
           }
         }
       }

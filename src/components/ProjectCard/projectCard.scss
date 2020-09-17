@@ -56,11 +56,11 @@
 
     &:hover {
       .text {
-        top: 40px;
+        top: 50px;
         opacity: 1;
       }
       .button {
-        bottom: 60px;
+        bottom: 50px;
         opacity: 1;
       }
       .bg-img {
@@ -78,6 +78,15 @@
       height: 221px;
       top: 7px;
       left: 38px;
+
+      &:hover {
+        .text {
+          top: 40px;
+        }
+        .button {
+          bottom: 40px;
+        }
+      }
     }
   }
 
@@ -102,6 +111,15 @@
       height: 180px;
       top: 6px;
       left: 31px;
+
+      &:hover {
+        .text {
+          top: 30px;
+        }
+        .button {
+          bottom: 30px;
+        }
+      }
     }
   }
 }
