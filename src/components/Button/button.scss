@@ -3,7 +3,6 @@
 @import "../../styles/vaiables.scss";
 
 .button {
-  height: 2.5rem;
   overflow: hidden;
 
   @media (max-width: 455px) {
@@ -17,7 +16,6 @@
     margin: auto;
     -webkit-transition-duration: 0.5s; /* Safari */
     transition-duration: 0.5s;
-    overflow: hidden;
     border-radius: 50px;
     background-color: $light_gray;
 
