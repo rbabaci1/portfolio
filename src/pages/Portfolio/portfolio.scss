@@ -1,5 +1,5 @@
 @import "../../styles/mixins.scss";
-@import "../../styles/vaiables.scss";
+@import "../../styles/variables.scss";
 
 .projects-container {
   background-color: $light_gray;
@@ -8,8 +8,7 @@
     @include flex(column, center, center);
     max-width: 1400px;
     margin: auto;
-    padding: 70px 0 40px 0;
-    // border: 1px solid green;
+    padding: 70px 0;
 
     .cards {
       width: 100%;
