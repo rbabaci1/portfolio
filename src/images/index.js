@@ -14,6 +14,7 @@ import nodeJs from "./nodeJs.svg";
 import pg from "./pg.svg";
 import git from "./git.svg";
 import gitHub from "./gitHub.svg";
+import angle from "./angle.svg";
 
 export {
   responsive,
@@ -32,4 +33,5 @@ export {
   pg,
   git,
   gitHub,
+  angle,
 };
