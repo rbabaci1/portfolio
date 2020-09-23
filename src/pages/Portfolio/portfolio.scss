@@ -4,11 +4,17 @@
 .projects-container {
   background-color: $light_gray;
 
+  svg {
+    width: 100%;
+    height: 150px;
+    background-color: $white;
+  }
+
   .projects {
     @include flex(column, center, center);
     max-width: 1400px;
     margin: auto;
-    padding: 70px 0 60px 0;
+    padding-bottom: 50px;
 
     .cards {
       width: 100%;

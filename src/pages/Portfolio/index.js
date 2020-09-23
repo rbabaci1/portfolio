@@ -1,8 +1,9 @@
 import React from "react";
 
 import BorderBottom from "../../components/HeaderBottomBorder";
-import "./portfolio.scss";
 import ProjectCard from "../../components/ProjectCard";
+import { diagonal_shape } from "../../images";
+import "./portfolio.scss";
 
 export default function Projects() {
   const temp = [1, 2, 3, 4, 5, 6, 8, 9, 10];
@@ -13,6 +14,16 @@ export default function Projects() {
 
   return (
     <div className="projects-container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+        data-aos="fade-right"
+        data-aos-duration="500"
+      >
+        <polygon fill="#f5f5f5" points="0,100 100,0 100,100" />
+      </svg>
+
       <div className="projects">
         <h1 data-aos="fade-left" data-aos-duration="700">
           PROJECTS
