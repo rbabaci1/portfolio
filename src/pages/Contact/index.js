@@ -1,17 +1,17 @@
 import React from "react";
 
 import BorderBottom from "../../components/HeaderBottomBorder";
-import { diagonal_shape } from "../../images";
+import DiagonalDiv from "../../components/DiagonalDiv";
 import "./contact.scss";
 
 export default function Contact() {
   return (
     <div className="contact-container">
-      <img
-        src={diagonal_shape}
-        alt="diagonal shape"
-        data-aos="fade-right"
-        data-aos-duration="500"
+      <DiagonalDiv
+        fill="#232d38"
+        backgroundColor="#f5f5f5"
+        width="100%"
+        height="150px"
       />
 
       <div className="contact">

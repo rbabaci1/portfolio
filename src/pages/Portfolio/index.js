@@ -2,7 +2,7 @@ import React from "react";
 
 import BorderBottom from "../../components/HeaderBottomBorder";
 import ProjectCard from "../../components/ProjectCard";
-import { diagonal_shape } from "../../images";
+import DiagonalDiv from "../../components/DiagonalDiv";
 import "./portfolio.scss";
 
 export default function Projects() {
@@ -14,15 +14,12 @@ export default function Projects() {
 
   return (
     <div className="projects-container">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-        data-aos="fade-right"
-        data-aos-duration="500"
-      >
-        <polygon fill="#f5f5f5" points="0,100 100,0 100,100" />
-      </svg>
+      <DiagonalDiv
+        fill="#f5f5f5"
+        backgroundColor="white"
+        width="100%"
+        height="150px"
+      />
 
       <div className="projects">
         <h1 data-aos="fade-left" data-aos-duration="700">
