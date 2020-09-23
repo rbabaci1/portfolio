@@ -18,7 +18,7 @@ export default function Projects() {
         fill="#f5f5f5"
         backgroundColor="white"
         width="100%"
-        height="150px"
+        height="200px"
       />
 
       <div className="projects">

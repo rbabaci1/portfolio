@@ -11,7 +11,7 @@ export default function Contact() {
         fill="#232d38"
         backgroundColor="#f5f5f5"
         width="100%"
-        height="150px"
+        height="200px"
       />
 
       <div className="contact">
