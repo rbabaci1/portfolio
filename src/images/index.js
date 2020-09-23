@@ -14,7 +14,7 @@ import nodeJs from "./nodeJs.svg";
 import pg from "./pg.svg";
 import git from "./git.svg";
 import gitHub from "./gitHub.svg";
-import mountains_shape from "./mountains_shape.svg";
+import diagonal_shape from "./diagonal_shape.svg";
 
 export {
   responsive,
@@ -33,5 +33,5 @@ export {
   pg,
   git,
   gitHub,
-  mountains_shape,
+  diagonal_shape,
 };

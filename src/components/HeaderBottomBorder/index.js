@@ -2,12 +2,14 @@ import React from "react";
 
 import "./BorderBottom.scss";
 
-export default function Border() {
+export default function Border({ color = "" }) {
+  console.log(color);
   return (
     <div
       data-aos="fade-right"
       className="header-border-bottom"
       data-aos-duration="500"
+      style={{ backgroundColor: color }}
     />
   );
 }
