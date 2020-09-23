@@ -7,47 +7,54 @@ import Button from "../../components/HomeButton";
 export default function App() {
   const [renderImg, setRenderImg] = useState(false);
   const [renderBtn, setRenderBtn] = useState(false);
+  const [renderTitle, setRenderTitle] = useState(false);
 
   return (
     <div className="home">
       <div id="bg-animation" />
 
       <div className="heading">
-        <Typist
-          cursor={{ show: false }}
-          startDelay={500}
-          avgTypingDelay={65}
-          onTypingDone={() => setRenderImg(true)}
-        >
-          <h1>
-            Hello, I'm <span>Rabah Babaci</span>.
-          </h1>
-        </Typist>
+        <h1>
+          <Typist
+            cursor={{ hideWhenDone: true }}
+            startDelay={500}
+            avgTypingDelay={65}
+            onTypingDone={() => {
+              setRenderImg(true);
 
-        {renderImg && (
+              setTimeout(() => {
+                setRenderTitle(true);
+              }, 1000);
+            }}
+          >
+            Hello, I'm <span>Rabah Babaci</span>.
+          </Typist>
+        </h1>
+
+        {renderImg ? (
           <img
             src="https://assets-global.website-files.com/5cd091cfb5499f22bdf72905/5e156bcd9ba5cbffdd421c8a_underline-red.png"
             alt="styles border bottom"
             data-aos="fade-right"
             data-aos-duration="500"
           />
-        )}
+        ) : undefined}
 
-        <Typist
-          cursor={{ show: false }}
-          avgTypingDelay={65}
-          onTypingDone={() => setRenderBtn(true)}
-        >
-          <Typist.Delay ms={2950} />
-
+        {renderTitle ? (
           <h1>
-            I'm a Full-Stick Web Developer.
-            <Typist.Backspace count={18} delay={600} />
-            <Typist.Delay ms={200} />
-            ack Web Developer.
+            <Typist
+              cursor={{ hideWhenDone: true, hideWhenDoneDelay: -1000 }}
+              avgTypingDelay={65}
+              onTypingDone={() => setRenderBtn(true)}
+            >
+              I'm a Full-Stick Web Developer.
+              <Typist.Backspace count={18} delay={600} />
+              <Typist.Delay ms={200} />
+              ack Web Developer.
+              <Typist.Delay ms={200} />
+            </Typist>
           </h1>
-          <Typist.Delay ms={200} />
-        </Typist>
+        ) : undefined}
 
         {renderBtn ? <Button text="View my work" /> : undefined}
       </div>

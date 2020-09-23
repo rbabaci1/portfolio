@@ -16,6 +16,17 @@
     top: 0;
     background-color: rgba(20, 27, 43, 0.3);
 
+    .Typist .Cursor {
+      padding: 0;
+
+      &--blinking {
+        opacity: 1;
+        animation: blink 1s linear infinite;
+      }
+
+      color: darken($color: $light_green, $amount: 10);
+    }
+
     h1 {
       font-size: 40px;
       font-weight: normal;
