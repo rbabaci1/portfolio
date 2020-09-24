@@ -16,79 +16,82 @@
     top: 0;
     background-color: rgba(20, 27, 43, 0.3);
 
-    .header {
-      height: 100px;
-      line-height: 20px;
+    h1 {
+      font-size: 40px;
+      font-weight: normal;
+      color: $white;
+      overflow: hidden;
+      line-height: 40px;
 
-      .Typist .Cursor {
-        color: lighten($color: $light_green, $amount: 30);
-
-        &--blinking {
-          padding: 0;
-          opacity: 1;
-          animation: blink 1s linear infinite;
-          font-weight: 500;
-        }
+      span {
+        letter-spacing: 1px;
+        font-weight: 700;
+        color: $red;
+        padding: 0 5px;
       }
 
-      h1 {
-        font-size: 40px;
-        font-weight: normal;
-        color: $white;
-        overflow: hidden;
-        line-height: 40px;
-
-        span {
-          letter-spacing: 1px;
-          font-weight: 700;
-          color: $red;
-          padding: 0 5px;
-        }
-
-        @media (max-width: $medium_devices) {
-          font-size: 34px;
-        }
-        @media (max-width: $small_devices) {
-          font-size: 32px;
-        }
-        @media (max-width: $mobile) {
-          font-size: 6.2vw;
-        }
+      @media (max-width: $medium_devices) {
+        font-size: 34px;
       }
+      @media (max-width: $small_devices) {
+        font-size: 32px;
+      }
+      @media (max-width: $mobile) {
+        font-size: 6.2vw;
+      }
+    }
 
-      img {
-        width: 290px;
-        position: relative;
-        bottom: 4px;
-        left: 80px;
+    .Typist .Cursor {
+      color: lighten($color: $light_green, $amount: 30);
 
-        @media (max-width: $medium_devices) {
-          width: 260px;
-          left: 70px;
-          bottom: 6px;
-        }
-        @media (max-width: $small_devices) {
-          width: 240px;
-          bottom: 7px;
-        }
-        @media (max-width: $mobile) {
-          width: 50vw;
-        }
-        @media (max-width: 400px) {
-          left: 12vw;
-          bottom: 1.25vh;
-        }
+      &--blinking {
+        padding: 0;
+        opacity: 1;
+        animation: blink 1s linear infinite;
+        font-weight: 500;
+      }
+    }
+
+    .first-header,
+    .second-header {
+      height: 60px;
+    }
+
+    img {
+      position: relative;
+      width: 290px;
+      bottom: 23px;
+      left: 80px;
+
+      @media (max-width: $medium_devices) {
+        width: 260px;
+        left: 70px;
+        bottom: 25px;
+      }
+      @media (max-width: $small_devices) {
+        width: 240px;
+        left: 65px;
+        bottom: 26px;
+      }
+      @media (max-width: $mobile) {
+        left: 56px;
+        bottom: 28px;
+        width: 50vw;
+      }
+      @media (max-width: 400px) {
+        left: 13vw;
+        bottom: 3.4vh;
       }
     }
 
     #btn-space {
-      margin-top: 40px;
+      margin-top: 25px;
       height: 3.5rem;
     }
 
     .button {
       height: 3.5rem;
-      margin-top: 40px;
+      margin-top: 25px;
 
       .learn-more {
         width: 14.8rem;
