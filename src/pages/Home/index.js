@@ -15,7 +15,7 @@ export default function App() {
 
       <div className="heading">
         <div className="header">
-          <h1>
+          <h1 id="first">
             <Typist
               cursor={{ hideWhenDone: true }}
               startDelay={500}

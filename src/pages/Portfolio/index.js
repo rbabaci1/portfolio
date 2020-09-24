@@ -14,12 +14,7 @@ export default function Projects() {
 
   return (
     <div className="projects-container">
-      <DiagonalDiv
-        fill="#f5f5f5"
-        backgroundColor="white"
-        width="100%"
-        height="200px"
-      />
+      <DiagonalDiv fill="#f5f5f5" bgColor="white" />
 
       <div className="projects">
         <h1 data-aos="fade-left" data-aos-duration="700">
@@ -28,10 +23,36 @@ export default function Projects() {
         <BorderBottom />
 
         <div className="cards">
-          <ProjectCard id={1} onClick={handleClick} />
-          <ProjectCard id={1} onClick={handleClick} />
-          <ProjectCard id={1} onClick={handleClick} />
-          <ProjectCard id={1} onClick={handleClick} />
+          <ProjectCard
+            id={1}
+            onClick={handleClick}
+            animation="fade-up"
+            duration="500"
+            delay="0"
+          />
+          <ProjectCard
+            id={1}
+            onClick={handleClick}
+            animation="fade-up"
+            duration="500"
+            delay="300"
+          />
+
+          <ProjectCard
+            id={1}
+            onClick={handleClick}
+            animation="fade-up"
+            duration="500"
+            delay="400"
+          />
+
+          <ProjectCard
+            id={1}
+            onClick={handleClick}
+            animation="fade-up"
+            duration="500"
+            delay="600"
+          />
           {/* {temp.map(i => {
             return <ProjectCard key={i} id={i} onClick={handleClick} />;
           })} */}

@@ -24,10 +24,9 @@
 
         &--blinking {
           padding: 0;
-          position: absolute;
           opacity: 1;
           animation: blink 1s linear infinite;
-          font-weight: 600;
+          font-weight: 500;
         }
       }
 
@@ -69,18 +68,14 @@
         }
         @media (max-width: $small_devices) {
           width: 240px;
-          bottom: 8px;
-          left: 65px;
+          bottom: 7px;
         }
         @media (max-width: $mobile) {
           width: 50vw;
         }
-        @media (max-width: 470px) {
-          left: 12.5vw;
-          bottom: 1.1vh;
-        }
         @media (max-width: 400px) {
-          bottom: 1.5vh;
+          left: 12vw;
+          bottom: 1.25vh;
         }
       }
     }

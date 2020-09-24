@@ -19,6 +19,7 @@ export default function About() {
           title="Responsive"
           description="Sensitive, ticklish layouts that will work on any device, big or small."
           icon={Img.responsive}
+          delay="0"
         />
 
         <HexagonCard

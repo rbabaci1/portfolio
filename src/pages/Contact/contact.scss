@@ -4,12 +4,6 @@
 .contact-container {
   background-color: #232d38;
 
-  img {
-    width: 100%;
-    height: 150px;
-    background-color: $light_gray;
-  }
-
   .contact {
     @include flex(column, center, center);
     max-width: 1400px;
