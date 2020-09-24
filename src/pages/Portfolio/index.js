@@ -14,12 +14,10 @@ export default function Projects() {
 
   return (
     <div className="projects-container">
-      <DiagonalDiv fill="#f5f5f5" bgColor="white" anim="slide-right" />
+      <DiagonalDiv fill="#f5f5f5" bgColor="white" />
 
       <div className="projects">
-        <h1 data-aos="fade-left" data-aos-duration="500">
-          PROJECTS
-        </h1>
+        <h1>PROJECTS</h1>
         <BorderBottom />
 
         <div className="cards">
