@@ -18,6 +18,7 @@
 
     .header {
       height: 100px;
+      line-height: 20px;
 
       .Typist .Cursor {
         color: lighten($color: $light_green, $amount: 30);
