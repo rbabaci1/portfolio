@@ -5,7 +5,6 @@ import "./homePage.scss";
 import Button from "../../components/HomeButton";
 
 export default function App() {
-  const [renderImg, setRenderImg] = useState(false);
   const [renderBtn, setRenderBtn] = useState(false);
   const [renderTitle, setRenderTitle] = useState(false);
 
@@ -20,25 +19,13 @@ export default function App() {
             startDelay={500}
             avgTypingDelay={65}
             onTypingDone={() => {
-              setRenderImg(true);
-
               setTimeout(() => {
                 setRenderTitle(true);
               }, 1000);
             }}
           >
-            Hello, I'm <span>Rabah Babaci</span>.
+            Hello, I'm <span className="name">Rabah Babaci</span>.
           </Typist>
-          {renderImg ? (
-            <img
-              src="https://assets-global.website-files.com/5cd091cfb5499f22bdf72905/5e156bcd9ba5cbffdd421c8a_underline-red.png"
-              alt="styles border bottom"
-              data-aos="fade-right"
-              data-aos-duration="500"
-            />
-          ) : (
-            <div className="first-header" />
-          )}
         </h1>
 
         {renderTitle ? (

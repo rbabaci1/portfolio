@@ -4,22 +4,13 @@ import Button from "../Button";
 import "./projectCard.scss";
 import macBook from "../../images/macbook.png";
 
-export default function ProjectCard({
-  id,
-  title,
-  subtitles,
-  onClick,
-  animation,
-  duration,
-  delay,
-}) {
+export default function ProjectCard({ id, title, subtitles, onClick, delay }) {
   return (
     <div
       className="card"
-      data-aos={animation}
-      data-aos-duration={duration}
+      data-aos="fade-up"
+      data-aos-duration="500"
       data-aos-delay={delay}
-      data-aos-easing="ease-in"
     >
       <img src={macBook} className="macBook" alt="macBook" />
 

@@ -6,7 +6,7 @@ import DiagonalDiv from "../../components/DiagonalDiv";
 import "./portfolio.scss";
 
 export default function Projects() {
-  const temp = [1, 2, 3, 4, 5, 6, 8, 9, 10];
+  // const temp = [1, 2, 3, 4, 5, 6, 8, 9, 10];
 
   const handleClick = () => {
     console.log("Here not affecting margin space!");
@@ -21,50 +21,12 @@ export default function Projects() {
         <BorderBottom />
 
         <div className="cards">
-          <ProjectCard
-            id={1}
-            onClick={handleClick}
-            animation="flip-up"
-            duration="500"
-            delay="0"
-          />
-          <ProjectCard
-            id={1}
-            onClick={handleClick}
-            animation="flip-up"
-            duration="500"
-            delay="120"
-          />
-
-          <ProjectCard
-            id={1}
-            onClick={handleClick}
-            animation="flip-up"
-            duration="500"
-            delay="240"
-          />
-
-          <ProjectCard
-            id={1}
-            onClick={handleClick}
-            animation="flip-up"
-            duration="500"
-            delay="360"
-          />
-          <ProjectCard
-            id={1}
-            onClick={handleClick}
-            animation="flip-up"
-            duration="500"
-            delay="480"
-          />
-          <ProjectCard
-            id={1}
-            onClick={handleClick}
-            animation="flip-up"
-            duration="500"
-            delay="500"
-          />
+          <ProjectCard id={1} onClick={handleClick} delay="0" />
+          <ProjectCard id={1} onClick={handleClick} delay="150" />
+          <ProjectCard id={1} onClick={handleClick} delay="300" />
+          <ProjectCard id={1} onClick={handleClick} delay="450" />
+          <ProjectCard id={1} onClick={handleClick} delay="600" />
+          <ProjectCard id={1} onClick={handleClick} delay="750" />
 
           {/* {temp.map(i => {
             return <ProjectCard key={i} id={i} onClick={handleClick} />;
