@@ -19,6 +19,7 @@ export default function ProjectCard({
       data-aos={animation}
       data-aos-duration={duration}
       data-aos-delay={delay}
+      data-aos-easing="ease-in"
     >
       <img src={macBook} className="macBook" alt="macBook" />
 

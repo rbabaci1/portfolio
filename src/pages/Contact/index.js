@@ -11,7 +11,7 @@ export default function Contact() {
         fill="#232d38"
         bgColor="#f5f5f5"
         anim="slide-right"
-        delayAnim="550"
+        delayAnim="1000"
       />
 
       <div className="contact">
