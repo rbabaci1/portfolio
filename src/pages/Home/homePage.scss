@@ -45,7 +45,6 @@
       color: lighten($color: $light_green, $amount: 30);
 
       &--blinking {
-        position: absolute;
         padding: 0;
         opacity: 1;
         animation: blink 1s linear infinite;
