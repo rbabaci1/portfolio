@@ -17,7 +17,7 @@ export default function Projects() {
       <DiagonalDiv fill="#f5f5f5" bgColor="white" anim="slide-right" />
 
       <div className="projects">
-        <h1 data-aos="fade-left" data-aos-duration="700">
+        <h1 data-aos="fade-left" data-aos-duration="500">
           PROJECTS
         </h1>
         <BorderBottom />
@@ -26,46 +26,46 @@ export default function Projects() {
           <ProjectCard
             id={1}
             onClick={handleClick}
-            animation="fade-up"
+            animation="flip-up"
             duration="500"
             delay="0"
           />
           <ProjectCard
             id={1}
             onClick={handleClick}
-            animation="fade-up"
+            animation="flip-up"
             duration="500"
-            delay="200"
+            delay="120"
           />
 
           <ProjectCard
             id={1}
             onClick={handleClick}
-            animation="fade-up"
+            animation="flip-up"
             duration="500"
-            delay="300"
+            delay="240"
           />
 
           <ProjectCard
             id={1}
             onClick={handleClick}
-            animation="fade-up"
+            animation="flip-up"
             duration="500"
-            delay="400"
+            delay="360"
           />
           <ProjectCard
             id={1}
             onClick={handleClick}
-            animation="fade-up"
+            animation="flip-up"
+            duration="500"
+            delay="480"
+          />
+          <ProjectCard
+            id={1}
+            onClick={handleClick}
+            animation="flip-up"
             duration="500"
             delay="500"
-          />
-          <ProjectCard
-            id={1}
-            onClick={handleClick}
-            animation="fade-up"
-            duration="500"
-            delay="600"
           />
 
           {/* {temp.map(i => {

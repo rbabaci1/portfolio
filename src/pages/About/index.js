@@ -45,20 +45,21 @@ export default function About() {
       </div>
 
       <div className="bottom-container">
-        <div
-          className="about-me-wrapper"
-          data-aos="fade-right"
-          data-aos-duration="700"
-        >
-          <img src={Img.me} alt="rabah's selfie" />
+        <div className="about-me-wrapper">
+          <img
+            src={Img.me}
+            alt="rabah's selfie"
+            data-aos="fade-up"
+            data-aos-duration="400"
+          />
 
-          <h2>
+          <h2 data-aos="fade-up" data-aos-duration="550">
             Hi! I'm Rabah{" "}
             <span className="wave" role="img" aria-label="waving hand">
               👋
             </span>
           </h2>
-          <p>
+          <p data-aos="fade-up" data-aos-duration="700">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. At
             varius vel pharetra vel turpis nunc. Id ornare arcu odio ut sem
@@ -69,8 +70,8 @@ export default function About() {
 
         <div
           className="skills-wrapper"
-          data-aos="fade-left"
-          data-aos-duration="800"
+          data-aos="fade-up"
+          data-aos-duration="500"
         >
           <img className="js" src={Img.js} alt="javascript icon" />
           <img className="react" src={Img.react} alt="react icon" />

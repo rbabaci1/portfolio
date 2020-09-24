@@ -26,7 +26,7 @@
 
     @media (max-width: 1010px) {
       flex-direction: column-reverse;
-      padding-bottom: 70px;
+      padding: 50px 0 70px 0;
     }
 
     .about-me-wrapper {
@@ -60,7 +60,7 @@
 
       @media (max-width: 1010px) {
         width: 100%;
-        padding: 0 100px;
+        padding: 0 50px;
         position: relative;
         top: 50px;
         padding-top: 20px;
@@ -74,7 +74,7 @@
         }
       }
       @media (max-width: 700px) {
-        padding: 0;
+        padding: 0 5px;
       }
 
       @media (max-width: 600px) {
