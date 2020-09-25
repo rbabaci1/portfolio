@@ -1,0 +1,13 @@
+.diagonal-container {
+  svg {
+    width: 100%;
+    height: 150px;
+
+    @media (max-width: 1000px) {
+      height: 100px;
+    }
+    @media (max-width: 500px) {
+      height: 60px;
+    }
+  }
+}

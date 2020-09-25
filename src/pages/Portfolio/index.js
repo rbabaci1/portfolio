@@ -14,7 +14,7 @@ export default function Projects() {
 
   return (
     <div className="projects-container">
-      <DiagonalDiv fill="#f5f5f5" bgColor="white" />
+      <DiagonalDiv fill="#f2f2f2" bgColor="white" anim="slide-right" />
 
       <div className="projects">
         <h1>PROJECTS</h1>

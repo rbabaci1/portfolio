@@ -20,5 +20,11 @@
         background-image: url("https://cdn.pixabay.com/photo/2020/08/29/18/50/coastal-5527726__480.jpg");
       }
     }
+    @media (max-width: 500px) {
+      padding: 20px 0;
+    }
+  }
+  @media (max-width: 500px) {
+    margin-top: 20px;
   }
 }
