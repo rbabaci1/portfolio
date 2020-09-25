@@ -9,7 +9,7 @@ export default function Contact() {
     <div className="contact-container">
       <DiagonalDiv
         fill="#232d38"
-        bgColor="#f5f5f5"
+        bgColor="#f2f2f2"
         anim="slide-right"
         delayAnim="1200"
       />
