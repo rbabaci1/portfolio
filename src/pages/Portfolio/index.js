@@ -22,11 +22,11 @@ export default function Projects() {
 
         <div className="cards">
           <ProjectCard id={1} onClick={handleClick} delay="0" />
-          <ProjectCard id={1} onClick={handleClick} delay="150" />
           <ProjectCard id={1} onClick={handleClick} delay="300" />
           <ProjectCard id={1} onClick={handleClick} delay="450" />
           <ProjectCard id={1} onClick={handleClick} delay="600" />
           <ProjectCard id={1} onClick={handleClick} delay="750" />
+          <ProjectCard id={1} onClick={handleClick} delay="900" />
 
           {/* {temp.map(i => {
             return <ProjectCard key={i} id={i} onClick={handleClick} />;
