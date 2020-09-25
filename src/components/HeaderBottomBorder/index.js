@@ -3,7 +3,6 @@ import React from "react";
 import "./BorderBottom.scss";
 
 export default function Border({ color = "" }) {
-  console.log(color);
   return (
     <div
       data-aos="fade-right"

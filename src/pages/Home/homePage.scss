@@ -16,14 +16,8 @@
     top: 0;
     background-color: rgba(20, 27, 43, 0.3);
 
-    .first-header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
     h1 {
-      font-size: 40px;
+      font-size: 32pt;
       font-weight: normal;
       color: $white;
       overflow: hidden;
@@ -33,7 +27,6 @@
         letter-spacing: 1px;
         font-weight: 700;
         color: $red;
-        padding: 0 5px;
       }
 
       @media (max-width: $medium_devices) {
@@ -60,10 +53,10 @@
 
     .first-header,
     .second-header {
-      height: 60px;
+      height: 50px;
 
       @media (max-width: 500px) {
-        height: 50px;
+        height: 45px;
       }
     }
 
