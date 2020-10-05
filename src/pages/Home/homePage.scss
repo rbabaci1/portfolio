@@ -26,7 +26,7 @@
       .name {
         letter-spacing: 1px;
         font-weight: 700;
-        color: $red;
+        color: darken($color: $red, $amount: 3);
       }
 
       @media (max-width: $medium_devices) {
