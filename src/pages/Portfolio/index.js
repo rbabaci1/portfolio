@@ -6,8 +6,6 @@ import DiagonalDiv from "../../components/DiagonalDiv";
 import "./portfolio.scss";
 
 export default function Projects() {
-  // const temp = [1, 2, 3, 4, 5, 6, 8, 9, 10];
-
   const handleClick = () => {
     console.log("Here not affecting margin space!");
   };
