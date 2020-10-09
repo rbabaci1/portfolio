@@ -3,7 +3,7 @@
 
 .contact-container {
   background-color: #232d38;
-
+  
   .contact {
     @include flex(column, center, center);
     max-width: 1400px;
@@ -12,6 +12,27 @@
 
     h1 {
       color: $white;
+    }
+
+    .form {
+      max-width: 600px;
+      padding: 10px;
+
+      input, textarea {
+        color: $light_green;
+        width: 100%;
+        outline: none;
+        padding: 12px 15px;
+        margin-bottom: 4px;
+        border: none;
+        font-size: 17px;
+        background-color: #1b232c;
+        letter-spacing: 1px;
+      }
+
+      textarea {
+        min-height: 150px;
+      }
     }
   }
 }
