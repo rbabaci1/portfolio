@@ -16,6 +16,7 @@
 
     form {
       max-width: 600px;
+      width: 100%;
       padding: 10px;
 
       input,
@@ -63,6 +64,10 @@
           color: $white;
           border-color: $light_green;
         }
+      }
+
+      .invalid-feedback {
+        color: $red;
       }
     }
   }
