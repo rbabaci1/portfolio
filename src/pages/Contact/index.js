@@ -1,26 +1,26 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 import BorderBottom from "../../components/HeaderBottomBorder";
 import DiagonalDiv from "../../components/DiagonalDiv";
 import "./contact.scss";
+import Button from "../../components/Button";
 
 export default function Contact() {
   const [formInfo, setFormInfo] = useState({
     name: "",
     email: "",
-    message: ""
-  })
+    message: "",
+  });
 
   const handleChange = e => {
-    setFormInfo({...formInfo, [e.target.name]: e.target.value})
-  }
+    setFormInfo({ ...formInfo, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = e => {
-    console.log(formInfo)
-    e.preventDefault()
-    setFormInfo({name: "", email:"", message:""})
-  }
-
+    console.log(formInfo);
+    e.preventDefault();
+    setFormInfo({ name: "", email: "", message: "" });
+  };
 
   return (
     <div className="contact-container">
@@ -35,11 +35,11 @@ export default function Contact() {
         <form onSubmit={handleSubmit}>
           <input
             value={formInfo.name}
-            onChange={handleChange} 
+            onChange={handleChange}
             placeholder="Name"
             type="text"
             name="name"
-            required 
+            required
           />
 
           <input
@@ -60,9 +60,8 @@ export default function Contact() {
             required
           />
 
-          <button>Submit</button>
+          <button>SUBMIT</button>
         </form>
-
       </div>
     </div>
   );
