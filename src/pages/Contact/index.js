@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 import BorderBottom from "../../components/HeaderBottomBorder";
 import DiagonalDiv from "../../components/DiagonalDiv";
 import ErrorHandling from "../../components/ContactError";
-import { validations } from "../../helpers";
+import { validations, validateSubmission } from "../../helpers";
 import "./contact.scss";
 
 export default function Contact() {
@@ -18,28 +18,32 @@ export default function Contact() {
     message: true,
   });
 
+  const refs = {
+    name: useRef(null),
+    email: useRef(null),
+    message: useRef(null),
+  };
+
   const handleChange = e => {
     let field = e.target;
 
     setFormInfo({ ...formInfo, [field.name]: field.value });
     if (validations[field.name](field.value)) {
       setInputValid({ ...inputValid, [field.name]: true });
+      refs[field.name].current.style.borderColor = "#171e27";
     }
   };
 
-  const validateForm = e => {
-    let field = e.target;
-
-    setInputValid({
-      ...inputValid,
-      [field.name]: validations[field.name](field.value),
-    });
-  };
-
   const handleSubmit = e => {
-    console.log(formInfo);
     e.preventDefault();
-    setFormInfo({ name: "", email: "", message: "" });
+    let invalidField = validateSubmission(refs.name, refs.email, refs.message);
+
+    if (invalidField) {
+      setInputValid({ ...inputValid, [invalidField]: false });
+    } else {
+      setFormInfo({ name: "", email: "", message: "" });
+      setInputValid({ name: true, email: true, message: true });
+    }
   };
 
   return (
@@ -54,45 +58,42 @@ export default function Contact() {
 
         <form onSubmit={handleSubmit}>
           <input
+            ref={refs.name}
             value={formInfo.name}
             onChange={handleChange}
-            onBlur={validateForm}
             placeholder="Name"
             type="text"
             name="name"
-            required
           />
           <ErrorHandling
             fieldName={inputValid.name}
-            text="Name must be more than 3 characters"
+            text="Name must be more than 3 characters."
           />
 
           <input
+            ref={refs.email}
             value={formInfo.email}
             onChange={handleChange}
-            onBlur={validateForm}
-            placeholder="Enter Email"
-            type="email"
+            placeholder="Email"
+            type="text"
             name="email"
-            required
           />
           <ErrorHandling
             fieldName={inputValid.email}
-            text="Please enter a valid email address"
+            text="Please enter a valid email address."
           />
 
           <textarea
+            ref={refs.message}
             value={formInfo.message}
             onChange={handleChange}
-            onBlur={validateForm}
             placeholder="Your Message..."
             type="text"
             name="message"
-            required
           />
           <ErrorHandling
             fieldName={inputValid.message}
-            text="Message must be more than 6 characters"
+            text="Message must be more than 6 characters."
           />
 
           <button>SUBMIT</button>
