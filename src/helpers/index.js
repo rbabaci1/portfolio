@@ -1,14 +1,16 @@
 const validations = {
   name: name => name.length > 3,
   email: email => /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/.test(email),
+  subject: subject => subject.length > 6,
   message: message => message.length > 6,
 };
 
-const validateSubmission = (name, email, message) => {
-  let fields = [name, email, message];
+const validateSubmission = ({ name, email, subject, message }) => {
+  let fields = [name, email, subject, message];
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < fields.length; i++) {
     let f = fields[i];
+
     if (!validations[f.current.name](f.current.value)) {
       f.current.focus();
       f.current.style.borderColor = "#e91e63";

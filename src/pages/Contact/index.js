@@ -10,18 +10,20 @@ export default function Contact() {
   const [formInfo, setFormInfo] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
   });
   const [inputValid, setInputValid] = useState({
     name: true,
     email: true,
     message: true,
+    subject: true,
   });
-
   const refs = {
     name: useRef(null),
     email: useRef(null),
     message: useRef(null),
+    subject: useRef(null),
   };
 
   const handleChange = e => {
@@ -36,13 +38,13 @@ export default function Contact() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    let invalidField = validateSubmission(refs.name, refs.email, refs.message);
+    let invalidField = validateSubmission(refs);
 
     if (invalidField) {
       setInputValid({ ...inputValid, [invalidField]: false });
     } else {
-      setFormInfo({ name: "", email: "", message: "" });
-      setInputValid({ name: true, email: true, message: true });
+      setFormInfo({ name: "", email: "", subject: "", message: "" });
+      setInputValid({ name: true, email: true, subject: true, message: true });
     }
   };
 
@@ -81,6 +83,19 @@ export default function Contact() {
           <ErrorHandling
             fieldName={inputValid.email}
             text="Please enter a valid email address."
+          />
+
+          <input
+            ref={refs.subject}
+            value={formInfo.subject}
+            onChange={handleChange}
+            placeholder="Subject"
+            type="text"
+            name="subject"
+          />
+          <ErrorHandling
+            fieldName={inputValid.subject}
+            text="Subject must be more than 6 characters."
           />
 
           <textarea
