@@ -14,10 +14,11 @@
       color: $white;
     }
 
-    .form {
+    form {
       max-width: 600px;
       padding: 10px;
 
+      // TODO remove input auto fill style changes
       input, textarea {
         color: $light_green;
         width: 100%;
@@ -29,6 +30,7 @@
         background-color: #1b232c;
         letter-spacing: 1px;
       }
+
 
       textarea {
         min-height: 150px;
