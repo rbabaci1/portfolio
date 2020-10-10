@@ -4,6 +4,7 @@ import BorderBottom from "../../components/HeaderBottomBorder";
 import DiagonalDiv from "../../components/DiagonalDiv";
 import ErrorHandling from "../../components/ContactError";
 import { validations, validateSubmission } from "../../helpers";
+
 import "./contact.scss";
 
 export default function Contact() {
@@ -43,6 +44,8 @@ export default function Contact() {
     if (invalidField) {
       setInputValid({ ...inputValid, [invalidField]: false });
     } else {
+      // TODO send email with form info
+
       setFormInfo({ name: "", email: "", subject: "", message: "" });
       setInputValid({ name: true, email: true, subject: true, message: true });
     }
