@@ -27,11 +27,11 @@
       height: 100%;
 
       &:hover {
-        background-color: $red;
+        color: $red;
       }
     }
     .active {
-      background-color: $red;
+      color: $red;
     }
 
     @media (min-width: $small_devices) {

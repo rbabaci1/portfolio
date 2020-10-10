@@ -59,6 +59,8 @@ export default function Contact() {
         <BorderBottom color="white" />
 
         <form onSubmit={handleSubmit}>
+          <span>Looking to hire a Web Developer or have a question?</span>
+
           <input
             ref={refs.name}
             value={formInfo.name}
