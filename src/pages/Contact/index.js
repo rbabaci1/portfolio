@@ -19,6 +19,8 @@ export default function Contact() {
 
         <ContactForm />
       </div>
+
+      <div className="footer"></div>
     </div>
   );
 }

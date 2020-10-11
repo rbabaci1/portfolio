@@ -2,18 +2,18 @@
 @import "../../styles/variables.scss";
 
 main {
+  span {
+    display: inline-block;
+    margin-bottom: 50px;
+    color: $light_green;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
   form {
     max-width: 600px;
-    width: 100%;
+    min-width: 600px;
     padding: 10px;
-
-    span {
-      display: inline-block;
-      margin-bottom: 50px;
-      color: $light_green;
-      font-size: 18px;
-      font-weight: 500;
-    }
 
     input,
     textarea {

@@ -8,7 +8,7 @@
     @include flex(column, center, center);
     max-width: 1400px;
     margin: auto;
-    padding: 20px 0 100px 0;
+    padding: 20px 0 130px 0;
 
     h1 {
       color: $white;
@@ -16,5 +16,10 @@
     .header-border-bottom {
       margin-bottom: 45px;
     }
+  }
+
+  .footer {
+    height: 200px;
+    background-color: #1b232c;
   }
 }

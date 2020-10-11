@@ -98,9 +98,16 @@ export default function ContactForm() {
 
   return (
     <main>
-      <form onSubmit={handleSubmit}>
-        <span>Looking to hire a Web Developer or have a question?</span>
+      <span data-aos="slide-right" data-aos-duration="700">
+        Looking to hire a Web Developer or have a question?
+      </span>
 
+      <form
+        onSubmit={handleSubmit}
+        data-aos="zoom-in-up"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-sine"
+      >
         <input
           ref={refs.name}
           value={formInfo.name}
