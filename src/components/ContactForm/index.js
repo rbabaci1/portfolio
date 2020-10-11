@@ -26,24 +26,25 @@ export default function ContactForm() {
   };
   const [status, setStatus] = useState({
     submitted: false,
-    submitting: true,
+    submitting: false,
     info: { error: false, msg: null },
   });
 
-  const handleServerResponse = (ok, msg) => {
+  const handleServerResponse = (msg, ok = true) => {
     if (ok) {
       setStatus({
         submitted: true,
         submitting: false,
         info: { error: false, msg: msg },
       });
+
       setTimeout(() => {
         setStatus({
           submitted: false,
           submitting: false,
           info: { error: false, msg: null },
         });
-      }, 1500);
+      }, 1800);
 
       setFormInfo({ name: "", email: "", subject: "", message: "" });
       setInputValid({
@@ -76,18 +77,20 @@ export default function ContactForm() {
     if (invalidField) {
       setInputValid({ ...inputValid, [invalidField]: false });
     } else {
-      setStatus({ ...status, submitting: true });
+      setStatus({
+        ...status,
+        submitting: true,
+        info: { error: false, mes: null },
+      });
 
       setTimeout(async () => {
         try {
           await axios.post("https://formspree.io/f/moqpjgzb", formInfo);
 
-          handleServerResponse(
-            true,
-            "Thank you, your message has been submitted."
-          );
+          handleServerResponse("Thank you, your message has been submitted.");
         } catch (error) {
-          handleServerResponse(false, error.response.data.error);
+          handleServerResponse(error.response.data.error, false);
+          console.error(error);
         }
       }, 1000);
     }
@@ -150,7 +153,7 @@ export default function ContactForm() {
           text="Message must be more than 6 characters."
         />
 
-        <button disabled={status.submitting}>
+        <button disabled={status.submitting || status.submitted}>
           {!status.submitting
             ? !status.submitted
               ? "SUBMIT"
