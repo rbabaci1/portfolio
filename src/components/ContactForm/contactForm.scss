@@ -1,67 +1,82 @@
 @import "../../styles/mixins.scss";
 @import "../../styles/variables.scss";
 
-form {
-  max-width: 600px;
-  width: 100%;
-  padding: 10px;
-
-  span {
-    display: inline-block;
-    margin-bottom: 50px;
-    color: $light_green;
-    font-size: 18px;
-    font-weight: 500;
-  }
-
-  input,
-  textarea {
-    color: $light_green;
+main {
+  form {
+    max-width: 600px;
     width: 100%;
-    outline: none;
-    padding: 15px;
-    margin-bottom: 4px;
-    border: none;
-    font-size: 17px;
-    background-color: #1b232c;
-    letter-spacing: 1px;
-    border: 1px solid #171e27;
-  }
-  textarea {
-    min-height: 200px;
-  }
+    padding: 10px;
 
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  textarea:-webkit-autofill,
-  textarea:-webkit-autofill:hover,
-  textarea:-webkit-autofill:focus {
-    -webkit-text-fill-color: $light_green;
-    caret-color: $light_green;
-    -webkit-box-shadow: 0 0 0 30px #1b232c inset;
-  }
+    span {
+      display: inline-block;
+      margin-bottom: 50px;
+      color: $light_green;
+      font-size: 18px;
+      font-weight: 500;
+    }
 
-  button {
-    padding: 12px 0;
-    cursor: pointer;
-    border: none;
-    font-size: 18px;
-    outline: none;
-    background-color: #1b232c;
-    color: rgb(192, 191, 191);
-    border: 1px solid #253041;
-    transition-duration: 0.5s;
-    width: 100%;
+    input,
+    textarea {
+      color: $light_green;
+      width: 100%;
+      outline: none;
+      padding: 15px;
+      margin-bottom: 4px;
+      border: none;
+      font-size: 17px;
+      background-color: #1b232c;
+      letter-spacing: 1px;
+      border: 1px solid #171e27;
+    }
+    textarea {
+      min-height: 200px;
+    }
 
-    &:hover {
-      color: $white;
-      background-color: $light_green;
-      border-color: $light_green;
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus {
+      -webkit-text-fill-color: $light_green;
+      caret-color: $light_green;
+      -webkit-box-shadow: 0 0 0 30px #1b232c inset;
+    }
+
+    button {
+      padding: 15px 0;
+      cursor: pointer;
+      border: none;
+      font-size: 18px;
+      outline: none;
+      background-color: #1b232c;
+      color: rgb(192, 191, 191);
+      border: 1px solid #253041;
+      transition-duration: 0.5s;
+      width: 100%;
+
+      &:hover {
+        color: $white;
+        background-color: $light_green;
+        border-color: $light_green;
+      }
+    }
+    button:disabled {
+      color: rgb(100, 100, 100);
+
+      &:hover {
+        color: rgb(100, 100, 100);
+        background-color: #1b232c;
+        border-color: #253041;
+      }
+    }
+
+    .invalid-feedback {
+      color: $red;
     }
   }
 
-  .invalid-feedback {
+  .error {
     color: $red;
   }
 }
