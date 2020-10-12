@@ -8,7 +8,7 @@
     @include flex(column, center, center);
     max-width: 1400px;
     margin: auto;
-    padding: 0 0 80px 0;
+    padding: 0 0 95px 0;
     margin-top: -10px;
 
     h1 {
@@ -25,32 +25,47 @@
       justify-content: space-evenly;
       max-width: 400px;
       margin: auto;
-      padding-bottom: 40px;
+      padding-bottom: 50px;
 
       a {
         text-decoration: none;
         color: inherit;
-        border-radius: 50%;
-        padding: 11px;
+        border-radius: 30px;
+        padding: 12px;
         color: $light_gray;
-        background: linear-gradient(to right, #04a6ac 50%, #1b232c 50%);
+        background: linear-gradient(to right, $light_gray 50%, #1b232c 50%);
         background-size: 200% 100%;
         background-position: right bottom;
-        transition: all 0.3s ease-out;
+        transition: all 0.2s ease-out;
+        border: 1px solid #1b232c;
 
         svg {
           vertical-align: middle;
-          font-size: 28px;
+          font-size: 26px;
         }
 
         &:hover {
           background-position: left bottom;
+          transform: scale(1.1);
+
+          &:nth-of-type(1) {
+            color: #1b232c;
+          }
+          &:nth-of-type(2) {
+            color: #0072b1;
+          }
+          &:nth-of-type(3) {
+            color: #3b5998;
+          }
+          &:nth-of-type(4) {
+            color: #1da1f2;
+          }
         }
       }
     }
 
     .copyright {
-      padding-bottom: 15px;
+      padding-bottom: 20px;
       color: $light_green;
 
       span {
