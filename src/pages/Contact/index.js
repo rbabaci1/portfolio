@@ -25,16 +25,35 @@ export default function Contact() {
 
       <div className="footer">
         <div className="social-icons">
-          <a href="#1">
+          <a
+            href="https://github.com/rbabaci1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <AiOutlineGithub />
           </a>
-          <a href="#1">
+
+          <a
+            href="https://www.linkedin.com/in/babaci"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <GrLinkedinOption />
           </a>
-          <a href="#1">
+
+          <a
+            href="https://www.facebook.com/rabah.babaci.948"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaFacebookF />
           </a>
-          <a href="#1">
+
+          <a
+            href="https://twitter.com/RabahBabaci"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaTwitter />
           </a>
         </div>
