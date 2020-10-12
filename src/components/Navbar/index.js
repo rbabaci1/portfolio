@@ -92,11 +92,11 @@ export default function SwipeableTemporaryDrawer() {
         </Link> */}
 
         <Link
-          to="contact"
+          to="contact-container"
           spy={true}
           smooth={true}
           duration={600}
-          offset={-200}
+          offset={-47}
         >
           CONTACT
         </Link>

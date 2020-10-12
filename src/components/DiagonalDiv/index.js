@@ -2,7 +2,7 @@ import React from "react";
 
 import "./diagonalDiv.scss";
 
-export default function DiagonalDiv({ fill, bgColor}) {
+export default function DiagonalDiv({ fill, bgColor }) {
   return (
     <div className="diagonal-container">
       <svg

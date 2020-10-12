@@ -4,7 +4,7 @@
 main {
   span {
     display: inline-block;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: $light_green;
     font-size: 18px;
     font-weight: 500;
@@ -20,7 +20,7 @@ main {
       color: $light_green;
       width: 100%;
       outline: none;
-      padding: 15px;
+      padding: 12px;
       margin-bottom: 4px;
       border: none;
       font-size: 17px;
@@ -44,7 +44,7 @@ main {
     }
 
     button {
-      padding: 15px 0;
+      padding: 14px 0;
       cursor: pointer;
       border: none;
       font-size: 18px;
@@ -54,6 +54,7 @@ main {
       border: 1px solid #253041;
       transition-duration: 0.5s;
       width: 100%;
+      font-weight: 500;
 
       &:hover {
         color: $white;

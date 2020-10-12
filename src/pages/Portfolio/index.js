@@ -12,7 +12,7 @@ export default function Projects() {
 
   return (
     <div className="projects-container">
-      <DiagonalDiv fill="#f2f2f2" bgColor="white"/>
+      <DiagonalDiv fill="#f2f2f2" bgColor="white" />
 
       <div className="projects">
         <h1>PROJECTS</h1>
@@ -20,11 +20,11 @@ export default function Projects() {
 
         <div className="cards">
           <ProjectCard id={1} onClick={handleClick} delay="0" />
-          <ProjectCard id={1} onClick={handleClick} delay="250" />
-          <ProjectCard id={1} onClick={handleClick} delay="400" />
-          <ProjectCard id={1} onClick={handleClick} delay="550" />
-          <ProjectCard id={1} onClick={handleClick} delay="700" />
-          <ProjectCard id={1} onClick={handleClick} delay="850" />
+          <ProjectCard id={1} onClick={handleClick} delay="200" />
+          <ProjectCard id={1} onClick={handleClick} delay="350" />
+          <ProjectCard id={1} onClick={handleClick} delay="500" />
+          <ProjectCard id={1} onClick={handleClick} delay="650" />
+          <ProjectCard id={1} onClick={handleClick} delay="800" />
 
           {/* {temp.map(i => {
             return <ProjectCard key={i} id={i} onClick={handleClick} />;
