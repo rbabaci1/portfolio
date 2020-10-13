@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Button from "../Button";
-import "./projectCard.scss";
 import macBook from "../../images/macbook.png";
+import ProjectModal from "../ProjectModal";
+
+import "./projectCard.scss";
 
 export default function ProjectCard({ id, title, subtitles, onClick, delay }) {
+  const [open, setOpen] = useState(false);
+
   return (
     <div
       className="card"
@@ -22,8 +26,14 @@ export default function ProjectCard({ id, title, subtitles, onClick, delay }) {
           <span>React-JS</span>
         </div>
 
-        <Button className="button" text="LEARN MORE" onClick={onClick} />
+        <Button
+          className="button"
+          text="LEARN MORE"
+          onClick={() => setOpen(true)}
+        />
       </div>
+
+      <ProjectModal open={open} setOpen={setOpen} />
     </div>
   );
 }
