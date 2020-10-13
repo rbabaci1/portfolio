@@ -105,7 +105,7 @@ export default function SwipeableTemporaryDrawer() {
           spy={true}
           smooth={true}
           duration={600}
-          offset={-44}
+          offset={-47}
         >
           CONTACT
         </Link>
