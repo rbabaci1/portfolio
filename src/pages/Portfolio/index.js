@@ -12,7 +12,7 @@ export default function Projects() {
 
   return (
     <div className="projects-container">
-      <DiagonalDiv fill="#f2f2f2" bgColor="white" />
+      <DiagonalDiv />
 
       <div className="projects">
         <h1>PROJECTS</h1>

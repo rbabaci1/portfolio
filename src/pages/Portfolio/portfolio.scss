@@ -4,6 +4,16 @@
 .projects-container {
   background-color: $light_gray;
 
+  .diagonal-container {
+    svg {
+      background-color: #fff;
+
+      polygon {
+        fill: #f2f2f2;
+      }
+    }
+  }
+
   .projects {
     @include flex(column, center, center);
     max-width: 1400px;

@@ -100,8 +100,8 @@ export default function ContactForm() {
     <main>
       <span
         data-aos="slide-right"
-        data-aos-duration="700"
-        data-aos-offset="500"
+        data-aos-duration="650"
+        data-aos-offset="400"
       >
         Looking to hire a Web Developer or have a question?
       </span>
@@ -109,9 +109,9 @@ export default function ContactForm() {
       <form
         onSubmit={handleSubmit}
         data-aos="zoom-in-up"
-        data-aos-duration="600"
+        data-aos-duration="500"
         data-aos-easing="ease-in-sine"
-        data-aos-offset="500"
+        data-aos-offset="400"
       >
         <input
           ref={refs.name}
