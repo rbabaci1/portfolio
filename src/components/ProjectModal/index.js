@@ -4,7 +4,7 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { BiLinkExternal } from "react-icons/bi";
 import { FaGithubAlt } from "react-icons/fa";
 
-import "react-responsive-modal/styles.scss";
+import "react-responsive-modal/styles.css";
 import "./projectModal.scss";
 import Carousel from "../ProjectCarousel";
 
