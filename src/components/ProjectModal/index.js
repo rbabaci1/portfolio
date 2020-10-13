@@ -4,7 +4,7 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { BiLinkExternal } from "react-icons/bi";
 import { FaGithubAlt } from "react-icons/fa";
 
-import "react-responsive-modal/styles.css";
+import "react-responsive-modal/styles.scss";
 import "./projectModal.scss";
 import Carousel from "../ProjectCarousel";
 
@@ -14,11 +14,17 @@ export default function ProjectModal(props) {
       open={props.open}
       onClose={() => props.setOpen(false)}
       center
-      classNames={{
-        animationIn: "customEnterAnimation",
-        animationOut: "customLeaveAnimation",
+      // classNames={{
+      //   animationIn: "customEnterAnimation",
+      //   animationOut: "customLeaveAnimation",
+      // }}
+      styles={{
+        modal: {
+          animation: `${
+            props.open ? "customEnterAnimation" : "customLeaveAnimation"
+          } 500ms`,
+        },
       }}
-      animationDuration={500}
       closeIcon={<AiFillCloseCircle />}
     >
       <Carousel images={props.images} />
