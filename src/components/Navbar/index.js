@@ -44,20 +44,29 @@ export default function SwipeableTemporaryDrawer() {
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
     >
-      {["HOME", "ABOUT", "PROJECTS", "CONTACT"].map((text, index) => (
-        <Link
-          to={text.toLowerCase()}
-          spy={true}
-          smooth={true}
-          duration={600}
-          // offset={-55}
-          key={index}
-        >
-          <ListItem button onClick={() => setOpen(false)}>
-            <ListItemText primary={text === "PROJECTS" ? "PORTFOLIO" : text} />
-          </ListItem>
-        </Link>
-      ))}
+      <Link to="home" spy={true} smooth={true}>
+        <ListItem button onClick={() => setOpen(false)}>
+          <ListItemText primary="HOME" />
+        </ListItem>
+      </Link>
+
+      <Link to="about" spy={true} smooth={true}>
+        <ListItem button onClick={() => setOpen(false)}>
+          <ListItemText primary="ABOUT" />
+        </ListItem>
+      </Link>
+
+      <Link to="projects" spy={true} smooth={true} offset={-65}>
+        <ListItem button onClick={() => setOpen(false)}>
+          <ListItemText primary="PORTFOLIO" />
+        </ListItem>
+      </Link>
+
+      <Link to="contact-container" spy={true} smooth={true} offset={-45}>
+        <ListItem button onClick={() => setOpen(false)}>
+          <ListItemText primary="CONTACT" />
+        </ListItem>
+      </Link>
     </div>
   );
 
@@ -96,7 +105,7 @@ export default function SwipeableTemporaryDrawer() {
           spy={true}
           smooth={true}
           duration={600}
-          offset={-45}
+          offset={-44}
         >
           CONTACT
         </Link>

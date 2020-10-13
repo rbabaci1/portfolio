@@ -17,6 +17,17 @@
     .header-border-bottom {
       margin-bottom: 45px;
     }
+
+    @media (max-width: 1000px) {
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      margin-top: 20px;
+
+      .header-border-bottom {
+        margin-bottom: 50px;
+      }
+    }
   }
 
   .footer {
