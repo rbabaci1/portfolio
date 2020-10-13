@@ -73,7 +73,7 @@
       left: 0;
       bottom: 0;
       padding: 0.55rem 0;
-      margin-left: 2.7rem;
+      margin-left: 2.9rem;
       color: lighten($color: $dark_gray, $amount: 4);
       font-weight: 500;
       display: flex;
@@ -82,6 +82,7 @@
       font-size: 14.5px;
 
       @media (max-width: 455px) {
+        margin-left: 2.8rem;
         font-size: 14px;
       }
     }
