@@ -59,7 +59,7 @@ export default function Contact() {
         </div>
 
         <div className="copyright">
-          RABAH BABACI<span> &copy;2020</span>
+          Rabah Babaci<span> &copy;2020</span>
         </div>
       </div>
     </div>
