@@ -5,34 +5,6 @@
   overflow: hidden;
   padding: 0;
 
-  .carousel {
-    display: flex;
-    position: relative;
-
-    img {
-      height: 100%;
-    }
-
-    .prev-btn,
-    .next-btn {
-      position: absolute;
-      z-index: 99;
-      cursor: pointer;
-      bottom: 45%;
-      font-size: 45px;
-      color: $white;
-      transition-duration: 0.3s;
-    }
-    .next-btn {
-      right: 5px;
-      border-right: none;
-    }
-    .prev-btn {
-      left: 5px;
-      border-left: none;
-    }
-  }
-
   .details {
     padding: 20px;
 

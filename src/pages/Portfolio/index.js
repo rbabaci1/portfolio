@@ -30,7 +30,7 @@ export default function Projects() {
           hendrerit risus, sed porttitor quam."
             gitHub="google.com"
             liveSite="facebook.com"
-            img="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80"
+            images={["a", "b"]}
           />
           {/* <ProjectCard id={1} onClick={handleClick} delay="200" />
           <ProjectCard id={1} onClick={handleClick} delay="350" />
