@@ -6,7 +6,7 @@ import ProjectModal from "../ProjectModal";
 
 import "./projectCard.scss";
 
-export default function ProjectCard({ id, title, subtitles, onClick, delay }) {
+export default function ProjectCard(props) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -14,12 +14,12 @@ export default function ProjectCard({ id, title, subtitles, onClick, delay }) {
       className="card"
       data-aos="fade-up"
       data-aos-duration="500"
-      data-aos-delay={delay}
+      data-aos-delay={props.delay}
     >
       <img src={macBook} className="macBook" alt="macBook" />
 
       <div className="inner-container">
-        <div className={`bg-img img_${id}`} />
+        <div className={`bg-img img_${props.id}`} />
 
         <div className="text">
           <h2>The Game Of Life</h2>
@@ -33,7 +33,7 @@ export default function ProjectCard({ id, title, subtitles, onClick, delay }) {
         />
       </div>
 
-      <ProjectModal open={open} setOpen={setOpen} />
+      <ProjectModal open={open} setOpen={setOpen} {...props} />
     </div>
   );
 }

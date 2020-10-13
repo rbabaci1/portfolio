@@ -51,81 +51,81 @@ code {
 
 .App {
   text-align: center;
+}
 
-  h2,
-  p {
-    color: lighten($color: $dark_gray, $amount: 6);
-  }
+h2,
+p {
+  color: lighten($color: $dark_gray, $amount: 6);
+}
 
-  /******* Global h1 *******/
+/******* Global h1 *******/
+h1 {
+  font-size: 30pt;
+  font-weight: 700;
+  color: $dark_gray;
+}
+@media (max-width: 1010px) {
   h1 {
-    font-size: 30pt;
-    font-weight: 700;
-    color: $dark_gray;
+    font-size: 42px;
   }
-  @media (max-width: 1010px) {
-    h1 {
-      font-size: 42px;
-    }
+}
+@media (max-width: 750px) {
+  h1 {
+    font-size: 36px;
   }
-  @media (max-width: 750px) {
-    h1 {
-      font-size: 36px;
-    }
+}
+@media (max-width: $iPhone_X) {
+  h1 {
+    font-size: 8vw;
   }
-  @media (max-width: $iPhone_X) {
-    h1 {
-      font-size: 8vw;
-    }
-  }
+}
 
-  /******* Global h2 *******/
+/******* Global h2 *******/
+h2 {
+  @include fonts(5.2vw, 700);
+}
+/******* Global p *******/
+p {
+  text-align: center;
+  line-height: 1.8vh;
+  font-size: 3.5vw;
+}
+
+@media (min-width: $iPhone_X) {
   h2 {
-    @include fonts(5.2vw, 700);
+    font-size: 18px;
   }
-  /******* Global p *******/
   p {
-    text-align: center;
-    line-height: 1.8vh;
-    font-size: 3.5vw;
+    font-size: 14px;
+    line-height: 17px;
   }
+}
 
-  @media (min-width: $iPhone_X) {
-    h2 {
-      font-size: 18px;
-    }
-    p {
-      font-size: 14px;
-      line-height: 17px;
-    }
+@media (min-width: 500px) {
+  h2 {
+    font-size: 20px;
   }
+  p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
 
-  @media (min-width: 500px) {
-    h2 {
-      font-size: 20px;
-    }
-    p {
-      font-size: 16px;
-      line-height: 19px;
-    }
+@media (min-width: 750px) {
+  h2 {
+    font-size: 22px;
   }
-
-  @media (min-width: 750px) {
-    h2 {
-      font-size: 22px;
-    }
-    p {
-      font-size: 17px;
-      line-height: 21px;
-    }
+  p {
+    font-size: 17px;
+    line-height: 21px;
   }
-  @media (min-width: 950px) {
-    h2 {
-      font-size: 24px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 23px;
-    }
+}
+@media (min-width: 950px) {
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 23px;
   }
 }
