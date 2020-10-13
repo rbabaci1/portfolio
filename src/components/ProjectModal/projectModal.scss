@@ -2,17 +2,42 @@
 @import "../../styles/variables.scss";
 
 .react-responsive-modal-modal {
+  overflow: hidden;
   padding: 0;
 
-  img {
-    // height: 100px;
+  .carousel {
+    display: flex;
+    position: relative;
+
+    img {
+      height: 100%;
+    }
+
+    .prev-btn,
+    .next-btn {
+      position: absolute;
+      z-index: 99;
+      cursor: pointer;
+      bottom: 45%;
+      font-size: 45px;
+      color: $white;
+      transition-duration: 0.3s;
+    }
+    .next-btn {
+      right: 5px;
+      border-right: none;
+    }
+    .prev-btn {
+      left: 5px;
+      border-left: none;
+    }
   }
 
   .details {
     padding: 20px;
 
     h1 {
-      font-size: 30px;
+      font-size: 28px;
     }
 
     h2 {
@@ -39,9 +64,8 @@
         text-decoration: none;
         width: 120px;
         color: #232d38;
-        border: 1px solid #a1a2a3;
+        border: 1px solid #c0c1c2;
         outline: none;
-        text-align: center;
         padding: 8px 0;
         transition-duration: 0.3s;
         font-weight: 500;
@@ -62,9 +86,11 @@
 
   .react-responsive-modal-closeButton {
     outline: none;
-    font-size: 30px;
+    font-size: 36px;
     top: 10px;
     right: 10px;
+    z-index: 99;
+    color: $white;
 
     svg {
       transition-duration: 0.3s;
