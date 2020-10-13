@@ -42,13 +42,12 @@
         text-decoration: none;
         color: inherit;
         border-radius: 30px;
-        padding: 12px;
+        padding: 13px;
         color: $light_gray;
         background: linear-gradient(to right, $light_gray 50%, #1b232c 50%);
         background-size: 200% 100%;
         background-position: right bottom;
         transition: all 0.2s ease-out;
-        border: 1px solid #1b232c;
 
         svg {
           vertical-align: middle;
