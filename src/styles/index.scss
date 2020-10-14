@@ -7,6 +7,11 @@ html {
   // scroll-behavior: smooth;
 }
 
+html.no-scroll,
+body.no-scroll {
+  overflow: visible !important;
+}
+
 *,
 *:before,
 *:after {
