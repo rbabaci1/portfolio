@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
 import Swiper from "react-id-swiper";
@@ -10,16 +10,20 @@ export default function Carousel({ images }) {
   const ref = useRef(null);
   const params = {
     loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      type: "progressbar",
-      clickable: true,
-    },
+    speed: 800,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
   };
+
+  useEffect(() => {
+    let intervalId = setInterval(() => {
+      goNext();
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, []);
 
   const goNext = () => {
     if (ref.current !== null && ref.current.swiper !== null) {
@@ -36,8 +40,8 @@ export default function Carousel({ images }) {
   return (
     <div className="carousel">
       <Swiper {...params} ref={ref}>
-        {images.map(img => (
-          <div>
+        {images.map((img, i) => (
+          <div key={i}>
             <img
               src={require(`../../images/${img}.jpg`)}
               alt="project landing page"

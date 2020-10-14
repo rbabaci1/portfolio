@@ -20,13 +20,13 @@ export default function ProjectModal(props) {
         overlay: "customOverlay",
         modal: "customModal",
       }}
-      closeIcon={<AiFillCloseCircle />}
+      // closeIcon="X"
     >
       <Carousel images={props.images} />
 
       <div className="details">
-        <h1>{props.title}</h1>
-        <h2>{props.subtitle}</h2>
+        <h2>{props.title}</h2>
+        <h3>{props.subtitle}</h3>
         <p>{props.description}</p>
 
         <div className="links">
