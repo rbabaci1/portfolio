@@ -14,12 +14,9 @@ export default function ProjectModal(props) {
       open={props.open}
       onClose={() => props.setOpen(false)}
       center
-      // classNames={{
-      //   animationIn: "customEnterAnimation",
-      //   animationOut: "customLeaveAnimation",
-      // }}
-
       classNames={{
+        animationIn: "customEnterAnimation",
+        animationOut: "customLeaveAnimation",
         overlay: "customOverlay",
         modal: "customModal",
       }}
