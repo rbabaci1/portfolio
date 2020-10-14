@@ -11,6 +11,10 @@ export default function Carousel({ images }) {
   const params = {
     loop: true,
     speed: 800,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

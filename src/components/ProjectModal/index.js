@@ -1,6 +1,5 @@
 import React from "react";
 import { Modal } from "react-responsive-modal";
-import { AiFillCloseCircle } from "react-icons/ai";
 import { BiLinkExternal } from "react-icons/bi";
 import { FaGithubAlt } from "react-icons/fa";
 
@@ -20,7 +19,6 @@ export default function ProjectModal(props) {
         overlay: "customOverlay",
         modal: "customModal",
       }}
-      // closeIcon="X"
     >
       <Carousel images={props.images} />
 
