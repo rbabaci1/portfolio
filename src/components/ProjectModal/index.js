@@ -14,9 +14,10 @@ export default function ProjectModal(props) {
       onClose={() => props.setOpen(false)}
       center
       classNames={{
-        overlay: "customOverlay",
-        modal: "customModal",
+        animationIn: "customEnterAnimation",
+        animationOut: "customLeaveAnimation",
       }}
+      animationDuration={700}
     >
       <Carousel images={props.images} />
 
