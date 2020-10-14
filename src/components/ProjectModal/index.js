@@ -18,12 +18,10 @@ export default function ProjectModal(props) {
       //   animationIn: "customEnterAnimation",
       //   animationOut: "customLeaveAnimation",
       // }}
-      styles={{
-        modal: {
-          animation: `${
-            props.open ? "customEnterAnimation" : "customLeaveAnimation"
-          } 500ms`,
-        },
+
+      classNames={{
+        overlay: "customOverlay",
+        modal: "customModal",
       }}
       closeIcon={<AiFillCloseCircle />}
     >
