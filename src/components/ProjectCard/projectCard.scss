@@ -91,10 +91,10 @@
       width: 390px;
     }
     .inner-container {
-      width: 321px;
-      height: 205px;
-      left: 36px;
-      top: 7px;
+      width: 322px;
+      height: 206px;
+      left: 35px;
+      top: 6px;
     }
   }
 
@@ -103,10 +103,30 @@
       width: 340px;
     }
     .inner-container {
-      width: 280px;
-      height: 180px;
-      top: 6px;
+      width: 281px;
+      height: 181px;
+      top: 5px;
       left: 31px;
+
+      &:hover {
+        .text {
+          top: 30px;
+        }
+        .button {
+          bottom: 30px;
+        }
+      }
+    }
+  }
+  @media (max-width: 370px) {
+    .macBook {
+      width: 300px;
+    }
+    .inner-container {
+      width: 248px;
+      height: 159px;
+      top: 5px;
+      left: 27px;
 
       &:hover {
         .text {
