@@ -6,13 +6,13 @@
   overflow: hidden;
 
   @media (max-width: 455px) {
-    height: 2.4rem;
+    height: 2.3rem;
   }
 
   .learn-more {
     position: relative;
     cursor: pointer;
-    width: 9.5rem;
+    width: 9.2rem;
     margin: auto;
     -webkit-transition-duration: 0.5s; /* Safari */
     transition-duration: 0.5s;
@@ -20,7 +20,7 @@
     background-color: $light_gray;
 
     @media (max-width: 455px) {
-      width: 9rem;
+      width: 8.8rem;
     }
 
     .circle {
@@ -28,14 +28,14 @@
       position: relative;
       display: block;
       margin: 0;
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 2.4rem;
+      height: 2.4rem;
       border-radius: 50px;
       background-color: $light_green;
 
       @media (max-width: 455px) {
-        height: 2.4rem;
-        width: 2.4rem;
+        height: 2.3rem;
+        width: 2.3rem;
       }
 
       .icon {
@@ -79,11 +79,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 14.5px;
+      font-size: 14px;
+      font-size: 13.8px;
 
       @media (max-width: 455px) {
-        margin-left: 2.8rem;
-        font-size: 14px;
+        margin-left: 2.7rem;
+        font-size: 13.6px;
       }
     }
 

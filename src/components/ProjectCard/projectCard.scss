@@ -4,7 +4,6 @@
 .card {
   position: relative;
   margin: 0 5px 30px 5px;
-  // border: 1px solid red;
 
   .macBook {
     width: 440px;
@@ -20,7 +19,6 @@
     background-color: $white;
 
     .bg-img {
-      background-position: center;
       background-size: cover;
       transition: opacity 0.4s;
       width: 100%;
