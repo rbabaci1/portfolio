@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 import Swiper from "react-id-swiper";
 
@@ -46,8 +46,10 @@ export default function Carousel({ images }) {
         ))}
       </Swiper>
 
-      <FaArrowAltCircleLeft onClick={goPrev} className="prev-btn" />
-      <FaArrowAltCircleRight onClick={goNext} className="next-btn" />
+      <div className="buttons">
+        <IoIosArrowBack onClick={goPrev} className="prev-btn" />
+        <IoIosArrowForward onClick={goNext} className="next-btn" />
+      </div>
     </div>
   );
 }

@@ -27,11 +27,11 @@ export default function ProjectModal(props) {
         <p>{props.description}</p>
 
         <div className="links">
-          <a href={props.liveSiteUrl}>
+          <a href={props.liveSiteUrl} target="_blank" rel="noopener noreferrer">
             <BiLinkExternal />
             View Site
           </a>
-          <a href={props.gitHubUrl}>
+          <a href={props.gitHubUrl} target="_blank" rel="noopener noreferrer">
             <FaGithubAlt />
             View Code
           </a>
