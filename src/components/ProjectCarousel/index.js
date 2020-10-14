@@ -46,10 +46,8 @@ export default function Carousel({ images }) {
         ))}
       </Swiper>
 
-      <div className="buttons">
-        <IoIosArrowBack onClick={goPrev} className="prev-btn" />
-        <IoIosArrowForward onClick={goNext} className="next-btn" />
-      </div>
+      <IoIosArrowBack onClick={goPrev} className="prev-btn" />
+      <IoIosArrowForward onClick={goNext} className="next-btn" />
     </div>
   );
 }
