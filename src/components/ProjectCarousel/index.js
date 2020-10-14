@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
 import Swiper from "react-id-swiper";
@@ -20,14 +20,6 @@ export default function Carousel({ images }) {
       prevEl: ".swiper-button-prev",
     },
   };
-
-  useEffect(() => {
-    let intervalId = setInterval(() => {
-      goNext();
-    }, 3000);
-
-    return () => clearInterval(intervalId);
-  }, []);
 
   const goNext = () => {
     if (ref.current !== null && ref.current.swiper !== null) {
