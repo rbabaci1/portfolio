@@ -53,13 +53,13 @@ export default function About() {
             data-aos-duration="400"
           />
 
-          <h2 data-aos="fade-up" data-aos-duration="550">
+          <h2 data-aos="fade-up" data-aos-duration="500">
             Hi! I'm Rabah{" "}
             <span className="wave" role="img" aria-label="waving hand">
               👋
             </span>
           </h2>
-          <p data-aos="fade-up" data-aos-duration="700">
+          <p data-aos="fade-up" data-aos-duration="600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. At
             varius vel pharetra vel turpis nunc. Id ornare arcu odio ut sem

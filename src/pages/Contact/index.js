@@ -18,7 +18,7 @@ export default function Contact() {
         <h1 data-aos="fade-left" data-aos-duration="700" data-aos-offset="500">
           CONTACT
         </h1>
-        <BorderBottom color="white" offset="500" />
+        <BorderBottom color="white" offset="450" />
 
         <ContactForm />
       </div>
