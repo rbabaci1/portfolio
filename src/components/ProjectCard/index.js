@@ -22,8 +22,8 @@ export default function ProjectCard(props) {
         <div className={`bg-img img_${props.id}`} />
 
         <div className="text">
-          <h2>The Game Of Life</h2>
-          <span>React-JS</span>
+          <h2>{props.title}</h2>
+          <span>{props.technologies}</span>
         </div>
 
         <Button

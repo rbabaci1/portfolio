@@ -28,7 +28,22 @@
       justify-content: center;
 
       .img_1 {
-        background-image: url("https://cdn.pixabay.com/photo/2020/08/29/18/50/coastal-5527726__480.jpg");
+        background-image: url("../../images/projects/covid1.png");
+      }
+      .img_2 {
+        background-image: url("../../images/projects/farmersMarket1.png");
+      }
+      .img_3 {
+        background-image: url("../../images/projects/gameOfLife1.png");
+      }
+      .img_4 {
+        background-image: url("../../images/projects/github1.png");
+      }
+      .img_5 {
+        background-image: url("../../images/projects/photography1.png");
+      }
+      .img_6 {
+        background-image: url("../../images/projects/todoList1.png");
       }
     }
     @media (max-width: 500px) {

@@ -24,15 +24,14 @@ export default function ProjectModal(props) {
 
       <div className="details">
         <h2>{props.title}</h2>
-        <h3>{props.subtitle}</h3>
         <p>{props.description}</p>
 
         <div className="links">
-          <a href={props.liveSite}>
+          <a href={props.liveSiteUrl}>
             <BiLinkExternal />
             View Site
           </a>
-          <a href={props.gitHub}>
+          <a href={props.gitHubUrl}>
             <FaGithubAlt />
             View Code
           </a>

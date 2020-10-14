@@ -39,7 +39,7 @@ export default function Carousel({ images }) {
         {images.map((img, i) => (
           <div key={i}>
             <img
-              src={require(`../../images/${img}.jpg`)}
+              src={require(`../../images/projects/${img}.png`)}
               alt="project landing page"
             />
           </div>
