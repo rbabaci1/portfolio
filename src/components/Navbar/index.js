@@ -77,7 +77,7 @@ export default function SwipeableTemporaryDrawer() {
           HOME
         </Link>
 
-        <Link to="about" spy={true} smooth={true} duration={600} offset={5}>
+        <Link to="about" spy={true} smooth={true} duration={600} offset={10}>
           ABOUT
         </Link>
 
@@ -86,7 +86,7 @@ export default function SwipeableTemporaryDrawer() {
           spy={true}
           smooth={true}
           duration={600}
-          offset={-65}
+          offset={-60}
         >
           PORTFOLIO
         </Link>
