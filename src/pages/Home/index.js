@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Typist from "react-typist";
 
-import "./homePage.scss";
 import Button from "../../components/HomeButton";
+import "./homePage.scss";
 
 export default function App() {
   const [renderBtn, setRenderBtn] = useState(false);
