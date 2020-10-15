@@ -17,10 +17,10 @@ export default function Contact() {
       <DiagonalDiv fill="#232d38" bgColor="#f2f2f2" />
 
       <div className="contact">
-        <h1 data-aos="fade-left" data-aos-duration="700" data-aos-offset="500">
+        <h1 data-aos="fade-left" data-aos-duration="700" data-aos-offset="550">
           CONTACT
         </h1>
-        <BorderBottom color="white" offset="450" />
+        <BorderBottom color="white" offset="500" />
 
         <ContactForm />
       </div>

@@ -98,20 +98,16 @@ export default function ContactForm() {
 
   return (
     <main>
-      <span
-        data-aos="slide-right"
-        data-aos-duration="650"
-        data-aos-offset="400"
-      >
+      <span data-aos="fade-right" data-aos-duration="600" data-aos-offset="350">
         Looking to hire a Web Developer or have a question?
       </span>
 
       <form
         onSubmit={handleSubmit}
         data-aos="zoom-in-up"
-        data-aos-duration="500"
+        data-aos-duration="400"
         data-aos-easing="ease-in-sine"
-        data-aos-offset="400"
+        data-aos-offset="350"
       >
         <input
           ref={refs.name}
