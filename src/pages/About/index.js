@@ -60,11 +60,12 @@ export default function About() {
             </span>
           </h2>
           <p data-aos="fade-up" data-aos-duration="600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. At
-            varius vel pharetra vel turpis nunc. Id ornare arcu odio ut sem
-            nulla. Odio ut sem nulla pharetra diam sit. Viverra suspendisse
-            potenti nullam ac.
+            A software engineer with a particular interest in Front End Web
+            Development, who focuses on writing clean, elegant and efficient
+            code. My specialties include quickly learning new skills and
+            programming languages, problem solving, responsive design
+            principles, website optimization and Model View Controller (MVC)
+            methods of organizing code.
           </p>
         </div>
 
