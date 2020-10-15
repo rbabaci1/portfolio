@@ -1,7 +1,9 @@
 import React from "react";
 import { AiOutlineGithub } from "react-icons/ai";
 import { GrLinkedinOption } from "react-icons/gr";
-import { FaFacebookF, FaTwitter } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import ResumeIcon from "./resumeIcon";
+import Tooltip from "@material-ui/core/Tooltip";
 
 import BorderBottom from "../../components/HeaderBottomBorder";
 import DiagonalDiv from "../../components/DiagonalDiv";
@@ -42,20 +44,22 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://www.facebook.com/rabah.babaci.948"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaFacebookF />
-          </a>
-
-          <a
             href="https://twitter.com/RabahBabaci"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaTwitter />
           </a>
+
+          <Tooltip title="RESUME">
+            <a
+              href="https://www.canva.com/design/DAD3k3gLODQ/5pN5cTUQRN2pW5NNokVQRg/view?utm_content=DAD3k3gLODQ&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ResumeIcon />
+            </a>
+          </Tooltip>
         </div>
 
         <div className="copyright">
