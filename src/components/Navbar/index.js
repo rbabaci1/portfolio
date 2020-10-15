@@ -86,7 +86,7 @@ export default function SwipeableTemporaryDrawer() {
           spy={true}
           smooth={true}
           duration={600}
-          offset={-70}
+          offset={-65}
         >
           PORTFOLIO
         </Link>
