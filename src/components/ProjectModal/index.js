@@ -17,7 +17,7 @@ export default function ProjectModal(props) {
         animationIn: "customEnterAnimation",
         animationOut: "customLeaveAnimation",
       }}
-      animationDuration={700}
+      animationDuration={600}
     >
       <Carousel images={props.images} />
 
