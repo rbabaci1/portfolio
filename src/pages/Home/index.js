@@ -16,12 +16,12 @@ export default function App() {
         <h1 className="first-header">
           <Typist
             cursor={{ hideWhenDone: true }}
-            startDelay={500}
+            startDelay={300}
             avgTypingDelay={65}
             onTypingDone={() => {
               setTimeout(() => {
                 setRenderTitle(true);
-              }, 1000);
+              }, 800);
             }}
           >
             Hello, I'm <span className="name">Rabah Babaci</span>.
@@ -35,10 +35,7 @@ export default function App() {
               avgTypingDelay={65}
               onTypingDone={() => setRenderBtn(true)}
             >
-              I'm a Full-Stick Web Developer.
-              <Typist.Backspace count={18} delay={600} />
-              <Typist.Delay ms={200} />
-              ack Web Developer.
+              I'm a Software Engineer.
               <Typist.Delay ms={200} />
             </Typist>
           </h1>
