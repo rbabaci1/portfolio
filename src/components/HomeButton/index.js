@@ -30,6 +30,7 @@ export default function HomeButton() {
       duration={400}
       data-aos="fade-up"
       data-aos-duration="500"
+      offset={5}
     >
       <Button text="View my work" />
     </Link>
