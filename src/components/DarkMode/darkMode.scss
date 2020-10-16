@@ -1,0 +1,57 @@
+.toggle-control {
+  position: fixed;
+  z-index: 999;
+  left: 15px;
+  top: 5px;
+  transition-duration: 2s;
+  cursor: pointer;
+}
+
+body.dark-mode {
+  h2,
+  h1 {
+    color: #fff;
+  }
+  p {
+    color: #bdc2c9;
+  }
+  .header-border-bottom {
+    background-color: #fff;
+  }
+
+  .about {
+    background-color: #1a2129;
+
+    .skills-wrapper img {
+      background-color: #1a2129;
+    }
+  }
+
+  .projects-container {
+    background-color: #232c36;
+
+    .diagonal-container {
+      svg {
+        background-color: #1a2129 !important;
+
+        polygon {
+          fill: #232c36;
+        }
+      }
+    }
+  }
+
+  .contact-container {
+    background-color: #27323f;
+
+    .diagonal-container {
+      svg {
+        background-color: #232c36 !important;
+
+        polygon {
+          fill: #27323f;
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Typist from "react-typist";
+import DarkModeToggle from "../../components/DarkMode";
 
 import Button from "../../components/HomeButton";
 import "./homePage.scss";
@@ -10,6 +11,8 @@ export default function App() {
 
   return (
     <div className="home">
+      <DarkModeToggle />
+
       <div id="bg-animation" />
 
       <div className="heading">
