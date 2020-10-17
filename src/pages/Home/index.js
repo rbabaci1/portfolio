@@ -38,7 +38,7 @@ export default function App() {
               avgTypingDelay={65}
               onTypingDone={() => setRenderBtn(true)}
             >
-              I'm a Software Engineer.
+              I'm a Full-Stack Web Developer.
               <Typist.Delay ms={200} />
             </Typist>
           </h1>
