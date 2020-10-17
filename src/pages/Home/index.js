@@ -11,7 +11,7 @@ export default function App() {
 
   return (
     <div className="home">
-      {/* <DarkModeToggle /> */}
+      <DarkModeToggle />
 
       <div id="bg-animation" />
 

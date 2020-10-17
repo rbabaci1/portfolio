@@ -7,23 +7,23 @@
   cursor: pointer;
 }
 
-body.dark-mode {
+body.light-mode {
   h2,
   h1 {
     color: #fff;
   }
   p {
-    color: #bdc2c9;
+    color: #d7d7d8;
   }
   .header-border-bottom {
     background-color: #fff;
   }
 
   .about {
-    background-color: #1a2129;
+    background-color: #1c232c;
 
     .skills-wrapper img {
-      background-color: #1a2129;
+      background-color: #1c232c;
     }
   }
 
@@ -32,11 +32,32 @@ body.dark-mode {
 
     .diagonal-container {
       svg {
-        background-color: #1a2129 !important;
+        background-color: #1c232c !important;
 
         polygon {
           fill: #232c36;
         }
+      }
+    }
+    .inner-container:hover {
+      background-color: #1c232c;
+
+      .learn-more {
+        background-color: #2d3947;
+
+        .button-text {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .react-responsive-modal-modal {
+    .details {
+      background-color: #232c36;
+
+      a {
+        color: #fff;
       }
     }
   }
