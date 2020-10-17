@@ -107,7 +107,7 @@ export default function ContactForm() {
         data-aos="zoom-in-up"
         data-aos-duration="400"
         data-aos-easing="ease-in-sine"
-        data-aos-offset="350"
+        data-aos-offset="300"
       >
         <input
           ref={refs.name}
