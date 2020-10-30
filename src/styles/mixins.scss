@@ -18,7 +18,7 @@
 
 @mixin icons-positions {
   .js {
-    left: 15px;
+    left: 22px;
     top: 40px;
     border-radius: 6px;
     padding: 5px 0;
@@ -30,7 +30,7 @@
   }
 
   .python {
-    left: -30px;
+    left: -26px;
     top: 140px;
     padding: 5px 0;
 
@@ -41,9 +41,10 @@
   }
 
   .nodeJs {
-    left: -17px;
-    bottom: 76px;
+    left: -5px;
+    bottom: 80px;
     transform: rotate(-25deg);
+    padding: 3px 0;
 
     @media (max-width: 600px) {
       bottom: 67px;
@@ -52,8 +53,8 @@
   }
 
   .pg {
-    bottom: -8px;
-    left: 63px;
+    bottom: -6px;
+    left: 65px;
     transform: rotate(-56deg);
     padding: 5px 0;
 
@@ -64,8 +65,8 @@
   }
 
   .git {
-    bottom: -30px;
-    left: 170px;
+    bottom: -27px;
+    left: 173px;
     padding: 0 5px;
     transform: rotate(-3deg);
 
@@ -77,8 +78,8 @@
   }
 
   .github {
-    bottom: 7px;
-    right: 50px;
+    bottom: 10px;
+    right: 52px;
     padding: 0 0 0 3px;
 
     @media (max-width: 600px) {
@@ -89,8 +90,8 @@
   }
 
   .sass {
-    right: 15px;
-    top: 25px;
+    right: 22px;
+    top: 35px;
 
     @media (max-width: 600px) {
       right: 8px;
@@ -98,8 +99,8 @@
   }
 
   .html {
-    right: -30px;
-    top: 125px;
+    right: -25px;
+    top: 130px;
     transform: rotate(-5deg);
     padding: 3px 0;
 
@@ -110,7 +111,7 @@
   }
 
   .css {
-    right: -16px;
+    right: -15px;
     bottom: 95px;
     padding: 5px 0;
     transform: rotate(21deg);
