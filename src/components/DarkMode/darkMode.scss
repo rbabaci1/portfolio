@@ -22,8 +22,17 @@ body.light-mode {
   .about {
     background-color: #1c232c;
 
-    .skills-wrapper img {
+    .skills-wrapper {
       background-color: #1c232c;
+      border-color: #2b3747;
+
+      h1 {
+        color: #2b3747;
+      }
+
+      img {
+        background-color: #1c232c;
+      }
     }
   }
 

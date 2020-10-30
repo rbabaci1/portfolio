@@ -69,11 +69,9 @@ export default function About() {
           </p>
         </div>
 
-        <div
-          className="skills-wrapper"
-          data-aos="fade-up"
-          data-aos-duration="500"
-        >
+        <div className="skills-wrapper">
+          <h1>SKILLS</h1>
+
           <img className="js" src={Img.js} alt="javascript icon" />
           <img className="react" src={Img.react} alt="react icon" />
           <img className="html" src={Img.html} alt="html icon" />
