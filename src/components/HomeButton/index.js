@@ -15,6 +15,8 @@ export default function HomeButton() {
         minWidth: 200.0,
         scale: 1.0,
         scaleMobile: 0.7,
+        backgroundColor: "#220a11",
+        color: "#04c2c9",
       });
     }, 400);
 
