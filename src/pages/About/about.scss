@@ -95,7 +95,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: $light-gray;
 
       &:hover {
         animation: 20s spin running infinite linear;
@@ -110,7 +109,7 @@
         font-size: 70px;
         animation: 20s spin paused infinite linear;
         animation-direction: reverse;
-        color: #fff;
+        color: $light-gray;
       }
 
       img {
@@ -124,7 +123,7 @@
         height: 300px;
 
         h1 {
-          font-size: 50px;
+          font-size: 52px;
         }
 
         img {

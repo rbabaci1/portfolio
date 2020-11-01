@@ -25,31 +25,31 @@
     transform: rotate(40deg);
 
     @media (max-width: 600px) {
-      top: 25px;
-      left: 15px;
+      top: 28px;
+      left: 11px;
     }
   }
 
   .python {
-    left: -26px;
+    left: -29px;
     top: 140px;
     padding: 5px 0;
 
     @media (max-width: 600px) {
       top: 103px;
-      left: -20px;
+      left: -24px;
     }
   }
 
   .nodeJs {
-    left: -5px;
+    left: -7px;
     bottom: 80px;
-    transform: rotate(-25deg);
+    transform: rotate(-27deg);
     padding: 3px 0;
 
     @media (max-width: 600px) {
-      bottom: 67px;
-      left: -13px;
+      bottom: 65px;
+      left: -12px;
     }
   }
 
@@ -60,74 +60,74 @@
     padding: 5px 0;
 
     @media (max-width: 600px) {
-      left: 40px;
-      bottom: 5px;
+      left: 41px;
+      bottom: 3px;
     }
   }
 
   .git {
-    bottom: -27px;
-    left: 173px;
-    padding: 0 5px;
-    transform: rotate(-3deg);
+    bottom: -29px;
+    left: 177px;
+    transform: rotate(-2deg);
+    background-color: #fff;
 
     @media (max-width: 600px) {
-      left: 120px;
-      bottom: -29px;
-      transform: rotate(2deg);
+      left: 124px;
+      bottom: -24px;
+      transform: rotate(-1deg);
     }
   }
 
   .github {
-    bottom: 10px;
-    right: 52px;
+    bottom: 11px;
+    right: 53px;
     padding: 0 0 0 3px;
 
     @media (max-width: 600px) {
-      bottom: -6px;
-      right: 48px;
-      width: 40px;
+      bottom: 0;
+      right: 47px;
+      width: 45px;
     }
   }
 
   .sass {
-    right: 22px;
-    top: 35px;
+    right: 23px;
+    top: 36px;
 
     @media (max-width: 600px) {
-      right: 8px;
+      right: 9px;
+      top: 30px;
+      width: 45px;
     }
   }
 
   .html {
-    right: -25px;
+    right: -28px;
     top: 130px;
     transform: rotate(-5deg);
     padding: 3px 0;
 
     @media (max-width: 600px) {
-      top: 105px;
-      right: -23px;
+      top: 108px;
+      right: -24px;
     }
   }
 
   .css {
     right: -15px;
-    bottom: 95px;
+    bottom: 90px;
     padding: 5px 0;
-    transform: rotate(21deg);
+    transform: rotate(22deg);
 
     @media (max-width: 600px) {
-      bottom: 62px;
-      right: -10px;
-      transform: rotate(23deg);
+      bottom: 60px;
+      right: -8px;
     }
   }
 
   .react {
-    top: -23px;
-    left: 100px;
-    background-color: transparent;
+    top: -21px;
+    left: 107px;
     transform: rotate(42deg);
 
     @media (max-width: 600px) {
@@ -138,15 +138,15 @@
   }
 
   .redux {
-    top: -25px;
+    top: -23px;
     right: 118px;
-    padding: 0 5px;
-    transform: rotate(15deg);
+    transform: rotate(20deg);
+    background-color: #fff;
 
     @media (max-width: 600px) {
-      right: 85px;
-      top: -22px;
-      transform: rotate(18deg);
+      right: 76px;
+      top: -18px;
+      width: 45px;
     }
   }
 }
