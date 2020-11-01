@@ -34,9 +34,9 @@
       width: 50%;
 
       img {
-        height: 290px;
         position: relative;
-        top: 18px;
+        height: 290px;
+        top: 10px;
       }
 
       h2 {
@@ -68,11 +68,8 @@
         padding: 0 50px;
         top: 50px;
         margin-top: 30px;
-
-        img {
-          top: 5px;
-        }
       }
+
       @media (max-width: 700px) {
         padding: 0 5px;
       }
