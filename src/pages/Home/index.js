@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Typist from "react-typist";
-import DarkModeToggle from "../../components/DarkMode";
 
+import DarkModeToggle from "../../components/DarkMode";
 import Button from "../../components/HomeButton";
 import "./homePage.scss";
 
