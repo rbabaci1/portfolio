@@ -2,8 +2,6 @@ import React, { useRef } from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import Swiper from "react-id-swiper";
 
-import * as projectImages from "../../images/projectsImages";
-
 import "swiper/swiper.scss";
 import "./carousel.scss";
 
@@ -40,7 +38,10 @@ export default function Carousel({ images }) {
       <Swiper {...params} ref={ref}>
         {images.map((img, i) => (
           <div key={i}>
-            <img src={projectImages[img]} alt="project landing page" />
+            <img
+              src={require(`../../images/projectsImages/${img}.png`).default}
+              alt="project landing page"
+            />
           </div>
         ))}
       </Swiper>
