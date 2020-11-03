@@ -3,7 +3,7 @@ import React from "react";
 import BorderBottom from "../../components/HeaderBottomBorder";
 import ProjectCard from "../../components/ProjectCard";
 import DiagonalDiv from "../../components/DiagonalDiv";
-import projectsData from "../../projectsData";
+import projectsData from "../../projectsData/index";
 
 import "./portfolio.scss";
 
