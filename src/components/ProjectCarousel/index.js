@@ -8,6 +8,7 @@ import "./carousel.scss";
 
 export default function Carousel({ images }) {
   const ref = useRef(null);
+
   const params = {
     loop: true,
     speed: 800,
