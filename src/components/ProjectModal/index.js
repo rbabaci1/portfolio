@@ -13,13 +13,13 @@ export default function ProjectModal(props) {
       open={props.open}
       onClose={() => props.setOpen(false)}
       center
-      // styles={{
-      //   modal: {
-      //     animation: `${
-      //       props.open ? "customEnterAnimation" : "customLeaveAnimation"
-      //     } 300ms`,
-      //   },
-      // }}
+      styles={{
+        modal: {
+          animation: `${
+            props.open ? "customEnterAnimation" : "customLeaveAnimation"
+          } 400ms`,
+        },
+      }}
       // classNames={{
       //   animationIn: "customEnterAnimation",
       //   animationOut: "customLeaveAnimation",
