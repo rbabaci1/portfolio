@@ -3,9 +3,9 @@ import { Modal } from "react-responsive-modal";
 import { BiLinkExternal } from "react-icons/bi";
 import { FaGithubAlt } from "react-icons/fa";
 
+import Carousel from "../ProjectCarousel";
 import "react-responsive-modal/styles.css";
 import "./projectModal.scss";
-import Carousel from "../ProjectCarousel";
 
 export default function ProjectModal(props) {
   return (
@@ -13,11 +13,18 @@ export default function ProjectModal(props) {
       open={props.open}
       onClose={() => props.setOpen(false)}
       center
-      classNames={{
-        animationIn: "customEnterAnimation",
-        animationOut: "customLeaveAnimation",
+      styles={{
+        modal: {
+          animation: `${
+            props.open ? "customEnterAnimation" : "customLeaveAnimation"
+          } 300ms`,
+        },
       }}
-      animationDuration={600}
+      // classNames={{
+      //   animationIn: "customEnterAnimation",
+      //   animationOut: "customLeaveAnimation",
+      // }}
+      animationDuration={300}
     >
       <Carousel images={props.images} />
 
