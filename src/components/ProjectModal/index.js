@@ -13,17 +13,10 @@ export default function ProjectModal(props) {
       open={props.open}
       onClose={() => props.setOpen(false)}
       center
-      styles={{
-        modal: {
-          animation: `${
-            props.open ? "customEnterAnimation" : "customLeaveAnimation"
-          } 400ms`,
-        },
+      classNames={{
+        animationIn: "customEnterAnimation",
+        animationOut: "customLeaveAnimation",
       }}
-      // classNames={{
-      //   animationIn: "customEnterAnimation",
-      //   animationOut: "customLeaveAnimation",
-      // }}
       animationDuration={400}
     >
       <Carousel images={props.images} />

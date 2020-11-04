@@ -17,7 +17,7 @@
     background-color: rgba(20, 27, 43, 0.4);
 
     h1 {
-      font-size: 32pt;
+      font-size: 31pt;
       font-weight: normal;
       color: $white;
       overflow: hidden;
@@ -70,12 +70,12 @@
       margin-top: 25px;
 
       .learn-more {
-        width: 14.8rem;
+        width: 13.8rem;
         background-color: rgb(21, 39, 53);
 
         .circle {
-          height: 3.5rem;
-          width: 3.5rem;
+          height: 3.4rem;
+          width: 3.4rem;
           background-color: darken($color: $light_green, $amount: 3);
 
           .arrow {
@@ -90,7 +90,7 @@
         }
 
         .button-text {
-          font-size: 24px;
+          font-size: 22px;
           color: lighten($color: $light_green, $amount: 30);
           right: 0;
           bottom: 2px;
