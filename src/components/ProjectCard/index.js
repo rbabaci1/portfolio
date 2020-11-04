@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Button from "../Button";
 import macBook from "../../images/macbook.png";
 import ProjectModal from "../ProjectModal";
-
 import "./projectCard.scss";
 
 export default function ProjectCard(props) {
