@@ -49,14 +49,19 @@ body.light-mode {
         }
       }
     }
-    .inner-container:hover {
+
+    .inner-container {
       background-color: #1c232c;
 
-      .learn-more {
-        background-color: #2d3947;
+      &:hover {
+        background-color: #1c232c;
 
-        .button-text {
-          color: #fff;
+        .learn-more {
+          background-color: #2d3947;
+
+          .button-text {
+            color: #fff;
+          }
         }
       }
     }
@@ -64,7 +69,7 @@ body.light-mode {
 
   .react-responsive-modal-modal {
     .details {
-      background-color: #232c36;
+      background-color: #1c232c;
 
       a {
         color: #fff;
