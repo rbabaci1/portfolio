@@ -111,7 +111,7 @@ export default function SwipeableTemporaryDrawer() {
             open={open}
             onClose={toggleDrawer(false)}
             onOpen={toggleDrawer(true)}
-            transitionDuration={400}
+            transitionDuration={300}
           >
             <AiOutlineClose onClick={toggleDrawer(false)} />
 
