@@ -53,7 +53,7 @@ export default function Contact() {
 
           <Tooltip title="RESUME">
             <a
-              href="https://www.canva.com/design/DAD3k3gLODQ/5pN5cTUQRN2pW5NNokVQRg/view?utm_content=DAD3k3gLODQ&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu"
+              href="https://www.canva.com/design/DAETP8gR9Qg/d8XYJu9tejXUctWe5PY7fg/view?utm_content=DAETP8gR9Qg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -46,7 +46,7 @@
         background: linear-gradient(to right, $light_gray 50%, #1b232c 50%);
         background-size: 200% 100%;
         background-position: right bottom;
-        transition: all 0.2s ease-out;
+        transition: all 0.3s ease-out;
 
         svg {
           vertical-align: middle;
@@ -60,7 +60,6 @@
 
         &:hover {
           background-position: left bottom;
-          transform: scale(1.1);
 
           &:nth-of-type(1) {
             color: #1b232c;
