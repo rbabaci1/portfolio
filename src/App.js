@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 
 export default function App() {
   useEffect(() => {
+    // initialze 3D animation
     AOS.init({ duration: 1200, once: true, delay: 200 });
   }, []);
 
